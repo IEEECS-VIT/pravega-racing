@@ -7,4 +7,4 @@ To run the project:
 
 `pnpm i`
 then
-`pnpm run dev`
+`pnpm dev`
