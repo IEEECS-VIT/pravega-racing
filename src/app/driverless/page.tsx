@@ -1,15 +1,25 @@
+'use client'
+import React from 'react';
+import SlideshowBackground from '@/components/Slideshow';
+import DriverlessSection from '@/components/DriverlessSection';
 
-export default function Driverless() {
+const Page: React.FC = () => {
   return (
-    <main>
+    <div className="flex flex-col items-center justify-center h-screen">
       
-      <section className='bg-white'>
-        <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <p>Example page 2</p>
-        </div>
-      </section>
-    </main>
+      <div className="flex items-center justify-center h-full">
+        <img
+          src="public/images/Pravega Racing Driverless Logo.png" // Replace with the path to your image
+          alt="Example Image"
+          className="max-w-full max-h-full"
+        />
+      </div>
+      <SlideshowBackground />
+      <DriverlessSection/>
+      
+    </div>
+    
   );
-}
+};
 
-
+export default Page;
