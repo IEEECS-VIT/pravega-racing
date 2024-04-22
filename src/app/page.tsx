@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
-
+import Nav from '@/components/nav';
 import PrimaryLink from '@/components/links/PrimaryLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 /**
@@ -20,25 +20,28 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 
 export default function HomePage() {
   return (
-    <main>
-      <Head>
-        <title>Hi</title>
-      </Head>
-      <section className='bg-white'>
-        <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <h1 className='mt-4'>Good Luck!</h1>
-          <p>This project comes with tailwind and ts installed and configured</p>
-          <p>use tailwind.config.ts to declare color variables and please use it</p>
-          <p>use a color picker eyedropper web extension to get the exact colors of the website</p>
-          <PrimaryLink href='https://nextjs.org/docs'>nextjs has the best docs ever refer to it</PrimaryLink>
-          <footer className='absolute bottom-2 text-gray-700'>
-            © {new Date().getFullYear()} By{' '}
-            <UnderlineLink href='https://github.com/IEEECS-VIT'>
-              IEEECS-VIT
-            </UnderlineLink>
-          </footer>
-        </div>
-      </section>
-    </main>
+    <>
+      <Nav></Nav>
+      <main>
+        <Head>
+          <title>Hi</title>
+        </Head>
+        <section className='bg-white'>
+          <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
+            <h1 className='mt-4'>Good Luck!</h1>
+            <p>This project comes with tailwind and ts installed and configured</p>
+            <p>use tailwind.config.ts to declare color variables and please use it</p>
+            <p>use a color picker eyedropper web extension to get the exact colors of the website</p>
+            <PrimaryLink href='https://nextjs.org/docs'>nextjs has the best docs ever refer to it</PrimaryLink>
+            <footer className='absolute bottom-2 text-gray-700'>
+              © {new Date().getFullYear()} By{' '}
+              <UnderlineLink href='https://github.com/IEEECS-VIT'>
+                IEEECS-VIT
+              </UnderlineLink>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
