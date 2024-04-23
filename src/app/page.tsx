@@ -65,10 +65,10 @@ export default function HomePage() {
             <div className="grid-container">
               <div className="grid-row">
                 <div className="column-12 text-center animated-parent testClass">
-                  <h1 className="text-color-9 mt-5 font-size-xxlrg main-heading-pravega">
+                  <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega">
                     <b>Pravega Racing</b>
                   </h1>
-                  <h5 className="text-color-9 mt-5"><b>
+                  <h5 className="text-color-10 mt-5"><b>
                     One Team. One Dream. One Car.
                   </b></h5>
                 </div>
@@ -78,7 +78,7 @@ export default function HomePage() {
 
         </div>
       </section>
-      <div className="main-ka-baap" style={{ backgroundColor: 'lightgray' }} >
+      <div className="main-ka-baap"  >
         <main className="container">
           <section id="firstsection" style={{ paddingLeft: 175, paddingRight: 50 }}>
             <div className="grid-container-fluid margin-top-70 margin-bottom-50">
@@ -113,8 +113,8 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="column-3">
-                  <img src="img/general/cars/sae_new.png" className="saeimg" />
-                  <img src="/images/testscreenshot.png" />
+                  <img src="/images/general/cars/sae.png" className="saeimg" />
+
                 </div>
               </div>
             </div>
