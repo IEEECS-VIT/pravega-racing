@@ -1,0 +1,153 @@
+
+@font-face {
+  font-family: 'Tagesschrift';
+  
+  /* src: url('css/mycss/alte_haas_grotesk/AlteHaasGroteskBold.ttf');*/
+  font-weight: normal;
+}
+.main-heading-pravega {
+  font-family: 'Tagesschrift';
+  font-weight: 100;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.fb-page {
+  width: 100% !important;
+}
+
+.fb-page blockquote {
+  width: 100% !important;
+}
+
+.twitter-page {
+  margin-top: 10px;
+}
+
+.valign-m {}
+
+.chancellor-img-div {
+  width: 100px;
+  display: inline-block;
+}
+
+.chancellor-p-div {
+  width: 500px;
+  display: inline-block;
+}
+
+.about-gv-p {}
+
+.chancellor-img {}
+
+#firstsection {
+  margin-top: -40px;
+}
+
+.twitter-follow-button {}
+
+.overlay__background {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay__background a {
+  text-decoration: none;
+}
+
+.cb-slideshow {
+  position: fixed;
+  z-index: -1;
+}
+
+.recent_fb {
+  max-height: 95vh !important;
+  max-width: 100vw !important;
+}
+
+.main-ka-baap {
+  width:100%;
+  z-index: 100;
+  border: solid 2px #fff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.btnToggle {
+  display: none !important;
+}
+
+.gvisva-section {
+  margin-top: -40px;
+}
+
+.recent_img {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 990px) {
+  #firstsection {
+    margin-top: -40px;
+  }
+
+  .gvisva-section .padlr {
+    padding-left: 70px;
+  }
+
+  .recent_img {
+    height: 180px !important;
+    width: 330px !important;
+    margin-bottom: 20px;
+  }
+
+  .saeimg {
+    margin-top: -60px;
+    width: 100%;
+
+    margin-bottom: -30px;
+  }
+
+  .gvisva-section {
+    margin-top: -20px;
+  }
+
+}
+</style>
+<style type="text/css">
+.ig-b- {
+  display: inline-block;
+}
+
+.ig-b- img {
+  visibility: hidden;
+}
+
+.ig-b-:hover {
+  background-position: 0 -60px;
+}
+
+.ig-b-:active {
+  background-position: 0 -120px;
+}
+
+.ig-b-v-24 {
+  width: 137px;
+  height: 24px;
+  background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .ig-b-v-24 {
+    background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png);
+    background-size: 160px 178px;
+  }
+}

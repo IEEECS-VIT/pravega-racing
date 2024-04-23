@@ -1,0 +1,13 @@
+ol,
+ul {
+  list-style: none;
+}
+.container {
+  position: relative;
+  width:100%;
+  text-align: center;
+}
+
+.testClass{
+  background-color:rgba(0,0,0,0);
+}
