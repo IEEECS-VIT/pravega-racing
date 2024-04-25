@@ -8,6 +8,17 @@
 .main-heading-pravega {
   font-family: 'Tagesschrift';
   font-weight: 100;
+  animation: fadeIn 2s;
+
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
 }
 
 .img-circle {
@@ -67,6 +78,7 @@
 }
 
 .main-ka-baap {
+  max-width:100%;
   width:100%;
   z-index: 100;
   border: solid 2px #fff;
@@ -86,6 +98,12 @@
 
 .recent_img {
   margin-bottom: 40px;
+}
+#firstsection{
+  max-width: '100%';
+  /*
+  padding-left: 175px; 
+  padding-right: 50px; */
 }
 
 @media (min-width: 990px) {
@@ -112,6 +130,7 @@
 
   .gvisva-section {
     margin-top: -20px;
+    width:100%;
   }
 
 }

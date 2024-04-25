@@ -5500,8 +5500,9 @@ hr {
 }
 body,
 html {
-  overflow-x: hidden;
+  overflow-x:hidden;
 }
+
 *,
 :after,
 :before,
