@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 const SlideshowBackground: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const images = ['images/2.jpg', '/images/3.jpg', '/images/4.jpg']; // Replace with your own image URLs
+  const images = ['images/2.jpg', '/images/3.jpg', '/images/4.jpg','/images/5.jpg','/images/8.jpg','/images/10.jpg']; // Replace with your own image URLs
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,9 +16,9 @@ const SlideshowBackground: React.FC = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  images.map((image, index) => (
+  /*images.map((image, index) => (
     console.log(image, index)
-  ));
+  ));*/
 
   return (
     <div style={{ zIndex: -100 }} className="fixed inset-0 overflow-hidden">
