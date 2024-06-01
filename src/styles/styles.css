@@ -16,6 +16,35 @@ button,
 hr {
   overflow: visible;
 }
+.swiper-button-prev{
+  background-color:black;
+}
+.swiper-button-next{
+  background-color:black;
+  
+}
+.custom-swiper-button-prev, .custom-swiper-button-next {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.textContentCars{
+  width: 45%;
+  text-align: left; 
+}
+.textContentCars b{
+  color:black;
+}
+.headingCar{
+  text-align:center;
+  color:black;
+  font-size:35px;
+  margin-top:100px;
+  margin-bottom:30px;
+
+}
 body,
 html {
   overflow-x: hidden;
