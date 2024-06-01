@@ -3,17 +3,15 @@
 import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
-import Nav from '@/components/nav';
-import PrimaryLink from '@/components/links/PrimaryLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
 
 import '/src/styles/slider1.css';
 import '/src/styles/slider2.css';
 import '/src/styles/font-awesome.css';
 import '/src/styles/indexpage.css';
 import '/src/styles/styles.css';
-import styles from '/src/styles/nav.module.css';
+
 import Footer from '@/components/footer';
+import Nav from '@/components/nav';
 import SlideshowBackground from '@/components/Slideshow';
 
 /**

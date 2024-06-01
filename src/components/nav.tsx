@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <nav className="bg-gray-800" style={{ borderBottom: '1px solid black', backgroundColor: 'rgba(0,0,0,0)', zIndex: 10000, width: '100%' }}>
+    <nav className="bg-gray-800 fixed" style={{ borderBottom: '1px solid black', backgroundColor: 'rgba(0,0,0,0)', zIndex: 10000, width: '100%' }}>
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
