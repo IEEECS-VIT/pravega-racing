@@ -1,8 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 
-const PrBackground: React.FC = () => {
-  const imageUrl = '/images/general/practivities/0.png'; 
+const SupportBackground: React.FC = () => {
+  const imageUrl = '/images/general/supportus/01.jpg'; 
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -21,19 +20,17 @@ const PrBackground: React.FC = () => {
           className={`text-4xl mb-4 ${isLoaded? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}
           style={{ transform: isLoaded? 'none' : 'translateX(100%)' }}
         >
-          PR activities
+          Support Us
         </p>
         <p 
           className={`text-xl whitespace-nowrap ${isLoaded? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}
           style={{ transform: isLoaded? 'none' : 'translateX(-100%)' }}
         >
-          We do our best to keep our sponsors satisfied by branding them through our various PR activities and exciting marketing campaigns
+          Assist Pravega Racing and be a part of the Formula Student Community
         </p>
       </div>
     </div>
   );
 };
 
-
-export default PrBackground;
-
+export default SupportBackground;
