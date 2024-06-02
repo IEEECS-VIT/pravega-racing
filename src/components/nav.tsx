@@ -1,8 +1,10 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Nav = () => {
   return (
+
     <nav
       className='bg-gray-800 fixed'
       style={{
@@ -22,9 +24,12 @@ const Nav = () => {
                 width={500} // Adjust the width and height as needed
                 height={300} // Adjust the height as needed
                 className='h-8 w-auto cursor-pointer'
+
+ 
               />
             </Link>
           </div>
+
 
           <div className='hidden sm:block mt-5' style={{ marginTop: '29.4px' }}>
             <div className='flex space-x-4 '>
@@ -113,6 +118,7 @@ const Nav = () => {
               </Link>
               <Link href='/supportus' passHref>
                 <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+
                   Support Us
                 </p>
               </Link>

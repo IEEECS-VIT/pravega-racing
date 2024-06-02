@@ -1,0 +1,91 @@
+ol,
+ul {
+  list-style: none;
+}
+.container {
+  position: relative;
+  width:100%;
+  text-align: center;
+  max-width:100%;
+}
+.container div b{
+  color:black;
+}
+
+.testClass{
+  background-color:rgba(0,0,0,0);
+}
+.footImg{
+  width:270px;
+  height:94px;
+}
+.buttonsAtEnd{
+  display:flex;
+  flex-direction:row;
+  gap:2px;
+
+}
+.itemRecentAct{
+  width: 300px;
+  height:200px;
+  background-color:black;
+  
+}
+@keyframes beeg{
+  0%{
+    transform:scale(1);
+  }100%{
+    transform:scale(1.1);
+  }
+}
+.itemRecentAct:hover{
+  animation: beeg 1s;
+}
+@keyframes zoomIn0 {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0; /* Start and end with opacity 0 */
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1; /* Fade in the image */
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1; /* Maintain opacity during zoom */
+  }
+}
+
+@keyframes zoomIn1 {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0; /* Start and end with opacity 0 */
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1; /* Fade in the image */
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1; /* Maintain opacity during zoom */
+  }
+}
+
+@keyframes zoomIn2 {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0; /* Start and end with opacity 0 */
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1; /* Fade in the image */
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1; /* Maintain opacity during zoom */
+  }
+}
+
+.text-left-imp{
+  text-align: left;
+}

@@ -7,11 +7,13 @@ import Nav from '@/components/nav';
 import Prbackground from '@/components/prbackground';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
+
 const MyPage: React.FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
   return (
     <div>
+
       <div className='relative z-10'>
         <Nav />
         <ScrollToTopButton />
@@ -25,6 +27,7 @@ const MyPage: React.FC = () => {
       >
         <div className='w-full grid-rows-1 bg-white grid-cols-1 gap-4'>
           <div className='col-span-1 flex flex-col items-center w-full'>
+
             <div className='bg-white p-4 max-w-5xl mx-auto '>
               <h2
                 className='text-3xl font-bold mb-2'
