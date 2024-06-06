@@ -57,7 +57,7 @@ const Nav = () => {
                 </div>
               </div>
               <div className="relative group">
-                <Link href="/events.php#cd_block16" passHref>
+                <Link href="/events" passHref>
                   <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none cursor-pointer">
                     Events
                   </p>
