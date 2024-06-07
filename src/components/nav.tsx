@@ -5,6 +5,11 @@ import Link from 'next/link';
 const Nav = () => {
   return (
 
+    <nav className="bg-gray-800 fixed" style={{ borderBottom: '1px solid black', backgroundColor: 'rgba(0,0,0,0)', zIndex: 10000, width: '100%' }}>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+
+
     <nav
       className='bg-gray-800 fixed'
       style={{
@@ -72,9 +77,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </div>
-              <div className='relative group'>
-                <Link href='/events.php#cd_block16' passHref>
-                  <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none cursor-pointer'>
+              <div className="relative group">
+                <Link href="/events" passHref>
+                  <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none cursor-pointer">
                     Events
                   </p>
                 </Link>

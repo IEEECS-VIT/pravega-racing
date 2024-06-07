@@ -1,0 +1,19 @@
+.vertical-timeline-element-icon.is-hidden {
+  visibility: visible !important;
+}
+
+* {
+  visibility: visible !important;
+}
+
+.vtop {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.button {
+  opacity: 1 !important;
+}
