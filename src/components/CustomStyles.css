@@ -1,0 +1,19 @@
+.custom-marker::before {
+  content: '>';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  color: #29465d;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.custom-marker1::before {
+  content: '✓';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  color: #ff0000;
+  margin-right: 10px;
+  font-weight: bold;
+}

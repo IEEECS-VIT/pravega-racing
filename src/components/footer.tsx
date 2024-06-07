@@ -1,5 +1,6 @@
 
 
+
 export default function Footer() {
   return (
     <footer className="container bg-gray-800 " style={{ maxWidth: '100%', height: 200 }} >
@@ -27,3 +28,4 @@ export default function Footer() {
     </footer>
   );
 }
+
