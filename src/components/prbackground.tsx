@@ -1,10 +1,31 @@
 
 import React, { useEffect, useState } from 'react';
 
+  
+
 const PrBackground: React.FC = () => {
   const imageUrl = '/images/general/practivities/0.png'; 
   const [isLoaded, setIsLoaded] = useState(false);
+  
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      if (parallaxRef.current) {
+        parallaxRef.current.style.transform = `translateY(${
+          scrollPosition * 0.5
+        }px)`;
+      }
+      if (contentRef.current) {
+        contentRef.current.style.transform = `translateY(${
+          scrollPosition * -0.5
+        }px)`;
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    
+    
   useEffect(() => {
     setIsLoaded(true);
   }, []);

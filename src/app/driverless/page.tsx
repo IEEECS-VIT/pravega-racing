@@ -1,10 +1,11 @@
 'use client'
 
 import React, { useRef } from 'react';
-import Nav from '@/components/nav';
-import SlideshowBackground from '@/components/Slideshow';
+
 import DriverlessSection from '@/components/DriverlessSection';
 import Footer from '@/components/footer';
+import Nav from '@/components/nav';
+import SlideshowBackground from '@/components/Slideshow';
 
 const Page: React.FC = () => {
   const driverlessSectionRef = useRef<HTMLDivElement>(null);
