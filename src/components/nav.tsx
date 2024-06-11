@@ -25,7 +25,7 @@ const Nav = () => {
                 height={300} // Adjust the height as needed
                 className='h-8 w-auto cursor-pointer'
 
- 
+
               />
             </Link>
           </div>
@@ -54,20 +54,65 @@ const Nav = () => {
                 </div>
               </div>
               <div className='relative group'>
-                <Link href='/teamprv20.php' passHref>
+                <Link href='/teamprv20' passHref>
                   <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none cursor-pointer'>
                     Team
                   </p>
                 </Link>
                 <div className='absolute z-10 hidden bg-black bg-opacity-90 text-white group-hover:block w-48 py-2 mt-1 rounded-md'>
-                  <Link href='/teamprv20.php' passHref>
+                  <Link href='/teamprv20' passHref>
                     <p className='block px-4 py-2 cursor-pointer'>
                       Team PRV 23
                     </p>
                   </Link>
-                  <Link href='/teamprv20.php' passHref>
+                  <Link href='/teamprv20' passHref>
                     <p className='block px-4 py-2 cursor-pointer'>
                       Team PRV 22
+                    </p>
+                  </Link>
+                  <Link href='/teamprv20' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 21
+                    </p>
+                  </Link>
+                  <Link href='/teamprv20' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 20
+                    </p>
+                  </Link>
+                  <Link href='/teamprv19' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 19
+                    </p>
+                  </Link>
+                  <Link href='/teamprv18' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 18
+                    </p>
+                  </Link>
+                  <Link href='/teamprv17' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 17
+                    </p>
+                  </Link>
+                  <Link href='/teamprv16' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 16
+                    </p>
+                  </Link>
+                  <Link href='/teamprv15' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 15
+                    </p>
+                  </Link>
+                  <Link href='/teamprv14' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 14
+                    </p>
+                  </Link>
+                  <Link href='/teamprv13' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Team PRV 13
                     </p>
                   </Link>
                 </div>
