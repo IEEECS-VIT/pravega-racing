@@ -14,6 +14,7 @@ const Nav = () => {
     >
       <div className='mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
+
           <nav
             className='bg-gray-800 fixed'
             style={{
@@ -63,6 +64,7 @@ const Nav = () => {
                           <p className='block px-4 py-2 cursor-pointer'>
                             PRV 21
                           </p>
+
                         </Link>
                       </div>
                     </div>
@@ -88,6 +90,7 @@ const Nav = () => {
                     <div className='relative group'>
                       <Link href='/events' passHref>
                         <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium focus:outline-none cursor-pointer'>
+
                           Events
                         </p>
                       </Link>
