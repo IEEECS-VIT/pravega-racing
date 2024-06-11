@@ -61,7 +61,7 @@ export default function Cars() {
             <div className="headingCar">
               <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV Delta Phoenix
-              <button ref={nextRef} className="custom-swiper-button-next mx-6">a</button>
+              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right"></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -104,7 +104,7 @@ export default function Cars() {
                 <b>Transmission:</b> Sequential 6 speed shift Electronic shift button type open differential<br />
               </div>
               <div style={{ width: '55%' }}>
-                <img src="images/2.jpg" style={{ height: '70%', width: '100%' }} />
+                <img src="vrs/PRV_13/prv13 render_VR.207/0_0.jpg" style={{ height: '70%', width: '100%' }} />
               </div>
             </div>
           </SwiperSlide>
@@ -130,7 +130,7 @@ export default function Cars() {
                 <b>Special Features:</b> Student built Pneumatic gear and clutch control unit and translogic dashboard. Twill layup Carbon fiber body and limited slip differential<br />
               </div>
               <div style={{ width: '55%' }}>
-                <img src="images/2.jpg" style={{ height: '70%', width: '100%' }} />
+                <img src="vrs/PRV_14/prv 14 render_VR.208/0_0.jpg" style={{ height: '70%', width: '100%' }} />
               </div>
             </div>
           </SwiperSlide>
@@ -156,7 +156,7 @@ export default function Cars() {
                 <b>Special Features:</b> In house developed Pneumatic gear and clutch control unit. Carbon epoxy composite body and Drexler limited slip differential<br />
               </div>
               <div style={{ width: '55%' }}>
-                <img src="images/2.jpg" style={{ height: '70%', width: '100%' }} />
+                <img src="vrs/PRV_15/PRV15_VR.205/0_0.jpg" style={{ height: '70%', width: '100%' }} />
               </div>
             </div>
           </SwiperSlide>
@@ -183,7 +183,7 @@ export default function Cars() {
 
               </div>
               <div style={{ width: '55%' }}>
-                <img src="images/2.jpg" style={{ height: '70%', width: '100%' }} />
+                <img src="vrs/PRV_16/PRV_16.215/0_0.jpg" style={{ height: '70%', width: '100%' }} />
               </div>
             </div>
           </SwiperSlide>
@@ -210,7 +210,7 @@ export default function Cars() {
 
               </div>
               <div style={{ width: '55%' }}>
-                <img src="images/2.jpg" style={{ height: '70%', width: '100%' }} />
+                <img src="vrs/PRV_17/17 pravega prv logo_VR.38/0_0.jpg" style={{ height: '70%', width: '100%' }} />
               </div>
             </div>
           </SwiperSlide>

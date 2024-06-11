@@ -64,7 +64,7 @@ export default function HomePage() {
             <div className="hero-unit__content">
               <div className="grid-container">
                 <div className="grid-row">
-                  <div className="column-12 text-center animated-parent testClass">
+                  <div style={{ marginTop: '250px' }} className="column-12 text-center animated-parent testClass">
                     <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega">
                       <b>Pravega Racing</b>
                     </h1>
@@ -78,7 +78,7 @@ export default function HomePage() {
 
           </div>
         </section>
-        <div className="main-ka-baap" >
+        <div className="main-ka-baap">
           <main className="container" style={{ width: '75%', margin: 'auto' }}>
             <section id="firstsection" >
               <div className="grid-container-fluid margin-top-70 margin-bottom-50">
