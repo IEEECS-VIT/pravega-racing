@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from 'react';
 import HomePage from './page';
 import Nav from '@/components/nav';
-
+import Footer from '@/components/footer';
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -352,6 +352,7 @@ export default function Cars() {
             </div>
           </SwiperSlide>
         </Swiper>
+        <Footer />
       </div>
     </>
   );
