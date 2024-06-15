@@ -1,3 +1,4 @@
+import '/src/styles/slider1.css';
 
 
 
