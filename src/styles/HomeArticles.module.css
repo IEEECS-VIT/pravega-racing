@@ -1,0 +1,126 @@
+.container {
+  font-family: Arial, sans-serif;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999;
+}
+
+
+
+.header {
+  text-align: center;
+  background: #111;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.headerTitle {
+  font-size: 36px;
+  margin: 0;
+}
+
+.headerSubtitle {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+.textDecor {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: #d9534f;
+  margin-right: 10px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.articlesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.articleCard {
+  flex: 0 0 30%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlayBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.overlayHeading {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.overlayText {
+  font-size: 14px;
+}
+
+.overlayImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  z-index: 0;
+}
+
+.teamPhoto {
+  height: 300px !important;
+}
+
+.articleCard:hover .overlayBackground,
+.articleCard:hover .overlayContent {
+  opacity: 1;
+}
+
+.articleCard:hover .overlayImage {
+  transform: scale(1.1);
+}
+
+.textCenter {
+  text-align: center;
+}

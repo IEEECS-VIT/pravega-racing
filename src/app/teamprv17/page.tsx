@@ -13,7 +13,7 @@ const MyPage: React.FC = () => {
   return (
     <div>
       <div className='relative z-10'>
-        <Nav />
+
         <ScrollToTopButton />
       </div>
       <div className='relative z-0 h-[10rem]'>
@@ -817,7 +817,7 @@ const MyPage: React.FC = () => {
 
 
       </div>
-      <Footer />
+
     </div>
   );
 };

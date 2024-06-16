@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <Nav />
+
         <Head>
           <title>Pravega Racing - VIT University Vellore</title>
 
@@ -165,7 +165,7 @@ export default function HomePage() {
           </section>
         </div>
       </div>
-      <Footer />
+
 
 
       <a href="#" className="back-to-top--floating"><i className="ion-ios-arrow-up"></i></a>

@@ -11,7 +11,7 @@ const MyPage: React.FC = () => {
   return (
     <div>
       <div className='relative z-10 fixed'>
-        <Nav />
+
       </div>
       <div className='relative z-0 h-[10rem]'>
         <PrBackground />
@@ -19,7 +19,7 @@ const MyPage: React.FC = () => {
       <div
         className='container mx-auto py-8 pt-60 flex flex-col items-center'
       ></div>
-      <Footer />
+
     </div>
   );
 };
