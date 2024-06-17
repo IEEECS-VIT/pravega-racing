@@ -1,0 +1,122 @@
+.container {
+  font-family: Arial, sans-serif;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999;
+}
+
+
+.header {
+  text-align: center;
+  background: #111;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+.textDecor {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: #d9534f;
+  margin-right: 10px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.articlesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer {
+  background-color: #222;
+  padding: 40px 20px;
+  color: #ccc;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.socialIcon {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.socialIcon:hover {
+  color: #fff;
+}
+
+.textColor11 {
+  color: #ccc;
+}
+
+.mailchimpSignup {
+  margin-top: 20px;
+}
+
+.mailchimpSignupInput {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mailchimpSignupInputLight {
+  background-color: #fff;
+  color: #000;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonSmall {
+  font-size: 14px;
+}
+
+.textColor10 {
+  color: #fff;
+}
+
+.mailchimpSignupInputSubmit {
+  background-color: #d9534f;
+}
