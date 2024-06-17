@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import * as React from 'react';
-
+import Nav from '@/components/nav';
+import Footer from '@/components/footer';
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
@@ -49,7 +50,13 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+
+      <body>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
+
     </html>
   );
 }

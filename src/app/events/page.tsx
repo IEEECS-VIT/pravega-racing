@@ -39,9 +39,7 @@ const EventsPage: React.FC = () => {
         backgroundAttachment: 'fixed',
       }}
     >
-      <div>
-        <Nav />
-      </div>
+
 
       <div className='vtop'>
         <p className='text-4xl'>EVENTS</p>
@@ -1033,7 +1031,7 @@ const EventsPage: React.FC = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
 
-      <Footer />
+
     </div>
   );
 };

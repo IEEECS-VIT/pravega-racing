@@ -40,7 +40,7 @@ export default function Cars() {
 
   return (
     <>
-      <Nav />
+
       <SlideshowBackground />
       <div style={{ marginTop: '15%', marginLeft: '45%', fontSize: '50px', color: 'white', position: 'absolute' }}>
         Cars
@@ -62,7 +62,7 @@ export default function Cars() {
         <h1 style={{ marginTop: '50px', fontSize: '50px' }}>Journey 2016 </h1>
         <iframe width="660" height="372" src="https://www.youtube.com/embed/l3OT-2vwQII" style={{ margin: 'auto' }} title="Pravega Racing - Sponsor Support" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  ></iframe>
       </div >
-      <Footer />
+
     </>
   );
 }

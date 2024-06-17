@@ -21,7 +21,7 @@ const SponsorPage: React.FC = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <Nav />
+
 
       <div className="relative flex flex-col items-center justify-center h-screen">
         <div className="z-10 text-center">
@@ -56,8 +56,8 @@ const SponsorPage: React.FC = () => {
       <div ref={sponsorsSectionRef}>
         <SponsorSection />
       </div>
-      
-      <Footer />
+
+
     </div>
   );
 };

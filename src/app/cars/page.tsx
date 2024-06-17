@@ -39,7 +39,7 @@ export default function Cars() {
 
   return (
     <>
-      <Nav />
+
       <SlideshowBackground />
       <div style={{ marginTop: '15%', marginLeft: '45%', fontSize: '50px', color: 'white', position: 'absolute' }}>
         Cars
@@ -352,7 +352,7 @@ export default function Cars() {
             </div>
           </SwiperSlide>
         </Swiper>
-        <Footer />
+
       </div>
     </>
   );
