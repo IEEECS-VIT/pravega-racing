@@ -112,6 +112,9 @@ const Nav = () => {
                   <Link href="/articles" passHref>
                     <p className="block px-4 py-2 cursor-pointer">Articles</p>
                   </Link>
+                  <Link href="/linkedin" passHref>
+                    <p className="block px-4 py-2 cursor-pointer">LinkedIn Articles</p>
+                  </Link>
                 </div>
               </div>
               <Link href="/practivities" passHref>
