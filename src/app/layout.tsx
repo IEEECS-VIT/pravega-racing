@@ -3,8 +3,10 @@ import * as React from 'react';
 import Nav from '@/components/nav';
 import Footer from '@/components/footer';
 import '@/styles/globals.css';
+import { Suspense } from 'react';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+import Loading from '@/app/loading';
 
 import { siteConfig } from '@/constant/config';
 
@@ -51,10 +53,17 @@ export default function RootLayout({
   return (
     <html>
 
+
       <body>
+        <script
+          src="https://kit.fontawesome.com/fbadad80a0.js"
+          crossOrigin="anonymous"
+        ></script>
+
         <Nav />
         {children}
         <Footer />
+
       </body>
 
     </html>
