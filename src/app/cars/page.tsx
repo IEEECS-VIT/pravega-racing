@@ -48,7 +48,7 @@ export default function Cars() {
     <>
 
       <SlideshowBackground />
-      <div style={{ marginTop: '15%', marginLeft: '45%', fontSize: '50px', color: 'white', position: 'absolute' }}>
+      <div className="carsTitle" >
         Cars
       </div>
       <div className="main-ka-baap" style={{ marginTop: '500px' }}>

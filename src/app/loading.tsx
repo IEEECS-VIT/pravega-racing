@@ -1,5 +1,7 @@
 export default function Loading() {
   return (
-    <h1> Loading</h1>
+    <div style={{ backgroundColor: 'white', height: '100%', width: '100%' }}>
+      <h1  > Loading</h1>
+    </div>
   )
 }

@@ -156,16 +156,17 @@ const Nav = () => {
                   Our Sponsors
                 </p>
               </Link>
-              <Link href="/contactus" passHref>
-                <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Contact Us
-                </p>
-              </Link>
               <Link href="/supportus" passHref>
                 <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Support Us
                 </p>
               </Link>
+              <Link href="/contactus" passHref>
+                <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                  Contact Us
+                </p>
+              </Link>
+
             </div>
           </div>
         </div>

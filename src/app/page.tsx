@@ -87,8 +87,7 @@ export default function HomePage() {
               <div className="grid-container-fluid margin-top-70 margin-bottom-50">
                 <div className="grid-row">
                   <div className="column-8 aboutusdiv">
-
-                    <h3 className="text-left"><b>Fifty Four, <span className="redcolor"><b>Pravega !</b></span></b></h3>
+                    <h3 className="text-left"><b>Fifty Four, <span className="redcolor" style={{ color: 'red' }}>Pravega !</span></b></h3>
                     <p className="text-left">
                       We are a team of engineers who seek to enhance the learning
                       experience of the student community at VIT University by implementation of engineering
@@ -160,17 +159,17 @@ export default function HomePage() {
           <section style={{ color: 'black', width: '80%', margin: 'auto' }}>
             <div className="text-align-left text-bold text-3xl">Recent Activities</div>
             <div className="imageThing justify-center mt-4 mb-6" style={{ marginLeft: '8%' }}>
-              <div className="itemRecentAct"><a href="http://www.google.com"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }} className="image"></img></a>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsb21/1.png" style={{ width: 'fit-content', height: '100%' }} className="image"></img></a>
                 <div className="textContentImage">
-                  <div className="innerText">Test</div>
+                  <div className="innerText">Formula Bharat 2021</div>
                 </div>  </div>
-              <div className="itemRecentAct"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }} className="image"></img>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsO20/1.jpg" style={{ width: '100%', height: '100%' }} className="image"></img></a>
                 <div className="textContentImage">
-                  <div className="innerText">Test</div>
+                  <div className="innerText">Formula Student Online 2020</div>
                 </div>  </div>
-              <div className="itemRecentAct"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }} className="image"></img>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsg19/11.jpg" style={{ width: 'fit-content', height: 'fit-content' }} className="image"></img></a>
                 <div className="textContentImage">
-                  <div className="innerText">Test</div>
+                  <div className="innerText">Formula Student Germany 2019</div>
                 </div>  </div>
             </div>
 
