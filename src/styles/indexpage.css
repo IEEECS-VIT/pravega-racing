@@ -106,34 +106,7 @@
   padding-right: 50px; */
 }
 
-@media (min-width: 990px) {
-  #firstsection {
-    margin-top: -40px;
-  }
 
-  .gvisva-section .padlr {
-    padding-left: 70px;
-  }
-
-  .recent_img {
-    height: 180px !important;
-    width: 330px !important;
-    margin-bottom: 20px;
-  }
-
-  .saeimg {
-    margin-top: -60px;
-    width: 100%;
-
-    margin-bottom: -30px;
-  }
-
-  .gvisva-section {
-    margin-top: -20px;
-    width:100%;
-  }
-
-}
 
 .ig-b- {
   display: inline-block;

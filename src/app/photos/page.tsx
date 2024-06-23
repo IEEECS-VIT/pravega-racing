@@ -32,18 +32,25 @@ const imageData = {
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("Formula Student Germany 2023");
   const [currentImages, setCurrentImages] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setCurrentImages(imageData[activeCategory]);
+    setLoading(true);
+    setTimeout(() => {
+      setCurrentImages(imageData[activeCategory]);
+      setLoading(false);
+    }, 1500); // Adjust this time to match your image loading time
   }, [activeCategory]);
 
   const handleNavClick = (category) => {
-    setActiveCategory(category);
+    if (category !== activeCategory) {
+      setActiveCategory(category);
+    }
   };
+
 
   return (
     <div className={styles.container}>
-      <PhotosBackground></PhotosBackground>
       <header className={styles.header}>
         {/* Header content */}
       </header>
@@ -60,11 +67,13 @@ export default function Home() {
           </ul>
         </nav>
         <main className={styles.main}>
-          <div className={styles.grid}>
-            {currentImages.map((img, index) => (
-              <img key={index} src={img} alt={`Description of ${img}`} className={styles.img} />
-            ))}
-          </div>
+          {loading ? <div className={styles.loader}></div> : (
+            <div className={styles.grid}>
+              {currentImages.map((img, index) => (
+                <img key={index} src={img} alt={`Description of ${img}`} className={styles.img} />
+              ))}
+            </div>
+          )}
         </main>
       </div>
     </div>

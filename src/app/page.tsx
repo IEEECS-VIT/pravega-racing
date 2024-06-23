@@ -29,7 +29,7 @@ import SlideshowBackground from '@/components/Slideshow';
 export default function HomePage() {
   return (
     <>
-      <div>
+      <div className="pageFull">
 
         <Head>
           <title>Pravega Racing - VIT University Vellore</title>
@@ -59,12 +59,13 @@ export default function HomePage() {
           <a data-scroll href="#firstsection"><span className="scroll-pointer"></span></a>
         </div>
       </section> */}
+
         <section>
           <div className="hero-unit hero-unit--banner-4" id="page">
             <div className="hero-unit__content">
               <div className="grid-container">
                 <div className="grid-row">
-                  <div style={{ marginTop: '250px' }} className="column-12 text-center animated-parent testClass">
+                  <div style={{}} className="column-12 text-center animated-parent testClass">
                     <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega">
                       <b>Pravega Racing</b>
                     </h1>
@@ -78,14 +79,15 @@ export default function HomePage() {
 
           </div>
         </section>
+
+
         <div className="main-ka-baap">
           <main className="container" style={{ width: '75%', margin: 'auto' }}>
             <section id="firstsection" >
               <div className="grid-container-fluid margin-top-70 margin-bottom-50">
                 <div className="grid-row">
                   <div className="column-8 aboutusdiv">
-
-                    <h3 className="text-left"><b>Fifty Four, <span className="redcolor"><b>Pravega !</b></span></b></h3>
+                    <h3 className="text-left"><b>Fifty Four, <span className="redcolor" style={{ color: 'red' }}>Pravega !</span></b></h3>
                     <p className="text-left">
                       We are a team of engineers who seek to enhance the learning
                       experience of the student community at VIT University by implementation of engineering
@@ -125,11 +127,11 @@ export default function HomePage() {
                   <div className="column-2 text-center">
                     <div>&nbsp;</div>
                     <img src="images/chancellor.png"
-                      className="img-circle chancellor-img img-responsive hidden-small valign-m text-center" />
+                      className="vish img-circle chancellor-img img-responsive hidden-small valign-m text-center" />
                   </div>
                   <div className="column-10">
 
-                    <div className="text-left-imp"><i className="fa fa-quote-left fa-2x" aria-hidden="true"></i></div>
+                    <div className="text-left-imp"><i className="fa fa-quote-left " ></i></div>
                     <div className="text-left-imp" >
                       <p>
                         I am happy and proud to inform you that Pravega Racing is the official Formula SAE
@@ -137,7 +139,7 @@ export default function HomePage() {
                         students of our institution from all academic divisions aiming for excellence. Pravega
                         Racing is among the top three Formula SAE teams of India.</p>
                     </div>
-                    <div className="text-right"><i className="fa fa-quote-right fa-2x" aria-hidden="true"></i></div>
+                    <div className="text-right"><i className="fa fa-quote-right " ></i></div>
 
                     <p className="about-gv-p text-left-imp"><b>
                       Dr. G Vishwanathan
@@ -156,10 +158,19 @@ export default function HomePage() {
           </main>
           <section style={{ color: 'black', width: '80%', margin: 'auto' }}>
             <div className="text-align-left text-bold text-3xl">Recent Activities</div>
-            <div className="grid grid-cols-3 justify-center mt-4 mb-6" style={{ marginLeft: '8%' }}>
-              <div className="itemRecentAct"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }}></img>  </div>
-              <div className="itemRecentAct"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }}></img>  </div>
-              <div className="itemRecentAct"><img src="images/2.jpg" style={{ width: 'fit-content', height: 'fit-content' }}></img>  </div>
+            <div className="imageThing justify-center mt-4 mb-6" style={{ marginLeft: '8%' }}>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsb21/1.png" style={{ width: 'fit-content', height: '100%' }} className="image"></img></a>
+                <div className="textContentImage">
+                  <div className="innerText">Formula Bharat 2021</div>
+                </div>  </div>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsO20/1.jpg" style={{ width: '100%', height: '100%' }} className="image"></img></a>
+                <div className="textContentImage">
+                  <div className="innerText">Formula Student Online 2020</div>
+                </div>  </div>
+              <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsg19/11.jpg" style={{ width: 'fit-content', height: 'fit-content' }} className="image"></img></a>
+                <div className="textContentImage">
+                  <div className="innerText">Formula Student Germany 2019</div>
+                </div>  </div>
             </div>
 
           </section>

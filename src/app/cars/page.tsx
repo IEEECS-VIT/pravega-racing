@@ -19,29 +19,36 @@ import '/src/styles/styles.css';
 import 'font-awesome/css/font-awesome.min.css'
 import SlideshowBackground from '@/components/Slideshow';
 import React from 'react';
+import { useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 export default function Cars() {
-
+  const router = useRouter();
+  const slide = useSearchParams().get('slide');
   const [swiper, setSwiper] = React.useState<any>(); // Add type assertion 'any' to swiper
   const prevRef = React.useRef();
   const nextRef = React.useRef();
-
-  React.useEffect(() => {
-    if (swiper) {
-      console.log("Swiper instance:", swiper);
-      (swiper as any).params.navigation.prevEl = prevRef.current; // Add type assertion 'any' to swiper
-      (swiper as any).params.navigation.nextEl = nextRef.current; // Add type assertion 'any' to swiper
-      swiper.navigation.init();
-      swiper.navigation.update();
+  /*
+    React.useEffect(() => {
+      if (swiper) {
+        console.log("Swiper instance:", swiper);
+        (swiper as any).params.navigation.prevEl = prevRef.current; // Add type assertion 'any' to swiper
+        (swiper as any).params.navigation.nextEl = nextRef.current; // Add type assertion 'any' to swiper
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }
+    }, [swiper]);*/
+  useEffect(() => {
+    if (swiper && swiper.initialized && typeof slide === 'string') {
+      swiper.slideTo(parseInt(slide));
     }
-  }, [swiper]);
-
+  }, [swiper, slide]);
 
 
   return (
     <>
 
       <SlideshowBackground />
-      <div style={{ marginTop: '15%', marginLeft: '45%', fontSize: '50px', color: 'white', position: 'absolute' }}>
+      <div className="carsTitle" >
         Cars
       </div>
       <div className="main-ka-baap" style={{ marginTop: '500px' }}>
@@ -357,3 +364,6 @@ export default function Cars() {
     </>
   );
 }
+
+
+

@@ -31,10 +31,34 @@ const Nav = () => {
                   </p>
                 </Link>
                 <div className="absolute z-10 hidden bg-black bg-opacity-90 text-white group-hover:block w-48 py-2 rounded-md">
-                  <Link href="/cars" passHref>
-                    <p className="block px-4 py-2 cursor-pointer">PRV 23</p>
+                  <Link href={{ pathname: "/cars", query: { slide: 0 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV Delta Phoenix</p>
                   </Link>
-                  <Link href="/cars" passHref>
+                  <Link href={{ pathname: "/cars", query: { slide: 1 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 13</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 2 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 14</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 3 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 15</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 4 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 16</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 5 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 17</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 6 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 18</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 7 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 19</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 8 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 20</p>
+                  </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 9 } }} passHref>
                     <p className="block px-4 py-2 cursor-pointer">PRV 21</p>
                   </Link>
                 </div>
@@ -132,16 +156,17 @@ const Nav = () => {
                   Our Sponsors
                 </p>
               </Link>
-              <Link href="/contactus" passHref>
-                <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                  Contact Us
-                </p>
-              </Link>
               <Link href="/supportus" passHref>
                 <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Support Us
                 </p>
               </Link>
+              <Link href="/contactus" passHref>
+                <p className="text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                  Contact Us
+                </p>
+              </Link>
+
             </div>
           </div>
         </div>
