@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
-
+import { useEffect } from 'react';
 import '/src/styles/slider1.css';
 import '/src/styles/slider2.css';
 import '/src/styles/font-awesome.css';
@@ -27,6 +27,9 @@ import SlideshowBackground from '@/components/Slideshow';
 // to customize the default configuration.
 
 export default function HomePage() {
+
+
+
   return (
     <>
       <div className="pageFull">
