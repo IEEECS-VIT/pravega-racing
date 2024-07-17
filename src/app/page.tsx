@@ -13,7 +13,7 @@ import '/src/styles/styles.css';
 import Footer from '@/components/footer';
 import Nav from '@/components/nav';
 import SlideshowBackground from '@/components/Slideshow';
-
+import FollowPageCard from '@/components/followpagecard';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -101,9 +101,7 @@ export default function HomePage() {
                       engineering practices and institutionalising innovation.
                     </p>
                   </div>
-                  <div className="column-4 fbdiv">
-                    {/* Your Facebook, Twitter, and Instagram content */}
-                  </div>
+                  <FollowPageCard />
                 </div>
                 <div className="grid-row padlr">
                   <h3 className="text-left">&nbsp;&nbsp;<b>About Formula SAE</b></h3>
@@ -122,6 +120,8 @@ export default function HomePage() {
 
                   </div>
                 </div>
+
+
               </div>
             </section>
             <section className="gvisva-section ">
