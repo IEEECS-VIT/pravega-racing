@@ -2,7 +2,7 @@
 import Slider from '@/components/Slider';
 import { useRef } from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { useEffect } from 'react';
 import HomePage from './page';
 import Nav from '@/components/nav';
@@ -21,12 +21,14 @@ import SlideshowBackground from '@/components/Slideshow';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
+
 export default function Cars() {
   const router = useRouter();
   const slide = useSearchParams().get('slide');
   const [swiper, setSwiper] = React.useState<any>(); // Add type assertion 'any' to swiper
   const prevRef = React.useRef();
   const nextRef = React.useRef();
+  const swiperT = useSwiper();
   /*
     React.useEffect(() => {
       if (swiper) {
@@ -60,15 +62,15 @@ export default function Cars() {
             prevEl: prevRef?.current,
             nextEl: nextRef?.current,
           }}
-          pagination={{ clickable: true }}
+          pagination={true}
           onSwiper={setSwiper}
 
           onSlideChange={() => console.log('slide change')} >
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV Delta Phoenix
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right"></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right"></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -91,9 +93,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 13
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -117,9 +119,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 14
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -143,9 +145,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 15
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -169,9 +171,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 16
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -196,9 +198,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 17
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -223,9 +225,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 18
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -251,9 +253,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 19
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -279,9 +281,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 20
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -308,9 +310,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 21
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
@@ -334,9 +336,9 @@ export default function Cars() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="headingCar">
-              <button ref={prevRef} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
+              <button onClick={() => { swiper.slidePrev() }} className="custom-swiper-button-prev mx-6"><i className="fa fa-arrow fa-arrow-left"></i></button>
               PRV 23
-              <button ref={nextRef} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
+              <button onClick={() => { swiper.slideNext() }} className="custom-swiper-button-next mx-6"><i className="fa fa-arrow fa-arrow-right" ></i></button>
             </div>
             <div className="container mx-auto" style={{ height: '100%', display: 'flex', flexDirection: 'row', gap: '10px', width: '80%' }}>
               <div className="textContentCars">
