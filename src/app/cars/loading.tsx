@@ -1,5 +1,10 @@
+
+import '/src/styles/loading.css'
 export default function Loading() {
   return (
-    <h1> Loading</h1>
+    <div className="loader">
+
+    </div>
+
   )
 }

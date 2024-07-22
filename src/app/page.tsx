@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
-
+import { useEffect } from 'react';
 import '/src/styles/slider1.css';
 import '/src/styles/slider2.css';
 import '/src/styles/font-awesome.css';
@@ -13,7 +13,7 @@ import '/src/styles/styles.css';
 import Footer from '@/components/footer';
 import Nav from '@/components/nav';
 import SlideshowBackground from '@/components/Slideshow';
-
+import FollowPageCard from '@/components/followpagecard';
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -27,6 +27,9 @@ import SlideshowBackground from '@/components/Slideshow';
 // to customize the default configuration.
 
 export default function HomePage() {
+
+
+
   return (
     <>
       <div className="pageFull">
@@ -98,9 +101,7 @@ export default function HomePage() {
                       engineering practices and institutionalising innovation.
                     </p>
                   </div>
-                  <div className="column-4 fbdiv">
-                    {/* Your Facebook, Twitter, and Instagram content */}
-                  </div>
+                  <FollowPageCard />
                 </div>
                 <div className="grid-row padlr">
                   <h3 className="text-left">&nbsp;&nbsp;<b>About Formula SAE</b></h3>
@@ -119,6 +120,8 @@ export default function HomePage() {
 
                   </div>
                 </div>
+
+
               </div>
             </section>
             <section className="gvisva-section ">

@@ -1,7 +1,14 @@
+
+import '/src/styles/loading.css'
 export default function Loading() {
   return (
-    <div style={{ backgroundColor: 'white', height: '100%', width: '100%' }}>
-      <h1  > Loading</h1>
-    </div>
+    <>
+      <div className="bg">
+
+      </div>
+      <div className="loader">
+
+      </div>
+    </>
   )
 }

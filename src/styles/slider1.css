@@ -35,7 +35,12 @@ img {
 .column-12, .column-8, .column-4, .column-9, .column-3, .column-2, .column-10 {
   padding: 0 15px;
 }
-
+.swiper-button-next{
+  display:none;
+}
+.swiper-button-prev{
+  display:none;
+}
 /* Media Queries */
 @media (max-width: 500px) {
   .testClass{
