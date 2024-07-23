@@ -52,6 +52,8 @@ img {
     justify-content:justify;
   }
   .imageThing {
+    padding-left:auto;
+    padding-right:auto;
     flex-direction:column; /* Makes the grid have one column */
 }
   
@@ -66,8 +68,7 @@ img {
     justify-content:justify;
   }
   .imageThing {
-    margin-left:25%;
-    margin-right:25%;
+    padding-left:25%;
     flex-direction:column; /* Makes the grid have one column */
 }
   
@@ -85,7 +86,7 @@ img {
   }
   
   .imageThing {
-    
+    padding-left:25%;
     flex-direction:column; /* Makes the grid have one column */
 }
 .main-ka-baap iframe{
@@ -144,8 +145,8 @@ img {
 @media (max-width:350px) and (min-width:250px){
   .imageThing{
     
-    margin-left:25%;
-    margin-right:auto;
+    margin-left:15%;
+  margin-right:25%;
     flex-direction:column;
     
     
@@ -153,9 +154,18 @@ img {
 }
 @media (min-width:350px){
   .imageThing{
-    margin-left:10%;
-    margin-right:auto;
+    
     flex-direction:column;
+  }
+}
+@media (min-width:350px) and (max-width:500px){
+  .imageThing{
+    
+    margin-left:10%;
+  margin-right:25%;
+    flex-direction:column;
+    
+    
   }
 }
 .imageThing img{
@@ -166,11 +176,16 @@ img {
   width: 100%;
   height:100%;
 }
+
 @media (max-width:1300px) and (min-width:1024px){
   .imageThing{
+    
+  
     flex-direction:column;
   }
+
 }
+
 .imageThing {
   display: flex;
   
