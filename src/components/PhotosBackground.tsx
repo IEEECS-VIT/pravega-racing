@@ -16,7 +16,7 @@ const PhotosBackground: React.FC = () => {
         style={{
           filter: 'brightness(50%)',
           transformOrigin: 'center center',
-          height: '25rem',
+          height: '100%',
           objectFit: 'cover', // Add this line
           objectPosition: 'top'
         }}

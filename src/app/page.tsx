@@ -65,14 +65,14 @@ export default function HomePage() {
 
         <section>
           <div className="hero-unit hero-unit--banner-4" id="page">
-            <div className="hero-unit__content">
+            <div className="hero-unit__content" >
               <div className="grid-container">
                 <div className="grid-row">
-                  <div style={{}} className="column-12 text-center animated-parent testClass">
-                    <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega">
+                  <div className="column-12 animated-parent testClass">
+                    <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega" style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto', fontFamily: 'Helvetica' }}>
                       <b>Pravega Racing</b>
                     </h1>
-                    <h5 className="text-color-10 mt-5"><b>
+                    <h5 style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }} className="text-color-10 mt-5" ><b>
                       One Team. One Dream. One Car.
                     </b></h5>
                   </div>
@@ -91,7 +91,7 @@ export default function HomePage() {
                 <div className="grid-row">
                   <div className="column-8 aboutusdiv">
                     <h3 className="text-left"><b>Fifty Four, <span className="redcolor" style={{ color: 'red' }}>Pravega !</span></b></h3>
-                    <p className="text-left">
+                    <p className="text-left" style={{ width: '85%' }}>
                       We are a team of engineers who seek to enhance the learning
                       experience of the student community at VIT University by implementation of engineering
                       fundamentals within the context of building
@@ -106,7 +106,7 @@ export default function HomePage() {
                 <div className="grid-row padlr">
                   <h3 className="text-left">&nbsp;&nbsp;<b>About Formula SAE</b></h3>
                   <div className="column-9">
-                    <p className="text-left">
+                    <p className="text-left" style={{ width: '80%' }}>
                       Formula SAE (FSAE) is an opportunity for students to design, manufacture, and race
                       a formula-style car. Over 570 university teams from around the world participate in
                       competitions held across the globe including locations such USA, UK, Germany, Italy,
@@ -159,9 +159,9 @@ export default function HomePage() {
             {/* End of sections */}
             <a href="#" className="back-to-top--floating"><i className="ion-ios-arrow-up"></i></a>
           </main>
-          <section style={{ color: 'black', width: '80%', margin: 'auto' }}>
-            <div className="text-align-left text-bold text-3xl">Recent Activities</div>
-            <div className="imageThing justify-center mt-4 mb-6" style={{ marginLeft: '8%' }}>
+          <section style={{ color: 'black', width: '100%', margin: 'auto' }}>
+            <div className="text-align-left text-bold text-3xl" style={{ marginLeft: '8%' }}>Recent Activities</div>
+            <div className="imageThing justify-center mt-4 mb-6" style={{}}>
               <div className="itemRecentAct"><a href="/events"><img src="images/general/media/fsb21/1.png" style={{ width: 'fit-content', height: '100%' }} className="image"></img></a>
                 <div className="textContentImage">
                   <div className="innerText">Formula Bharat 2021</div>
