@@ -1,40 +1,41 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav
-      className='bg-gray-800 fixed'
-      style={{
-        borderBottom: '1px solid black',
-        backgroundColor: 'rgba(0,0,0,0)',
-        zIndex: 10000,
-        width: '100%',
-      }}
-    >
-      <div className='mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className='flex items-center justify-between h-16'>
-          <div className='flex-shrink-0'>
-            <Link href='/' passHref>
+    <nav className="fixed navTest" style={{ borderBottom: '1px solid black', zIndex: 10000, width: '100%' }}>
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex-shrink-0">
+            <Link href="/" passHref>
               <Image
                 src='/images/general/logowhite.png'
                 alt='Flagstone logo'
                 width={500}
                 height={300}
-                className='h-8 w-auto cursor-pointer'
+                className="h-16 w-auto cursor-pointer"
               />
             </Link>
           </div>
-          <div className='hidden sm:block mt-5' style={{ marginTop: '29.4px' }}>
-            <div className='flex space-x-4'>
-              <Link href='/' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+          <div className="hidden sm:block" style={{ marginTop: '29.4px' }}>
+            <div className="flex space-x-4">
+              <Link href="/" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Home
                 </p>
               </Link>
-              <div className='relative group'>
-                <Link href='/cars' passHref>
-                  <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <div className="relative group">
+                <Link href="/cars" passHref>
+                  <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Cars
                   </p>
                 </Link>
@@ -103,9 +104,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </div>
-              <div className='relative group'>
-                <Link href='/teams/2020' passHref>
-                  <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <div className="relative group">
+                <Link href="/teamprv20" passHref>
+                  <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Team
                   </p>
                 </Link>
@@ -167,9 +168,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </div>
-              <div className='relative group'>
-                <Link href='/events' passHref>
-                  <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <div className="relative group">
+                <Link href="/events" passHref>
+                  <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Events
                   </p>
                 </Link>
@@ -186,9 +187,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </div>
-              <div className='relative group'>
-                <Link href='/photos' passHref>
-                  <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <div className="relative group">
+                <Link href="/photos" passHref>
+                  <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Media
                   </p>
                 </Link>
@@ -209,33 +210,101 @@ const Nav = () => {
                   </Link>
                 </div>
               </div>
-              <Link href='/practivities' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <Link href="/practivities" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   PR Activities
                 </p>
               </Link>
-              <Link href='/driverless' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <Link href="/driverless" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Driverless
                 </p>
               </Link>
-              <Link href='/sponsors' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <Link href="/sponsors" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Our Sponsors
                 </p>
               </Link>
-              <Link href='/supportus' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
+              <Link href="/supportus" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Support Us
                 </p>
               </Link>
-              <Link href='/contactus' passHref>
-                <p className='text-black hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer'>
-                  Contact
+              <Link href="/contactus" passHref>
+                <p className="text-white hover:text-black px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                  Contact Us
                 </p>
               </Link>
             </div>
           </div>
+          <div className="-mr-2 flex sm:hidden">
+            <button
+              onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+            >
+              {isOpen ? (
+                <XIcon className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className={`${isOpen ? 'block' : 'hidden'} sm:hidden`} style={{ zIndex: '99999999999999999999999999999', backgroundColor: 'white', width: '50%' }}>
+        <div className="px-2 pt-2 pb-3 space-y-1">
+          <Link href="/" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Home
+            </p>
+          </Link>
+          <Link href="/cars" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Cars
+            </p>
+          </Link>
+          <Link href="/teamprv20" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Team
+            </p>
+          </Link>
+          <Link href="/events" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Events
+            </p>
+          </Link>
+          <Link href="/photos" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Media
+            </p>
+          </Link>
+          <Link href="/practivities" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              PR Activities
+            </p>
+          </Link>
+          <Link href="/driverless" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Driverless
+            </p>
+          </Link>
+          <Link href="/sponsors" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Our Sponsors
+            </p>
+          </Link>
+          <Link href="/supportus" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Support Us
+            </p>
+          </Link>
+          <Link href="/contactus" passHref>
+            <p className="text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+              Contact Us
+            </p>
+          </Link>
         </div>
       </div>
     </nav>
