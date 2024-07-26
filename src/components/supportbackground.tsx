@@ -12,7 +12,7 @@ const SupportBackground: React.FC = () => {
     <div className="relative">
       <img
         src={imageUrl}
-        style={{ filter: 'brightness(50%)', transformOrigin: 'center center', height: '25rem' }}
+        style={{ filter: 'brightness(50%)', transformOrigin: 'center center', height: '25rem', objectFit:'cover'  }}
         className="left-0 w-full"
       />
       <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
@@ -23,7 +23,7 @@ const SupportBackground: React.FC = () => {
           Support Us
         </p>
         <p 
-          className={`text-xl whitespace-nowrap ${isLoaded? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}
+          className={`text-xl ${isLoaded? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}
           style={{ transform: isLoaded? 'none' : 'translateX(-100%)' }}
         >
           Assist Pravega Racing and be a part of the Formula Student Community
