@@ -1,11 +1,13 @@
 'use client'
 
 import React, { useRef } from 'react';
+import withDynamicImport from '@/hoc/withDynamicImport';
+import SkeletonLoader from '@/components/SkeletonLoader';
 
-import Footer from '@/components/footer';
-import Nav from '@/components/nav';
-import SponsorSection from '@/components/sponsorSection';
-import SlideshowBackground from '@/components/sponsorsSlideShow';
+const Footer = withDynamicImport(() => import('@/components/footer'), <SkeletonLoader />);
+const Nav = withDynamicImport(() => import('@/components/nav'), <SkeletonLoader />);
+const SponsorSection = withDynamicImport(() => import('@/components/sponsorSection'), <SkeletonLoader />);
+const SlideshowBackground = withDynamicImport(() => import('@/components/sponsorsSlideShow'), <SkeletonLoader />);
 
 const SponsorPage: React.FC = () => {
   const sponsorsSectionRef = useRef<HTMLDivElement>(null);
@@ -21,8 +23,6 @@ const SponsorPage: React.FC = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-
-
       <div className="relative flex flex-col items-center justify-center h-screen">
         <div className="z-10 text-center">
           <p className="text-6xl text-white">Our Sponsors</p>
@@ -56,8 +56,6 @@ const SponsorPage: React.FC = () => {
       <div ref={sponsorsSectionRef}>
         <SponsorSection />
       </div>
-
-
     </div>
   );
 };

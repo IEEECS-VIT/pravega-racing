@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useRef } from 'react';
 
+
 import '@/components/CustomStyles.css';
 
 import Footer from '@/components/footer';
