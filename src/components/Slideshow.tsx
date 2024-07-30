@@ -27,7 +27,7 @@ const SlideshowBackground: React.FC = () => {
           key={index}
           src={image}
 
-          style={{ filter: 'brightness(50%)', transformOrigin: 'center center' }}
+          style={{ zIndex: '-9999999999999999999', objectFit: 'cover', filter: 'brightness(50%)', transformOrigin: 'center center' }}
 
 
           alt={`Slideshow Image ${index + 1}`}

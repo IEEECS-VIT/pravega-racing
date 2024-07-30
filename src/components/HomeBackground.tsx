@@ -14,9 +14,13 @@ const Team13Background: React.FC = () => {
       <img
         src={imageUrl}
         style={{
+          position: 'absolute',
+          zIndex: '-99999999999999999',
+          height: '100%',
+          width: '100%',
           filter: 'brightness(50%)',
           transformOrigin: 'center center',
-          height: '25rem',
+
           objectFit: 'cover', // Add this line
           objectPosition: 'top'
         }}
