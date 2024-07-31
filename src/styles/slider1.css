@@ -45,6 +45,7 @@ img {
 @media (max-width: 500px) {
   .testClass{
     margin-left:-120px;
+
   }
   .testClass h5{
     width:100%;
@@ -285,6 +286,7 @@ img {
 }
 
 .testClass{
+  
   background-color:rgba(0,0,0,0);
 }
 .footImg{

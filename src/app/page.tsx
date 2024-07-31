@@ -41,47 +41,17 @@ export default function HomePage() {
         </Head>
         <SlideshowBackground />
 
-        {/* <section className="">
-        <div className="hero-unit hero-unit--banner-4" id="page">
-          {/*<ul style={{ background: 'rgba(0,0,0,0.5)', zIndex: 5 }} className="cb-slideshow">
-            {/* Your list items here */}
-        {/* <div className="hero-unit__content">
-            <div className="grid-container">
-              <div className="grid-row">
-                <div className="column-12 text-center animated-parent">
-                  <h1 className="text-color-9 mt-5 font-size-xxlrg main-heading-pravega">
-                    <b>Pravega Racing</b>
-                  </h1>
-                  <h5 className="text-color-10 animated animate__fade-in-up-short"><b>
-                    One Team. One Dream. One Car.
-                  </b></h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a data-scroll href="#firstsection"><span className="scroll-pointer"></span></a>
-        </div>
-      </section> */}
 
-        <section>
-          <div className="hero-unit hero-unit--banner-4" id="page">
-            <div className="hero-unit__content" >
-              <div className="grid-container">
-                <div className="grid-row">
-                  <div className="column-12 animated-parent testClass">
-                    <h1 className="text-color-10 mt-5 font-size-xxlrg main-heading-pravega" style={{ textAlign: 'center', width: '100%', marginLeft: 'auto', marginRight: 'auto', fontFamily: 'Helvetica' }}>
-                      <b>Pravega Racing</b>
-                    </h1>
-                    <h5 style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }} className="text-color-10 mt-5" ><b>
-                      One Team. One Dream. One Car.
-                    </b></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+        <section className="h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-color-10 font-size-xxlrg main-heading-pravega font-bold mb-5">
+              Pravega Racing
+            </h1>
+            <h5 className="text-color-10 font-bold">
+              One Team. One Dream. One Car.
+            </h5>
           </div>
-        </section >
+        </section>
 
 
         <div className="main-ka-baap">
