@@ -1,13 +1,10 @@
 'use client'
 
 import React, { useRef } from 'react';
-import withDynamicImport from '@/hoc/withDynamicImport';
-import SkeletonLoader from '@/components/SkeletonLoader';
-
-const Footer = withDynamicImport(() => import('@/components/footer'), <SkeletonLoader />);
-const Nav = withDynamicImport(() => import('@/components/nav'), <SkeletonLoader />);
-const SponsorSection = withDynamicImport(() => import('@/components/sponsorSection'), <SkeletonLoader />);
-const SlideshowBackground = withDynamicImport(() => import('@/components/sponsorsSlideShow'), <SkeletonLoader />);
+import Footer from '@/components/footer';
+import Nav from '@/components/nav';
+import SponsorSection from '@/components/sponsorSection';
+import SlideshowBackground from '@/components/sponsorsSlideShow';
 
 const SponsorPage: React.FC = () => {
   const sponsorsSectionRef = useRef<HTMLDivElement>(null);
