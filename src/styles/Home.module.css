@@ -60,7 +60,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.imgFadeOut, .imgFadeIn {
+.imgFadeOut,
+.imgFadeIn {
   animation-duration: 0.5s;
   animation-fill-mode: both;
 }
@@ -75,7 +76,7 @@
 
 @keyframes fadeOut {
   from {
-    opacity: ;
+    opacity:;
   }
   to {
     opacity: 0;
@@ -105,6 +106,10 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

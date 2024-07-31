@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 const Team16Background: React.FC = () => {
@@ -10,7 +9,7 @@ const Team16Background: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className='relative'>
       <img
         src={imageUrl}
         style={{
@@ -18,11 +17,11 @@ const Team16Background: React.FC = () => {
           transformOrigin: 'center center',
           height: '25rem',
           objectFit: 'cover', // Add this line
-          objectPosition: 'top'
+          objectPosition: 'top',
         }}
-        className="left-0 w-full"
+        className='left-0 w-full'
       />
-      <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+      <div className='absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center'>
         <p
           className={`text-4xl mb-4 ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-2000`}
           style={{ transform: isLoaded ? 'none' : 'translateX(100%)' }}

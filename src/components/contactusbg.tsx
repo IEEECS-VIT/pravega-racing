@@ -11,18 +11,16 @@ const MyPage: React.FC = () => {
 
   return (
     <div>
-      <div className="relative z-10">
+      <div className='relative z-10'>
         <Nav />
       </div>
-      <div className="relative z-0 h-[10rem]">
+      <div className='relative z-0 h-[10rem]'>
         <Prbackground />
       </div>
       <div
         ref={contentRef}
-        className="container mx-auto py-8 pt-60 flex flex-col items-center"
-      >
-        
-      </div>
+        className='container mx-auto py-8 pt-60 flex flex-col items-center'
+      ></div>
       <Footer />
     </div>
   );

@@ -349,10 +349,20 @@ h6 {
   opacity: 0;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  -webkit-transition-property: visibility, opacity, -webkit-transform;
-  transition-property: visibility, opacity, -webkit-transform;
+  -webkit-transition-property:
+    visibility,
+    opacity,
+    -webkit-transform;
+  transition-property:
+    visibility,
+    opacity,
+    -webkit-transform;
   transition-property: transform, visibility, opacity;
-  transition-property: transform, visibility, opacity, -webkit-transform;
+  transition-property:
+    transform,
+    visibility,
+    opacity,
+    -webkit-transform;
   -webkit-transform: rotateX(90deg) perspective(500px);
   transform: rotateX(90deg) perspective(500px);
   -webkit-transform-origin: top;
@@ -378,10 +388,17 @@ h6 {
 .utility-bar-toggle i:before {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  -webkit-transition-property: color, -webkit-transform;
-  transition-property: color, -webkit-transform;
+  -webkit-transition-property:
+    color,
+    -webkit-transform;
+  transition-property:
+    color,
+    -webkit-transform;
   transition-property: color, transform;
-  transition-property: color, transform, -webkit-transform;
+  transition-property:
+    color,
+    transform,
+    -webkit-transform;
 }
 .utility-bar-toggle:hover i:before {
   color: #fff;
@@ -720,17 +737,31 @@ h6 {
   }
   .mobile-nav-toggle span:before {
     top: -10px;
-    -webkit-transition-property: top, -webkit-transform;
-    transition-property: top, -webkit-transform;
+    -webkit-transition-property:
+      top,
+      -webkit-transform;
+    transition-property:
+      top,
+      -webkit-transform;
     transition-property: top, transform;
-    transition-property: top, transform, -webkit-transform;
+    transition-property:
+      top,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle span:after {
     bottom: -10px;
-    -webkit-transition-property: bottom, -webkit-transform;
-    transition-property: bottom, -webkit-transform;
+    -webkit-transition-property:
+      bottom,
+      -webkit-transform;
+    transition-property:
+      bottom,
+      -webkit-transform;
     transition-property: bottom, transform;
-    transition-property: bottom, transform, -webkit-transform;
+    transition-property:
+      bottom,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle__is-active span {
     background: 0 0;

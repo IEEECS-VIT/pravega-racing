@@ -1,4 +1,6 @@
-article,,aside,
+article,
+,
+aside,
 details,
 figcaption,
 figure,
@@ -16,34 +18,32 @@ button,
 hr {
   overflow: visible;
 }
-.swiper-button-prev{
-  background-color:black;
+.swiper-button-prev {
+  background-color: black;
 }
-.swiper-button-next{
-  background-color:black;
-  
+.swiper-button-next {
+  background-color: black;
 }
-.custom-swiper-button-prev, .custom-swiper-button-next {
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
   background: none;
   border: none;
   cursor: pointer;
-
 }
 
-.textContentCars{
+.textContentCars {
   width: 45%;
-  text-align: left; 
+  text-align: left;
 }
-.textContentCars b{
-  color:black;
+.textContentCars b {
+  color: black;
 }
-.headingCar{
-  text-align:center;
-  color:black;
-  font-size:35px;
-  margin-top:100px;
-  margin-bottom:30px;
-
+.headingCar {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 body,
 html {
@@ -1031,8 +1031,7 @@ legend {
 .grid-row {
   margin-right: auto;
   margin-left: auto;
-  width:100%;
-
+  width: 100%;
 }
 .grid-row .grid-row {
   margin-right: -15px;
@@ -1691,17 +1690,31 @@ h6 {
   }
   .mobile-nav-toggle span:before {
     top: -10px;
-    -webkit-transition-property: top, -webkit-transform;
-    transition-property: top, -webkit-transform;
+    -webkit-transition-property:
+      top,
+      -webkit-transform;
+    transition-property:
+      top,
+      -webkit-transform;
     transition-property: top, transform;
-    transition-property: top, transform, -webkit-transform;
+    transition-property:
+      top,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle span:after {
     bottom: -10px;
-    -webkit-transition-property: bottom, -webkit-transform;
-    transition-property: bottom, -webkit-transform;
+    -webkit-transition-property:
+      bottom,
+      -webkit-transform;
+    transition-property:
+      bottom,
+      -webkit-transform;
     transition-property: bottom, transform;
-    transition-property: bottom, transform, -webkit-transform;
+    transition-property:
+      bottom,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle__is-active span {
     background: 0 0;
@@ -1828,7 +1841,9 @@ h6 {
   transition-duration: 0.5s;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
@@ -3910,7 +3925,7 @@ h6 {
   transform: translateY(20px);
 }
 .animate__fade-in-up-short.go {
-  opacity:1;
+  opacity: 1;
   -webkit-animation-name: fade-in-up-short;
   animation-name: fade-in-up-short;
 }
@@ -4176,8 +4191,12 @@ h6 {
   -webkit-appearance: none;
   -webkit-transition-duration: 350ms;
   transition-duration: 350ms;
-  -webkit-transition-property: background-color, border color;
-  transition-property: background-color, border color;
+  -webkit-transition-property:
+    background-color,
+    border color;
+  transition-property:
+    background-color,
+    border color;
 }
 .pricing-column__price-amount,
 .testimonial__meta-name {
@@ -4471,7 +4490,9 @@ h6 {
   transition-duration: 350ms;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
 }
 .draw--active:after {
   -webkit-transform: rotate(45deg);
@@ -4486,8 +4507,8 @@ h6 {
 }
 .hero-unit,
 .hero-unit-sub-page {
-  padding:250px;
-  padding-bottom:150px;
+  padding: 250px;
+  padding-bottom: 150px;
   position: relative;
   width: 100%;
   background-position: 50% 50%;
@@ -4668,7 +4689,9 @@ h6 {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
@@ -4825,11 +4848,22 @@ a[data-lightbox] {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: background-color, opacity, visibility,
+  -webkit-transition-property:
+    background-color,
+    opacity,
+    visibility,
     -webkit-transform;
-  transition-property: background-color, opacity, visibility, -webkit-transform;
+  transition-property:
+    background-color,
+    opacity,
+    visibility,
+    -webkit-transform;
   transition-property: background-color, transform, opacity, visibility;
-  transition-property: background-color, transform, opacity, visibility,
+  transition-property:
+    background-color,
+    transform,
+    opacity,
+    visibility,
     -webkit-transform;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
@@ -4850,12 +4884,25 @@ a[data-lightbox] {
   transform: translate3d(-50%, -50%, 0);
   -webkit-transition-duration: 350ms;
   transition-duration: 350ms;
-  -webkit-transition-property: background-color, opacity, visibility, top,
+  -webkit-transition-property:
+    background-color,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
-  transition-property: background-color, opacity, visibility, top,
+  transition-property:
+    background-color,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
   transition-property: background-color, transform, opacity, visibility, top;
-  transition-property: background-color, transform, opacity, visibility, top,
+  transition-property:
+    background-color,
+    transform,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
 }
 .overlay__content-heading {
@@ -4868,7 +4915,9 @@ a[data-lightbox] {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
 }
 .overlay:hover .overlay__background {
   opacity: 1;
@@ -5529,7 +5578,7 @@ hr {
 }
 body,
 html {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 *,
@@ -7173,17 +7222,31 @@ h6 {
   }
   .mobile-nav-toggle span:before {
     top: -10px;
-    -webkit-transition-property: top, -webkit-transform;
-    transition-property: top, -webkit-transform;
+    -webkit-transition-property:
+      top,
+      -webkit-transform;
+    transition-property:
+      top,
+      -webkit-transform;
     transition-property: top, transform;
-    transition-property: top, transform, -webkit-transform;
+    transition-property:
+      top,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle span:after {
     bottom: -10px;
-    -webkit-transition-property: bottom, -webkit-transform;
-    transition-property: bottom, -webkit-transform;
+    -webkit-transition-property:
+      bottom,
+      -webkit-transform;
+    transition-property:
+      bottom,
+      -webkit-transform;
     transition-property: bottom, transform;
-    transition-property: bottom, transform, -webkit-transform;
+    transition-property:
+      bottom,
+      transform,
+      -webkit-transform;
   }
   .mobile-nav-toggle__is-active span {
     background: 0 0;
@@ -7310,7 +7373,9 @@ h6 {
   transition-duration: 0.5s;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
@@ -9657,8 +9722,12 @@ h6 {
   -webkit-appearance: none;
   -webkit-transition-duration: 350ms;
   transition-duration: 350ms;
-  -webkit-transition-property: background-color, border color;
-  transition-property: background-color, border color;
+  -webkit-transition-property:
+    background-color,
+    border color;
+  transition-property:
+    background-color,
+    border color;
 }
 .pricing-column__price-amount,
 .testimonial__meta-name {
@@ -9952,7 +10021,9 @@ h6 {
   transition-duration: 350ms;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
 }
 .draw--active:after {
   -webkit-transform: rotate(45deg);
@@ -10149,7 +10220,9 @@ h6 {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
@@ -10306,11 +10379,22 @@ a[data-lightbox] {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-property: background-color, opacity, visibility,
+  -webkit-transition-property:
+    background-color,
+    opacity,
+    visibility,
     -webkit-transform;
-  transition-property: background-color, opacity, visibility, -webkit-transform;
+  transition-property:
+    background-color,
+    opacity,
+    visibility,
+    -webkit-transform;
   transition-property: background-color, transform, opacity, visibility;
-  transition-property: background-color, transform, opacity, visibility,
+  transition-property:
+    background-color,
+    transform,
+    opacity,
+    visibility,
     -webkit-transform;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
@@ -10331,12 +10415,25 @@ a[data-lightbox] {
   transform: translate3d(-50%, -50%, 0);
   -webkit-transition-duration: 350ms;
   transition-duration: 350ms;
-  -webkit-transition-property: background-color, opacity, visibility, top,
+  -webkit-transition-property:
+    background-color,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
-  transition-property: background-color, opacity, visibility, top,
+  transition-property:
+    background-color,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
   transition-property: background-color, transform, opacity, visibility, top;
-  transition-property: background-color, transform, opacity, visibility, top,
+  transition-property:
+    background-color,
+    transform,
+    opacity,
+    visibility,
+    top,
     -webkit-transform;
 }
 .overlay__content-heading {
@@ -10349,7 +10446,9 @@ a[data-lightbox] {
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  transition-property:
+    transform,
+    -webkit-transform;
 }
 .overlay:hover .overlay__background {
   opacity: 1;
