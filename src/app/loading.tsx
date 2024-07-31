@@ -1,14 +1,17 @@
+import Image from 'next/image';
+import React from 'react';
 
-import '/src/styles/loading.css'
-export default function Loading() {
+const GlobalLoading = () => {
   return (
-    <>
-      <div className="bg">
+    <div className='flex items-center justify-center h-screen'>
+      <Image
+        src='/images/loader/status.gif'
+        alt='Loading...'
+        width={400}
+        height={300}
+      />
+    </div>
+  );
+};
 
-      </div>
-      <div className="loader">
-
-      </div>
-    </>
-  )
-}
+export default GlobalLoading;
