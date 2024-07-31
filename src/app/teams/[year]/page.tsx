@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Footer from '@/components/footer';
 import Nav from '@/components/nav';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
@@ -18,6 +18,18 @@ import { teamData } from '@/constant/teamdata';
 
 const TeamPage = ({ params }: { params: { year: string } }) => {
   const contentRef = useRef<HTMLDivElement>(null);
+  const fontUrl = 'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap';
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = fontUrl;
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []); 
 
   console.log('Params:', params);
 
@@ -77,7 +89,7 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
       <div
         ref={contentRef}
         className='container py-8 pt-60 flex flex-col w-full justify-center items-center'>
-        <h1 className="pt-8">Team {year}</h1>
+        <h1 className="pt-8 text-4xl" style={{ fontFamily: "'Lato', Helvetica, Arial, sans-serif", fontWeight: '300',color: 'rgb(48,48,48)' }}>Team {year}</h1>
         {chunkedMembers.map((row, rowIndex) => (
           <div key={rowIndex} className="flex flex-wrap p-5 justify-center w-full">
             {row.map((member, memberIndex) => (
