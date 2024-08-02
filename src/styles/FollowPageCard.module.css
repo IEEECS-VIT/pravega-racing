@@ -1,0 +1,50 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.title span {
+  color: #666;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.followButton,
+.shareButton {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.shareButton {
+  background-color: #ccc;
+  color: #333;
+}

@@ -15,8 +15,9 @@ const ContactUsbackground: React.FC = () => {
     };
   }, []); 
 
+
   return (
-    <div className="relative w-full">
+    <div className='relative w-full'>
       <img
         src={imageUrl}
         style={{ filter: 'brightness(50%)', height: '25rem', objectFit: 'cover', objectPosition: 'bottom' }}
@@ -28,6 +29,7 @@ const ContactUsbackground: React.FC = () => {
         </p>
         <p className="text-xl " style={{ fontFamily: "'Lato', Helvetica, Arial, sans-serif", fontWeight: '300' }}>
           If you have any queries or would like to know more about the team, feel free to contact us
+
         </p>
       </div>
     </div>

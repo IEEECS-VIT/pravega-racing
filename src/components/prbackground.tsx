@@ -16,12 +16,17 @@ const PrBackground: React.FC = () => {
     };
   }, []);  
 
+
   return (
-    <div className="relative">
+    <div className='relative'>
       <img
         src={imageUrl}
-        style={{ filter: 'brightness(50%)', height: '25rem', objectFit:'cover'  }}
-        className="left-0 w-full"
+        style={{
+          filter: 'brightness(50%)',
+          height: '25rem',
+          objectFit: 'cover',
+        }}
+        className='left-0 w-full'
       />
       <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
         <p className="text-4xl mb-4" style={{ fontFamily: "'Lato', Helvetica, Arial, sans-serif", fontWeight: '300' }}>
@@ -29,6 +34,7 @@ const PrBackground: React.FC = () => {
         </p>
         <p className="text-xl" style={{ fontFamily: "'Lato', Helvetica, Arial, sans-serif", fontWeight: '300' }}>
           We do our best to keep our sponsors satisfied by branding them through our various PR activities and exciting marketing campaigns
+
         </p>
       </div>
     </div>

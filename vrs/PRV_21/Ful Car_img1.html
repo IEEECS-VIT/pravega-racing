@@ -6,47 +6,45 @@
 
 -->
 
+<!doctype html>
 
-
-<!DOCTYPE html>
-
-<html xmlns='http://www.w3.org/1999/xhtml'>
-
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
     <title>KeyShotXR</title>
 
     <style type="text/css">
-
-      body { -ms-touch-action: none; }
-
+      body {
+        -ms-touch-action: none;
+      }
     </style>
 
-    <script type="text/javascript" src="Ful Car_img1/files/KeyShotXR.js"></script>
+    <script
+      type="text/javascript"
+      src="Ful Car_img1/files/KeyShotXR.js"
+    ></script>
 
     <script type="text/javascript">
-
       var keyshotXR;
 
-
-
       function initKeyShotXR() {
+        var nameOfDiv = 'KeyShotXR';
 
-        var nameOfDiv = "KeyShotXR";
-
-        var folderName = "Ful Car_img1";
+        var folderName = 'Ful Car_img1';
 
         var viewPortWidth = 1024;
 
         var viewPortHeight = 576;
 
-        var backgroundColor = "#FFFFFF";
+        var backgroundColor = '#FFFFFF';
 
         var uCount = 30;
 
@@ -76,11 +74,11 @@
 
         var downloadOnInteraction = false;
 
-        var imageExtension = "png";
+        var imageExtension = 'png';
 
         var showLoading = true;
 
-        var loadingIcon = "Ful Car.29.png"; // Set to empty string for default icon.
+        var loadingIcon = 'Ful Car.29.png'; // Set to empty string for default icon.
 
         var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
 
@@ -90,25 +88,41 @@
 
         var hotspots = {};
 
-        
-
-        keyshotXR = new keyshotXR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
-
+        keyshotXR = new keyshotXR(
+          nameOfDiv,
+          folderName,
+          viewPortWidth,
+          viewPortHeight,
+          backgroundColor,
+          uCount,
+          vCount,
+          uWrap,
+          vWrap,
+          uMouseSensitivity,
+          vMouseSensitivity,
+          uStartIndex,
+          vStartIndex,
+          minZoom,
+          maxZoom,
+          rotationDamping,
+          downScaleToBrowser,
+          addDownScaleGUIButton,
+          downloadOnInteraction,
+          imageExtension,
+          showLoading,
+          loadingIcon,
+          allowFullscreen,
+          uReverse,
+          vReverse,
+          hotspots,
+        );
       }
 
-
-
       window.onload = initKeyShotXR;
-
     </script>
-
   </head>
 
   <body oncontextmenu="return false;">
-
     <div id="KeyShotXR"></div>
-
   </body>
-
 </html>
-
