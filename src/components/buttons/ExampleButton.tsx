@@ -17,7 +17,7 @@ const ExampleButton = React.forwardRef<HTMLButtonElement, ExampleButtonProps>(
       disabled: buttonDisabled,
       ...rest
     },
-    ref
+    ref,
   ) => {
     return (
       <button
@@ -39,14 +39,14 @@ const ExampleButton = React.forwardRef<HTMLButtonElement, ExampleButtonProps>(
           ],
           //#endregion  //*======== Variant ===========
           'disabled:cursor-not-allowed disabled:brightness-105 disabled:hover:underline',
-          className
+          className,
         )}
         {...rest}
       >
         {children}
       </button>
     );
-  }
+  },
 );
 
 export default ExampleButton;
