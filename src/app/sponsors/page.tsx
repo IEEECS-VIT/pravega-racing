@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useRef } from 'react';
-
-import SponsorSection from '@/components/sponsorSection';
+import Footer from '@/components/footer';
+import Nav from '@/components/nav';
+Section from '@/components/sponsorSection';
 import SlideshowBackground from '@/components/sponsorsSlideShow';
 
 const SponsorPage: React.FC = () => {
@@ -18,10 +19,11 @@ const SponsorPage: React.FC = () => {
   };
 
   return (
-    <div className='relative min-h-screen overflow-hidden'>
-      <div className='relative flex flex-col items-center justify-center h-screen'>
-        <div className='z-10 text-center'>
-          <p className='text-6xl text-white'>Our Sponsors</p>
+    <div className="relative min-h-screen overflow-hidden">
+      <div className="relative flex flex-col items-center justify-center h-screen">
+        <div className="z-10 text-center">
+          <p className="text-6xl text-white">Our Sponsors</p>
+
           <br />
           <p className='text-white text-2xl'>
             Without their support, we wouldn't be where we are

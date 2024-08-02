@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
 
+
 import '@/components/CustomStyles.css';
 
 import ScrollToTopButton from '@/components/ScrollToTopButton';

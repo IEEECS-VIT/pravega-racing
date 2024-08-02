@@ -1,3 +1,45 @@
+/* Home.module.css */
+
+.skeleton {
+  width: 100%;
+  padding-top: 75%; /* Aspect ratio */
+  background: linear-gradient(-90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 400% 400%;
+  animation: skeleton-loading 1.2s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* styles/Home.module.css */
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Or any height you prefer */
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -76,7 +118,8 @@
 
 @keyframes fadeOut {
   from {
-    opacity:;
+    opacity: 1;
+
   }
   to {
     opacity: 0;
