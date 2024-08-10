@@ -11,9 +11,11 @@ const FollowPageCard = () => {
           <span>12,757 followers</span>
         </div>
       </div>
-      <div className={styles.buttons}>
-        <button className={styles.followButton}>Follow Page</button>
-        <button className={styles.shareButton}>Share</button>
+
+      <div className={styles.socialButtons}>
+        <button className={`${styles.socialButton} ${styles.instagram}`} aria-label="Instagram"></button>
+        <button className={`${styles.socialButton} ${styles.facebook}`} aria-label="Facebook"></button>
+        <button className={`${styles.socialButton} ${styles.twitter}`} aria-label="Twitter"></button>
       </div>
     </div>
   );
