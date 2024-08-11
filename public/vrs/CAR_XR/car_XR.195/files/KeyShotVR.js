@@ -1,7 +1,7 @@
 var r = !0,
   t = null,
   z = !1;
-window.keyshotVR = function(
+window.keyshotVR = function (
   U,
   v,
   V,
@@ -27,27 +27,27 @@ window.keyshotVR = function(
   za,
   Aa,
   Ba,
-  p
+  p,
 ) {
   function O(a, d, b) {
     a.removeEventListener
       ? a.removeEventListener(d, b, z)
       : a.detachEvent &&
-        (a.detachEvent("on" + d, a["e" + d + b]), (a["e" + d + b] = t));
+        (a.detachEvent('on' + d, a['e' + d + b]), (a['e' + d + b] = t));
   }
   function m(a, d, b) {
     a.addEventListener
       ? a.addEventListener(d, b, z)
       : a.attachEvent &&
-        ((a["e" + d + b] = b),
-        a.attachEvent("on" + d, function() {
-          a["e" + d + b]();
+        ((a['e' + d + b] = b),
+        a.attachEvent('on' + d, function () {
+          a['e' + d + b]();
         }));
   }
   function ba() {
     var a = z;
-    -1 != navigator.platform.toString().indexOf("Win") &&
-      -1 != navigator.appVersion.indexOf("MSIE") &&
+    -1 != navigator.platform.toString().indexOf('Win') &&
+      -1 != navigator.appVersion.indexOf('MSIE') &&
       (a = r);
     return a;
   }
@@ -58,7 +58,7 @@ window.keyshotVR = function(
         a.webkitRequestFullScreen ||
         a.mozRequestFullScreen ||
         a.msRequestFullScreen;
-    "undefined" != typeof d && d && d.call(a);
+    'undefined' != typeof d && d && d.call(a);
   }
   function Da(f) {
     a.ma = z;
@@ -75,16 +75,16 @@ window.keyshotVR = function(
   }
   function fa() {
     a.l
-      ? (setTimeout(function() {
+      ? (setTimeout(function () {
           a.u(z);
         }, 20),
-        setTimeout(function() {
+        setTimeout(function () {
           a.u(r);
         }, 120))
-      : (setTimeout(function() {
+      : (setTimeout(function () {
           a.u(r);
         }, 20),
-        setTimeout(function() {
+        setTimeout(function () {
           a.u(z);
         }, 120));
   }
@@ -101,37 +101,37 @@ window.keyshotVR = function(
     var f = c.g;
     c.g = 1;
     f != c.g && a.T((a.v() * f) / c.g);
-    q.setAttribute("width", B.width);
+    q.setAttribute('width', B.width);
     a.l
-      ? (q.removeAttribute("height"),
-        (q.style.width = "100%"),
-        (q.style[L] = "scale(" + c.n + ")"),
-        (q.style.height = "auto"),
-        (s.style["background-color"] = a.backgroundColor),
-        (document.body.style["background-color"] = a.backgroundColor))
-      : (q.setAttribute("height", B.height),
+      ? (q.removeAttribute('height'),
+        (q.style.width = '100%'),
+        (q.style[L] = 'scale(' + c.n + ')'),
+        (q.style.height = 'auto'),
+        (s.style['background-color'] = a.backgroundColor),
+        (document.body.style['background-color'] = a.backgroundColor))
+      : (q.setAttribute('height', B.height),
         (q.style[L] =
-          "translate(" +
+          'translate(' +
           -B.width / 2 +
-          "px," +
+          'px,' +
           -B.height / 2 +
-          "px) scale(" +
+          'px) scale(' +
           c.g +
-          ") translate(" +
+          ') translate(' +
           (0.5 * C.width) / c.g +
-          "px," +
+          'px,' +
           (0.5 * C.height) / c.g +
-          "px) translate(" +
+          'px) translate(' +
           c.j +
-          "px," +
+          'px,' +
           c.k +
-          "px) scale(" +
+          'px) scale(' +
           c.n +
-          ")"),
-        (q.style["max-width"] = ""),
-        (q.style.width = ""),
-        (q.style.height = ""),
-        (s.style["background-color"] = a.backgroundColor));
+          ')'),
+        (q.style['max-width'] = ''),
+        (q.style.width = ''),
+        (q.style.height = ''),
+        (s.style['background-color'] = a.backgroundColor));
   }
   function M() {
     a.Sa(a.h.offsetWidth, a.h.offsetHeight);
@@ -170,19 +170,19 @@ window.keyshotVR = function(
       (1 == j.d
         ? ia(f.pageX, f.pageY)
         : 2 == j.d
-        ? ((f = a.cursor.y - E.start.y),
-          (d = a.v()),
-          a.T(c.t * Math.exp(f / 200)),
-          (f = a.v()),
-          (c.j += parseFloat(a.e * d - a.e * f)),
-          (c.k += parseFloat(a.f * d - a.f * f)))
-        : 3 == j.d &&
-          ((d = a.cursor.x - E.start.x),
-          (f = a.cursor.y - E.start.y),
-          (c.j += parseFloat((d - c.m.x) / c.g)),
-          (c.k += parseFloat((f - c.m.y) / c.g)),
-          (c.m.x = d),
-          (c.m.y = f)));
+          ? ((f = a.cursor.y - E.start.y),
+            (d = a.v()),
+            a.T(c.t * Math.exp(f / 200)),
+            (f = a.v()),
+            (c.j += parseFloat(a.e * d - a.e * f)),
+            (c.k += parseFloat(a.f * d - a.f * f)))
+          : 3 == j.d &&
+            ((d = a.cursor.x - E.start.x),
+            (f = a.cursor.y - E.start.y),
+            (c.j += parseFloat((d - c.m.x) / c.g)),
+            (c.k += parseFloat((f - c.m.y) / c.g)),
+            (c.m.x = d),
+            (c.m.y = f)));
   }
   function N(f) {
     f || (f = window.event);
@@ -282,7 +282,7 @@ window.keyshotVR = function(
       e.pageX = b[0];
       e.pageY = b[1];
       e.target = a.r;
-      e.preventDefault = function() {};
+      e.preventDefault = function () {};
       f.push(e);
     }
     return f;
@@ -297,11 +297,11 @@ window.keyshotVR = function(
     (500 > e && 0 < e) ||
       ((Q = b),
       (R = setTimeout(
-        function() {
+        function () {
           clearTimeout(R);
         },
         500,
-        [f]
+        [f],
       )));
     Q = b;
   }
@@ -365,35 +365,35 @@ window.keyshotVR = function(
     a = a ? a : window.event;
     a.preventDefault() ? a.preventDefault() : (a.returnValue = z);
   }
-  var A = "/",
+  var A = '/',
     I = window.location.href,
-    ma = I.lastIndexOf("/");
+    ma = I.lastIndexOf('/');
   0 <= ma && (A = I.substr(0, ma + 1));
   var T = (I = z);
   this.Za = X != Y;
   this.ma = z;
   this.F = [];
-  this.Ba = function() {
+  this.Ba = function () {
     if (e.J) {
       e.J = z;
       var b = parseInt(e.K * e.c + e.I);
-      if (-1 != a.D[b] && (na.setAttribute("src", a.C[b]), void 0 !== p))
+      if (-1 != a.D[b] && (na.setAttribute('src', a.C[b]), void 0 !== p))
         if (((b = a.ha[b]), !b && void 0 == p[b])) {
-          if (document.getElementById("vr_hotspot")) {
-            var d = document.getElementById("vr_hotspot");
+          if (document.getElementById('vr_hotspot')) {
+            var d = document.getElementById('vr_hotspot');
             document.body.removeChild(d);
           }
         } else
-          document.getElementById("vr_hotspot") &&
-            ((d = document.getElementById("vr_hotspot")),
+          document.getElementById('vr_hotspot') &&
+            ((d = document.getElementById('vr_hotspot')),
             document.body.removeChild(d)),
-            (d = document.createElement("div")),
+            (d = document.createElement('div')),
             (d.innerHTML = p[b].text),
-            (d.id = "vr_hotspot"),
-            (d.style.position = "absolute"),
-            (d.style.left = p[b].position.x + "px"),
-            (d.style.top = p[b].position.y + "px"),
-            (d.style.color = "#000000"),
+            (d.id = 'vr_hotspot'),
+            (d.style.position = 'absolute'),
+            (d.style.left = p[b].position.x + 'px'),
+            (d.style.top = p[b].position.y + 'px'),
+            (d.style.color = '#000000'),
             void 0 !== p[b].fb &&
               (p[b].options.fontSize &&
                 (d.style.fontSize = p[b].options.fontSize),
@@ -410,7 +410,7 @@ window.keyshotVR = function(
     if (c.n != c.a || c.j != c.wa || c.k != c.xa)
       (c.a = c.n), (c.wa = c.j), (c.xa = c.k), ga();
   };
-  this.bb = function(b) {
+  this.bb = function (b) {
     for (
       var d = -1e3,
         c = b,
@@ -440,7 +440,7 @@ window.keyshotVR = function(
     }
     return c;
   };
-  this.fa = function() {
+  this.fa = function () {
     if (a.na < e.q) {
       var b = new Image(),
         d = a.B[a.na];
@@ -461,7 +461,7 @@ window.keyshotVR = function(
       a.na++;
     }
   };
-  this.Fa = function() {
+  this.Fa = function () {
     for (
       var b = e.qa,
         d = e.ra,
@@ -484,7 +484,7 @@ window.keyshotVR = function(
         ((a.B[a.P] = l),
         a.P++,
         (a.C[l] = a.ua(q, s)),
-        void 0 !== p && p[s + "_" + q] && (a.ha[l] = s + "_" + q));
+        void 0 !== p && p[s + '_' + q] && (a.ha[l] = s + '_' + q));
       0 == j && ((b += h), k++);
       1 == j && ((d += g), m++);
       n++;
@@ -505,17 +505,17 @@ window.keyshotVR = function(
                   ((a.B[a.P] = l),
                   a.P++,
                   (a.C[l] = a.ua(d, c)),
-                  void 0 !== p && p[c + "_" + d] && (a.ha[l] = c + "_" + d));
+                  void 0 !== p && p[c + '_' + d] && (a.ha[l] = c + '_' + d));
             break;
           }
           j = m = k = 0;
         }
     }
   };
-  this.ua = function(b, d) {
-    return A + a.s + "/" + parseInt(d) + "_" + parseInt(b) + "." + xa;
+  this.ua = function (b, d) {
+    return A + a.s + '/' + parseInt(d) + '_' + parseInt(b) + '.' + xa;
   };
-  this.la = function(b, d) {
+  this.la = function (b, d) {
     var b = b * (1 < e.c ? a.Va : 0),
       d = d * (1 < e.i ? a.Wa : 0),
       c = Math.sqrt(b * b + d * d);
@@ -551,29 +551,29 @@ window.keyshotVR = function(
       }
     }
   };
-  this.Ua = function() {
+  this.Ua = function () {
     a.u(!a.l);
     a.l
-      ? a.H.setAttribute("src", A + a.s + "/files/GoFullScreenIcon.png")
-      : a.H.setAttribute("src", A + a.s + "/files/GoFixedSizeIcon.png");
+      ? a.H.setAttribute('src', A + a.s + '/files/GoFullScreenIcon.png')
+      : a.H.setAttribute('src', A + a.s + '/files/GoFixedSizeIcon.png');
   };
-  this.u = function(b) {
+  this.u = function (b) {
     a.l = b;
     a.l
-      ? ((u.style.position = "relative"),
-        (u.style.left = "0px"),
-        (u.style.top = "0px"),
-        (document.body.style.overflow = ""))
-      : ((u.style.position = "absolute"),
+      ? ((u.style.position = 'relative'),
+        (u.style.left = '0px'),
+        (u.style.top = '0px'),
+        (document.body.style.overflow = ''))
+      : ((u.style.position = 'absolute'),
         (b = G()),
-        (u.style.left = window.pageXOffset - b.x + k.left + "px"),
-        (u.style.top = window.pageYOffset - b.y + k.top + "px"),
-        (document.body.style.overflow = "hidden"));
-    document.body.style.margin = "0";
-    document.body.style.padding = "0";
+        (u.style.left = window.pageXOffset - b.x + k.left + 'px'),
+        (u.style.top = window.pageYOffset - b.y + k.top + 'px'),
+        (document.body.style.overflow = 'hidden'));
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
     M();
   };
-  this.Ja = function() {
+  this.Ja = function () {
     var b = new Image();
     b.src = a.O.src;
     a.G[a.Y] = b;
@@ -586,84 +586,84 @@ window.keyshotVR = function(
   };
   var R,
     Q = t;
-  this.va = function(b) {
+  this.va = function (b) {
     var d = G();
     a.cursor.x = b.pageX - d.x + k.left;
     a.cursor.y = b.pageY - d.y + k.top;
     1 == j.d
       ? ha(b.pageX, b.pageY)
       : 2 == j.d
-      ? ((E.start.x = a.cursor.x),
-        (E.start.y = a.cursor.y),
-        (c.t = a.v()),
-        (a.e = a.cursor.x - 0.5 * C.width),
-        (a.f = a.cursor.y - 0.5 * C.height),
-        (a.e *= a.R),
-        (a.f *= a.R),
-        (a.e -= c.j),
-        (a.f -= c.k),
-        (a.e /= c.t),
-        (a.f /= c.t))
-      : 3 == j.d &&
-        ((E.start.x = a.cursor.x),
-        (E.start.y = a.cursor.y),
-        (c.m.x = 0),
-        (c.m.y = 0));
+        ? ((E.start.x = a.cursor.x),
+          (E.start.y = a.cursor.y),
+          (c.t = a.v()),
+          (a.e = a.cursor.x - 0.5 * C.width),
+          (a.f = a.cursor.y - 0.5 * C.height),
+          (a.e *= a.R),
+          (a.f *= a.R),
+          (a.e -= c.j),
+          (a.f -= c.k),
+          (a.e /= c.t),
+          (a.f /= c.t))
+        : 3 == j.d &&
+          ((E.start.x = a.cursor.x),
+          (E.start.y = a.cursor.y),
+          (c.m.x = 0),
+          (c.m.y = 0));
   };
-  this.Ga = function(b) {
+  this.Ga = function (b) {
     a.T(c.n * Math.exp(-b / 50));
   };
-  this.v = function() {
+  this.v = function () {
     return c.n;
   };
-  this.T = function(a) {
+  this.T = function (a) {
     a > c.ja / c.g && (a = c.ja / c.g);
     a < c.ka / c.g && (a = c.ka / c.g);
     c.n = a;
   };
-  this.ab = function(a, b, c, e) {
+  this.ab = function (a, b, c, e) {
     k.left = a;
     k.top = b;
     k.right = c;
     k.bottom = e;
     M();
   };
-  this.Sa = function(b, d) {
+  this.Sa = function (b, d) {
     a.l || ((b = window.innerWidth), (d = window.innerHeight));
     var c = b - k.left - k.right,
       e = d - k.top - k.bottom;
     C.width = c;
     C.height = e;
-    s.style.width = c + "px";
+    s.style.width = c + 'px';
     a.l && window.innerHeight < B.height && (e = window.innerHeight);
-    s.style.height = e + "px";
-    s.style.left = k.left + "px";
-    s.style.top = k.top + "px";
+    s.style.height = e + 'px';
+    s.style.left = k.left + 'px';
+    s.style.top = k.top + 'px';
     ga();
-    n.style.width = b + "px";
+    n.style.width = b + 'px';
     a.l && window.innerHeight < B.height && (d = window.innerHeight);
-    n.style.height = d + "px";
-    a.h.style.height = d + "px";
+    n.style.height = d + 'px';
+    a.h.style.height = d + 'px';
     n.Aa && n.Aa(b, d);
     $ &&
-      ((a.N.style.height = window.innerHeight + "px"),
-      (a.N.style.width = window.innerWidth + "px"));
+      ((a.N.style.height = window.innerHeight + 'px'),
+      (a.N.style.width = window.innerWidth + 'px'));
   };
-  this.U = function(a) {
-    m(a, "mousedown", F);
-    m(a, "mousemove", H);
-    m(a, "mouseup", N);
+  this.U = function (a) {
+    m(a, 'mousedown', F);
+    m(a, 'mousemove', H);
+    m(a, 'mouseup', N);
   };
-  this.aa = function(a) {
-    O(a, "mousedown", F);
-    O(a, "mousemove", H);
-    O(a, "mouseup", N);
+  this.aa = function (a) {
+    O(a, 'mousedown', F);
+    O(a, 'mousemove', H);
+    O(a, 'mouseup', N);
   };
-  this.Qa = function() {
-    a.p && ((a.p.style.visibility = "hidden"), a.aa(a.p), a.aa(a.Q), a.aa(a.o));
+  this.Qa = function () {
+    a.p && ((a.p.style.visibility = 'hidden'), a.aa(a.p), a.aa(a.Q), a.aa(a.o));
   };
-  this.Ka = function() {
-    a.A.style.visibility = "hidden";
+  this.Ka = function () {
+    a.A.style.visibility = 'hidden';
     a.aa(a.A);
   };
   var Ha =
@@ -672,104 +672,104 @@ window.keyshotVR = function(
     window.mozRequestAnimationFrame ||
     window.oRequestAnimationFrame ||
     window.msRequestAnimationFrame ||
-    function(a) {
+    function (a) {
       window.setTimeout(a, 10);
     };
-  this.ta = function() {
-    a.p = document.createElement("div");
+  this.ta = function () {
+    a.p = document.createElement('div');
     a.U(a.p);
-    a.p.V = function() {
+    a.p.V = function () {
       this.parentNode &&
-        ((this.style.left = "16px"), (this.style.top = "16px"));
+        ((this.style.left = '16px'), (this.style.top = '16px'));
     };
-    b = "position:absolute;";
-    b += "left: 0px;";
-    b += "top:  0px;";
-    b += "width: 80px;";
-    b += "height: 80px;";
-    b += y + "transform-origin: 50% 50%;";
-    b += "visibility: inherit;";
-    a.p.setAttribute("style", b);
-    a.Q = document.createElement("div");
+    b = 'position:absolute;';
+    b += 'left: 0px;';
+    b += 'top:  0px;';
+    b += 'width: 80px;';
+    b += 'height: 80px;';
+    b += y + 'transform-origin: 50% 50%;';
+    b += 'visibility: inherit;';
+    a.p.setAttribute('style', b);
+    a.Q = document.createElement('div');
     a.U(a.Q);
-    b = "position:absolute;";
-    b += "left: 0px;";
-    b += "top:  29px;";
-    b += "width: 80px;";
-    b += "height: 80px;";
-    b += y + "transform-origin: 50% 50%;";
-    b += "opacity: 1.0;";
-    b += "visibility: inherit;";
-    b += "border: 0px solid #000000;";
-    b += "color: #ffffff;";
-    b += "text-align: left;";
-    b += "white-space: nowrap;";
-    b += "padding: 0px 0px 0px 0px;";
-    b += "overflow: hidden;";
-    a.Q.setAttribute("style", b);
-    a.o = document.createElement("div");
+    b = 'position:absolute;';
+    b += 'left: 0px;';
+    b += 'top:  29px;';
+    b += 'width: 80px;';
+    b += 'height: 80px;';
+    b += y + 'transform-origin: 50% 50%;';
+    b += 'opacity: 1.0;';
+    b += 'visibility: inherit;';
+    b += 'border: 0px solid #000000;';
+    b += 'color: #ffffff;';
+    b += 'text-align: left;';
+    b += 'white-space: nowrap;';
+    b += 'padding: 0px 0px 0px 0px;';
+    b += 'overflow: hidden;';
+    a.Q.setAttribute('style', b);
+    a.o = document.createElement('div');
     a.U(a.o);
     a.o.$ = { Ma: 0, Na: 0, ia: 0, Oa: 1, Pa: 1, eb: 1 };
-    b = "position:absolute;";
-    b += "left: 0px;";
-    b += "top:  0px;";
-    b += "width: 80px;";
-    b += "height: 80px;";
-    b += y + "transform-origin: 50% 50%;";
-    b += "opacity: 1.0;";
-    b += "visibility: inherit;";
-    b += "border: 0px solid #000000;";
-    b += "color: #ffffff;";
-    b += "text-align: left;";
-    b += "white-space: nowrap;";
-    b += "padding: 0px 0px 0px 0px;";
-    b += "overflow: hidden;";
+    b = 'position:absolute;';
+    b += 'left: 0px;';
+    b += 'top:  0px;';
+    b += 'width: 80px;';
+    b += 'height: 80px;';
+    b += y + 'transform-origin: 50% 50%;';
+    b += 'opacity: 1.0;';
+    b += 'visibility: inherit;';
+    b += 'border: 0px solid #000000;';
+    b += 'color: #ffffff;';
+    b += 'text-align: left;';
+    b += 'white-space: nowrap;';
+    b += 'padding: 0px 0px 0px 0px;';
+    b += 'overflow: hidden;';
     var c = ya;
-    "" == c && (c = "ks_logo.png");
-    a.o.setAttribute("style", b);
-    a.o.innerHTML = '<img src="' + A + a.s + "/files/" + c + '"></img>';
+    '' == c && (c = 'ks_logo.png');
+    a.o.setAttribute('style', b);
+    a.o.innerHTML = '<img src="' + A + a.s + '/files/' + c + '"></img>';
     a.p.appendChild(a.o);
     a.p.appendChild(a.Q);
     n.appendChild(a.p);
     a.u(a.l);
-    setTimeout(function() {
+    setTimeout(function () {
       a.u(a.l);
     }, 10);
   };
-  this.Ra = function(b) {
+  this.Ra = function (b) {
     if (a.p) {
-      a.Q.innerHTML = "<center>" + parseInt(100 * b) + "</center>";
+      a.Q.innerHTML = '<center>' + parseInt(100 * b) + '</center>';
       a.o.$.ia += 2.1;
-      b = "";
+      b = '';
       if (a.o.$)
         var d = a.o.$,
           b =
             b +
-            ("translate(" +
+            ('translate(' +
               d.Ma +
-              "px," +
+              'px,' +
               d.Na +
-              "px) rotate(" +
+              'px) rotate(' +
               d.ia +
-              "deg) scale(" +
+              'deg) scale(' +
               d.Oa +
-              "," +
+              ',' +
               d.Pa +
-              ") ");
-      a.o.style[L] = b + "scale(1.0,1.0)";
+              ') ');
+      a.o.style[L] = b + 'scale(1.0,1.0)';
     }
   };
-  this.sa = function() {
+  this.sa = function () {
     T = r;
     S();
   };
-  this.ya = function() {
-    m(window, "resize", M);
-    za && m(n, "dblclick", Ca);
+  this.ya = function () {
+    m(window, 'resize', M);
+    za && m(n, 'dblclick', Ca);
     if (ba())
       if (
-        (m(window, "mousewheel", P),
-        m(window, "keydown", la),
+        (m(window, 'mousewheel', P),
+        m(window, 'keydown', la),
         /Tablet PC/i.test(navigator.userAgent) && window.$a)
       ) {
         var b = new MSGesture();
@@ -777,31 +777,31 @@ window.keyshotVR = function(
         a.h.Ia = b;
         a.h.Ia.pointerType = t;
         a.h.gb = [];
-        m(a.h, "MSPointerDown", Fa);
-        m(a.h, "MSPointerMove", Ea);
-        m(a.h, "MSPointerUp", Da);
+        m(a.h, 'MSPointerDown', Fa);
+        m(a.h, 'MSPointerMove', Ea);
+        m(a.h, 'MSPointerUp', Da);
       } else
-        m(n, "mousedown", F),
-          m(q, "mousedown", F),
-          m(n, "mousemove", H),
-          m(q, "mousemove", H),
-          m(document, "mouseup", N);
+        m(n, 'mousedown', F),
+          m(q, 'mousedown', F),
+          m(n, 'mousemove', H),
+          m(q, 'mousemove', H),
+          m(document, 'mouseup', N);
     else
       n.addEventListener &&
-        (m(document, "mouseup", N),
-        m(n, "mousewheel", P),
-        m(document, "keydown", la),
-        m(n, "mousedown", F),
-        m(q, "mousedown", F),
-        m(n, "mousemove", H),
-        m(n, "touchstart", ea),
-        m(n, "touchmove", da),
-        m(n, "touchcancel", Ga),
-        m(n, "touchend", ca),
-        m(n, "DOMMouseScroll", P),
-        m(window, "orientationchange", fa));
+        (m(document, 'mouseup', N),
+        m(n, 'mousewheel', P),
+        m(document, 'keydown', la),
+        m(n, 'mousedown', F),
+        m(q, 'mousedown', F),
+        m(n, 'mousemove', H),
+        m(n, 'touchstart', ea),
+        m(n, 'touchmove', da),
+        m(n, 'touchcancel', Ga),
+        m(n, 'touchend', ca),
+        m(n, 'DOMMouseScroll', P),
+        m(window, 'orientationchange', fa));
   };
-  if (document.createElement("canvas").getContext) {
+  if (document.createElement('canvas').getContext) {
     var a = this,
       u = (a.h = t),
       s = t,
@@ -834,7 +834,7 @@ window.keyshotVR = function(
         J: z,
         q: 0,
         Ca: r,
-        Ea: z
+        Ea: z,
       };
     J || (J = 0);
     K || (K = 0);
@@ -850,8 +850,8 @@ window.keyshotVR = function(
     var B = { width: 0, height: 0 };
     B.width = V;
     B.height = W;
-    var y = "",
-      L = "transform",
+    var y = '',
+      L = 'transform',
       C = { x: 640, y: 480 },
       c = {
         n: 1,
@@ -865,7 +865,7 @@ window.keyshotVR = function(
         ka: 1,
         ja: 1,
         m: { x: 0, y: 0 },
-        oa: z
+        oa: z,
       };
     c.ka = parseFloat(X);
     c.ja = parseFloat(Y);
@@ -874,7 +874,7 @@ window.keyshotVR = function(
         a: { x: 0, y: 0 },
         La: { x: 0, y: 0 },
         n: { x: 0, y: 0 },
-        b: { x: 0, y: 0 }
+        b: { x: 0, y: 0 },
       },
       E = { start: { x: 0, y: 0 } },
       j = {
@@ -885,7 +885,7 @@ window.keyshotVR = function(
         n: { x: 0, y: 0 },
         b: { x: 0, y: 0 },
         ba: { x: 0, y: 0 },
-        ca: { x: 0, y: 0 }
+        ca: { x: 0, y: 0 },
       },
       i = { a: { x: 0, y: 0 }, b: { x: 0, y: 0 }, L: 0.96 };
     i.L = va;
@@ -919,55 +919,55 @@ window.keyshotVR = function(
     for (v = 0; v < e.q; v++) (a.w[v] = -1), (a.D[v] = -1);
     a.C = [];
     a.ha = [];
-    v = ["Webkit", "Moz", "0", "ms", "Ms"];
+    v = ['Webkit', 'Moz', '0', 'ms', 'Ms'];
     for (D = 0; D < v.length; D++)
-      "undefined" !=
-        typeof document.documentElement.style[v[D] + "Transform"] &&
-        ((y = "-" + v[D].toLowerCase() + "-"), (L = v[D] + "Transform"));
-    var b = "";
+      'undefined' !=
+        typeof document.documentElement.style[v[D] + 'Transform'] &&
+        ((y = '-' + v[D].toLowerCase() + '-'), (L = v[D] + 'Transform'));
+    var b = '';
     a.h = document.getElementById(U);
-    b = "width: " + V + "px;";
-    b += "height: " + W + "px;";
-    b += "max-width: 100%;";
-    a.h.setAttribute("style", b);
-    u = document.createElement("div");
-    u.setAttribute("id", "viewwindow");
-    b = "top:  0px;";
-    b += "left: 0px;";
-    b += "position: relative;";
-    u.setAttribute("style", b);
+    b = 'width: ' + V + 'px;';
+    b += 'height: ' + W + 'px;';
+    b += 'max-width: 100%;';
+    a.h.setAttribute('style', b);
+    u = document.createElement('div');
+    u.setAttribute('id', 'viewwindow');
+    b = 'top:  0px;';
+    b += 'left: 0px;';
+    b += 'position: relative;';
+    u.setAttribute('style', b);
     a.h.appendChild(u);
-    s = document.createElement("div");
-    s.setAttribute("id", "turntable");
-    b = "top:  0px;";
-    b += "left: 0px;";
-    b += "overflow: hidden;";
-    b += "position:absolute;";
-    b += y + "user-select: none;";
-    s.setAttribute("style", b);
+    s = document.createElement('div');
+    s.setAttribute('id', 'turntable');
+    b = 'top:  0px;';
+    b += 'left: 0px;';
+    b += 'overflow: hidden;';
+    b += 'position:absolute;';
+    b += y + 'user-select: none;';
+    s.setAttribute('style', b);
     u.appendChild(s);
-    q = document.createElement("img");
-    q.setAttribute("id", "backbuffer");
-    b = "top:  0px;";
-    b += "left: 0px;";
-    b += "position:absolute;";
-    b += y + "user-select: none;";
-    q.setAttribute("style", b);
+    q = document.createElement('img');
+    q.setAttribute('id', 'backbuffer');
+    b = 'top:  0px;';
+    b += 'left: 0px;';
+    b += 'position:absolute;';
+    b += y + 'user-select: none;';
+    q.setAttribute('style', b);
     s.appendChild(q);
     na = q;
-    n = document.createElement("div");
+    n = document.createElement('div');
     a.r = n;
-    b = "top:  0px;";
-    b += "left: 0px;";
-    b += "width:  100px;";
-    b += "height: 100px;";
-    b += "overflow: hidden;";
-    b += "position:absolute;";
-    b += "z-index: 522;";
-    b += y + "user-select: none;";
-    n.setAttribute("style", b);
+    b = 'top:  0px;';
+    b += 'left: 0px;';
+    b += 'width:  100px;';
+    b += 'height: 100px;';
+    b += 'overflow: hidden;';
+    b += 'position:absolute;';
+    b += 'z-index: 522;';
+    b += y + 'user-select: none;';
+    n.setAttribute('style', b);
     u.appendChild(n);
-    n.Aa = function(a, b) {
+    n.Aa = function (a, b) {
       var c = [];
       for (c.push(this); 0 < c.length; ) {
         var e = c.pop();
@@ -976,21 +976,21 @@ window.keyshotVR = function(
           for (var g = 0; g < e.childNodes.length; g++) c.push(e.childNodes[g]);
       }
     };
-    this.A = document.createElement("div");
-    b = "position:absolute;";
-    b += "left: 0px;";
-    b += "top:  0px;";
-    b += "width: 256px;";
-    b += "height: 256px;";
-    b += "opacity: 0.0;";
-    b += y + "transform-origin: 50% 50%;";
-    b += "visibility: inherit;";
-    b += "display: none";
-    this.A.setAttribute("style", b);
-    this.O = document.createElement("img");
-    this.O.setAttribute("width", 256);
-    this.O.setAttribute("height", 256);
-    this.O.onload = function() {
+    this.A = document.createElement('div');
+    b = 'position:absolute;';
+    b += 'left: 0px;';
+    b += 'top:  0px;';
+    b += 'width: 256px;';
+    b += 'height: 256px;';
+    b += 'opacity: 0.0;';
+    b += y + 'transform-origin: 50% 50%;';
+    b += 'visibility: inherit;';
+    b += 'display: none';
+    this.A.setAttribute('style', b);
+    this.O = document.createElement('img');
+    this.O.setAttribute('width', 256);
+    this.O.setAttribute('height', 256);
+    this.O.onload = function () {
       a.Ja();
     };
     a.U(this.A);
@@ -998,78 +998,78 @@ window.keyshotVR = function(
     n.appendChild(this.A);
     this.backgroundColor = s.style.backgroundColor = pa;
     wa &&
-      ((a.S = document.createElement("div")),
-      (b = "position:absolute;"),
-      (b += "width: 38px;"),
-      (b += "height: 32px;"),
-      (b += y + "transform-origin: 50% 50%;"),
-      (b += "visibility: inherit;"),
-      (b += "cursor: pointer;"),
-      a.S.setAttribute("style", b),
-      (a.H = document.createElement("img")),
+      ((a.S = document.createElement('div')),
+      (b = 'position:absolute;'),
+      (b += 'width: 38px;'),
+      (b += 'height: 32px;'),
+      (b += y + 'transform-origin: 50% 50%;'),
+      (b += 'visibility: inherit;'),
+      (b += 'cursor: pointer;'),
+      a.S.setAttribute('style', b),
+      (a.H = document.createElement('img')),
       a.l
-        ? a.H.setAttribute("src", A + a.s + "/files/GoFullScreenIcon.png")
-        : a.H.setAttribute("src", A + a.s + "/files/GoFixedSizeIcon.png"),
+        ? a.H.setAttribute('src', A + a.s + '/files/GoFullScreenIcon.png')
+        : a.H.setAttribute('src', A + a.s + '/files/GoFixedSizeIcon.png'),
       a.H.setAttribute(
-        "style",
-        "position: absolute;top: 0px;left: 0px;width: 38px;height: 32px;"
+        'style',
+        'position: absolute;top: 0px;left: 0px;width: 38px;height: 32px;',
       ),
       a.S.appendChild(a.H),
-      (a.S.V = function(a, b) {
-        this.style.left = a - 38 + "px";
-        this.style.top = b - 32 + "px";
+      (a.S.V = function (a, b) {
+        this.style.left = a - 38 + 'px';
+        this.style.top = b - 32 + 'px';
       }),
-      (a.S.onclick = function() {
+      (a.S.onclick = function () {
         a.Ua();
       }),
       a.r.appendChild(a.S));
     if (a.W) {
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
+        navigator.userAgent,
       ) && (I = r);
-      a.M = document.createElement("div");
-      b = "position:absolute;";
-      b += "width: 92px;";
-      b += "height: 92px;";
-      b += y + "transform-origin: 50% 50%;";
-      b += "visibility: inherit;";
-      b += "cursor: pointer;";
-      a.M.setAttribute("style", b);
-      a.X = document.createElement("img");
+      a.M = document.createElement('div');
+      b = 'position:absolute;';
+      b += 'width: 92px;';
+      b += 'height: 92px;';
+      b += y + 'transform-origin: 50% 50%;';
+      b += 'visibility: inherit;';
+      b += 'cursor: pointer;';
+      a.M.setAttribute('style', b);
+      a.X = document.createElement('img');
       I
-        ? a.X.setAttribute("src", A + a.s + "/files/vr_hand.gif")
-        : a.X.setAttribute("src", A + a.s + "/files/vr_cursor.gif");
+        ? a.X.setAttribute('src', A + a.s + '/files/vr_hand.gif')
+        : a.X.setAttribute('src', A + a.s + '/files/vr_cursor.gif');
       a.X.setAttribute(
-        "style",
-        "position: absolute;top: 0px;left: 0px;width: 92px;height: 92px;"
+        'style',
+        'position: absolute;top: 0px;left: 0px;width: 92px;height: 92px;',
       );
       a.M.appendChild(a.X);
-      a.M.V = function(a, b) {
-        this.style.left = 0.5 * a - 46 + "px";
-        this.style.top = 0.5 * b - 46 + "px";
+      a.M.V = function (a, b) {
+        this.style.left = 0.5 * a - 46 + 'px';
+        this.style.top = 0.5 * b - 46 + 'px';
       };
-      a.N = document.createElement("div");
-      b = "position:absolute;";
-      b += y + "transform-origin: 50% 50%;";
-      b += " width: " + window.innerWidth + "px;";
-      b += " height: " + window.innerHeight + "px;";
-      b += " background-color: #ccc;";
-      b += " opacity: .7";
-      a.N.setAttribute("style", b);
+      a.N = document.createElement('div');
+      b = 'position:absolute;';
+      b += y + 'transform-origin: 50% 50%;';
+      b += ' width: ' + window.innerWidth + 'px;';
+      b += ' height: ' + window.innerHeight + 'px;';
+      b += ' background-color: #ccc;';
+      b += ' opacity: .7';
+      a.N.setAttribute('style', b);
       a.r.appendChild(a.N);
-      var oa = function() {
-        a.M.style.visibility = "hidden";
-        a.N.style.visibility = "hidden";
+      var oa = function () {
+        a.M.style.visibility = 'hidden';
+        a.N.style.visibility = 'hidden';
         aa && a.ta();
         a.Z = r;
         for (var b = 0; b < a.za; b++) a.fa();
         a.sa();
       };
-      a.r.onmousedown = function(a) {
+      a.r.onmousedown = function (a) {
         T || oa();
         a.preventDefault();
       };
-      a.r.ontouchstart = function(a) {
+      a.r.ontouchstart = function (a) {
         T || oa();
         a.preventDefault();
       };
@@ -1081,11 +1081,11 @@ window.keyshotVR = function(
     a.T(a.R);
     this.Fa();
     a.fa();
-    setTimeout(function() {
+    setTimeout(function () {
       S();
     }, 10);
-    setTimeout(function() {
+    setTimeout(function () {
       M();
     }, 15);
-  } else alert("Your browser must support HTML5 to show KeyShotVR");
+  } else alert('Your browser must support HTML5 to show KeyShotVR');
 };

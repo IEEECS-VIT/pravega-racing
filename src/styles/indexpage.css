@@ -1,7 +1,6 @@
-
 @font-face {
   font-family: 'Tagesschrift';
-  
+
   /* src: url('css/mycss/alte_haas_grotesk/AlteHaasGroteskBold.ttf');*/
   font-weight: normal;
 }
@@ -9,15 +8,14 @@
   font-family: 'Tagesschrift';
   font-weight: 100;
   animation: fadeIn 2s;
-
 }
 
-@keyframes fadeIn{
-  0%{
-    opacity:0;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
   }
 }
 
@@ -37,7 +35,8 @@
   margin-top: 10px;
 }
 
-.valign-m {}
+.valign-m {
+}
 
 .chancellor-img-div {
   width: 100px;
@@ -49,15 +48,18 @@
   display: inline-block;
 }
 
-.about-gv-p {}
+.about-gv-p {
+}
 
-.chancellor-img {}
+.chancellor-img {
+}
 
 #firstsection {
   margin-top: -40px;
 }
 
-.twitter-follow-button {}
+.twitter-follow-button {
+}
 
 .overlay__background {
   background-color: rgba(255, 255, 255, 0.7);
@@ -78,8 +80,8 @@
 }
 
 .main-ka-baap {
-  max-width:100%;
-  width:100%;
+  max-width: 100%;
+  width: 100%;
   z-index: 100;
   border: solid 2px #fff;
   margin-top: 0px;
@@ -99,14 +101,12 @@
 .recent_img {
   margin-bottom: 40px;
 }
-#firstsection{
+#firstsection {
   max-width: '100%';
   /*
   padding-left: 175px; 
   padding-right: 50px; */
 }
-
-
 
 .ig-b- {
   display: inline-block;
@@ -127,16 +127,16 @@
 .ig-b-v-24 {
   width: 137px;
   height: 24px;
-  background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0;
+  background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png)
+    no-repeat 0 0;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2 / 1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2 / 1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
   .ig-b-v-24 {
     background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png);
     background-size: 160px 178px;

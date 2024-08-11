@@ -1,214 +1,211 @@
 [
-    {
-      "id": "event1",
-      "title": "FS East 2023",
-      "subtitle": "PRV 23 - The only Indian team to score a podium in this competition.",
-      "iconText": "23'",
-      "details": [
-        "2nd in Business Presentation Event",
-        "19th in Design Event",
-        "12th in Cost Event",
-        "12th in Static Event",
-        "12th overall"
-      ]
-    },
-    {
-      "id": "event2",
-      "title": "FS Germany 2023",
-      "subtitle": "PRV 23 - The fastest Indian Team in the competition.",
-      "iconText": "23'",
-      "details": [
-        "8th in Cost Event",
-        "9th in Design Event",
-        "10th in Business Presentation Event",
-        "18th overall"
-      ]  
-    },
-    {
-        "id": "event3",
-        "title": "Formula Bharat 2023",
-        "subtitle": "PRV 23 - Kicking off the 2023 season with a strong return for the team by qualifying for all the finals of the static events.",
-        "iconText": "23'",
-        "details": [
-          "1st in Business Presentation Event",
-          "4th in Cost Event",
-          "5th in Design Event",
-          "2nd in Static Event",
-          "7th overall"
-        ]  
-      },
-      {
-        "id": "event4",
-        "title": "Formula Student Online 2021",
-        "subtitle": "PRV21 - The highest overall finish by an Indian team in an International event. A second podium in BPP event and a first podium in Dynamic Event propelled the team to receive an Invitation to Formula Student East.",
-        "iconText": "21'",
-        "details": [
-          "2nd in Business Presentation Event",
-          "3rd in Dynamic Event",
-          "4th in Design Event",
-          "3rd Overall"
-        ]  
-      },
-      {
-        "id": "event5",
-        "title": "FSEV 2021",
-        "subtitle": "PRV21 - The team's first attempt at FSEV gave them a top 10 finish competing against the top EV teams in the world. This also helped in gaining the team confidence for a smooth possible transition towards EV.",
-        "iconText": "21'",
-        "details": [
-          "6th in Engineering Design Event",
-          "7th Procurement Report",
-          "8rd in FMEA Event",
-          "10th overall"
-        ]  
-      },
-      {
-        "id": "event6",
-        "title": "Formula Bharat 2021",
-        "subtitle": "PRV21 - A podium comeback at Formula Bharat 21 Virtual Event. Given the pandemic, the team collaborated smoothly while still aiming for excellence notwithstanding the challenges of working remotely for the first time.",
-        "iconText": "21'",
-        "details": [
-          "6th in Engineering Design Event",
-          "1st in Business Plan Presentation",
-          "4th in Engineering Design Concept",
-          "3rd overall"
-        ]  
-      },
-      {
-        "id": "event7",
-        "title": "Formula Student Online 2020",
-        "subtitle": "PRV 20 - The only Indian team to participate in the virtual event. Our highest ever overall finish and first podium in the BPP at an international event.",
-        "iconText": "20'",
-        "details": [
-          "3rd in Business Plan Presentation",
-          "6th in Dynamic Event",
-          "7th in AutoCross Event",
-          "11th overall"
-        ]  
-      },
-      {
-        "id": "event8",
-        "title": "FS Germany 2019",
-        "subtitle": "PRV 19-Highest ever points scored by an Indian team at the Engineering Design event at Formula Student Germany and the first ever team to win the D-BASF best use of 3D printing award at the event.",
-        "iconText": "19'",
-        "details": [
-          "D-BASF best use of 3D printing award winners",
-          "15th in Engineering design",
-          "15th in Business presentation",
-          "43rd overall"
-        ]  
-      },
-      {
-        "id": "event9",
-        "title": "Formula SAE-A 2018",
-        "subtitle": "PRV 18 - Highest ever points scored by an Indian team at the Engineering Design event.",
-        "iconText": "18'",
-        "details": [
-          "FSAE-A encouragement award",
-          "4th in Engineering design",
-          "9th in acceleration",
-          "14th overall"
-        ]  
-      },
-      {
-        "id": "event10",
-        "title": "FS Germany 2017",
-        "subtitle": "PRV 18 - Highest ever points scored by an Indian team at the Engineering Design event.",
-        "iconText": "17'",
-        "details": [
-          "18th in Business Presentation Event",
-          "20th in Cost Report"
-        ]  
-      },
-      {
-        "id": "event11",
-        "title": "Formula Bharat 2017",
-        "subtitle": "PRV 16 - Car that raced to be the best in India.",
-        "iconText": "17'",
-        "details": [
-          "1st overall",
-          "1st in Autocross",
-          "1st in Acceleration",
-          "1st in Cost Event",
-          "1st in Business Presentation Event",
-          "2nd in Skidpad",
-          "2nd in Endurance",
-          "Special Award for Spirit of FSI",
-          "Best Driver Award"         
-        ]  
-      },
-      {
-        "id": "event12",
-        "title": "Formula Student Germany 2016",
-        "subtitle": "PRV 16 was the fastest among all Indian teams.",
-        "iconText": "16'",
-        "details": [
-          "13th in Business Presentation Event",
-          "39th in Design Event",
-          "40th in Cost Event",
-          "1st in Cost Event",
-          "37th in Acceleration Event(4.65 seconds)",
-          "41th in Skidpad Event(6.39 seconds)",
-          "53th in AutoCross Event(87.88 seconds)"  
-        ]  
-      },
-      {
-        "id": "event13",
-        "title": "Formula Student India 2016",
-        "subtitle": "Won 7/11 Trophies",
-        "iconText": "16'",
-        "details": [
-          "1st in Acceleration Event",
-          "1st in Skidpad Event",
-          "1st in Business Presentation Event",
-          "3rd in Engineering Design Event",
-          "37th in Acceleration Event(4.65 seconds)",
-          "3rd in Cost & Manufacturing Event",
-          "Special Awards for Spirit of FSI and Cleanest Pit"  
-        ]  
-      },
-      {
-        "id": "event14",
-        "title": "Formula Student Germany 2015",
-        "subtitle": "This was the best statics result by any Indian team in Formula Student Germany history",
-        "iconText": "15'",
-        "details": [
-          "8th in Cost & Manufacturing Event",
-          "10th in Business Presentation Event",
-          "21st in Engineering Design Event"
-        ]  
-      },
-      {
-        "id": "event15",
-        "title": "JK Tyre Formula Design Challenge 2015",
-        "subtitle": "We set the national record of completing the autocross lap in 1 minute 23 seconds which is still un-beaten",
-        "iconText": "15'",
-        "details": [
-          "3rd overall",
-          "2nd in Engineering Design Event",
-          "2nd in AutoCross Event",
-          "3rd in Business Presentation Event",
-          "3rd in Cost & Manufacturing Event",
-          "3rd in Skipad Event"
-        ]  
-      },
-      {
-        "id": "event16",
-        "title": "Formula Student Germany 2014",
-        "subtitle": "We were the Only Indian team to complete the entire Technical Inspection and compete in all the Dynamic Events",
-        "iconText": "14'",
-        "details": [
-          "In 2014 we decided to move to Formula Student Germany as it is considered the biggest event in the Formula Student Circuit. Our first experience at the biggest stage was a valuable one and we learned a lot of new things from the top teams in the world. We had a great result here as we were the Only Indian team to complete the entire Technical Inspection and compete in all the Dynamic Events." 
-        ]  
-      },
-      {
-        "id": "event17",
-        "title": "Formula Student Italy 2013",
-        "subtitle": "Overall 20th position in the world out of the 45 competing teams",
-        "iconText": "13'",
-        "details": [
-            "2nd position in the cost event",
-            "11th in Business Plan Event",
-            "19th in Design Event"
-        ]  
-      }   
-  ]
+  {
+    "id": "event1",
+    "title": "FS East 2023",
+    "subtitle": "PRV 23 - The only Indian team to score a podium in this competition.",
+    "iconText": "23'",
+    "details": [
+      "2nd in Business Presentation Event",
+      "19th in Design Event",
+      "12th in Cost Event",
+      "12th in Static Event",
+      "12th overall"
+    ]
+  },
+  {
+    "id": "event2",
+    "title": "FS Germany 2023",
+    "subtitle": "PRV 23 - The fastest Indian Team in the competition.",
+    "iconText": "23'",
+    "details": [
+      "8th in Cost Event",
+      "9th in Design Event",
+      "10th in Business Presentation Event",
+      "18th overall"
+    ]
+  },
+  {
+    "id": "event3",
+    "title": "Formula Bharat 2023",
+    "subtitle": "PRV 23 - Kicking off the 2023 season with a strong return for the team by qualifying for all the finals of the static events.",
+    "iconText": "23'",
+    "details": [
+      "1st in Business Presentation Event",
+      "4th in Cost Event",
+      "5th in Design Event",
+      "2nd in Static Event",
+      "7th overall"
+    ]
+  },
+  {
+    "id": "event4",
+    "title": "Formula Student Online 2021",
+    "subtitle": "PRV21 - The highest overall finish by an Indian team in an International event. A second podium in BPP event and a first podium in Dynamic Event propelled the team to receive an Invitation to Formula Student East.",
+    "iconText": "21'",
+    "details": [
+      "2nd in Business Presentation Event",
+      "3rd in Dynamic Event",
+      "4th in Design Event",
+      "3rd Overall"
+    ]
+  },
+  {
+    "id": "event5",
+    "title": "FSEV 2021",
+    "subtitle": "PRV21 - The team's first attempt at FSEV gave them a top 10 finish competing against the top EV teams in the world. This also helped in gaining the team confidence for a smooth possible transition towards EV.",
+    "iconText": "21'",
+    "details": [
+      "6th in Engineering Design Event",
+      "7th Procurement Report",
+      "8rd in FMEA Event",
+      "10th overall"
+    ]
+  },
+  {
+    "id": "event6",
+    "title": "Formula Bharat 2021",
+    "subtitle": "PRV21 - A podium comeback at Formula Bharat 21 Virtual Event. Given the pandemic, the team collaborated smoothly while still aiming for excellence notwithstanding the challenges of working remotely for the first time.",
+    "iconText": "21'",
+    "details": [
+      "6th in Engineering Design Event",
+      "1st in Business Plan Presentation",
+      "4th in Engineering Design Concept",
+      "3rd overall"
+    ]
+  },
+  {
+    "id": "event7",
+    "title": "Formula Student Online 2020",
+    "subtitle": "PRV 20 - The only Indian team to participate in the virtual event. Our highest ever overall finish and first podium in the BPP at an international event.",
+    "iconText": "20'",
+    "details": [
+      "3rd in Business Plan Presentation",
+      "6th in Dynamic Event",
+      "7th in AutoCross Event",
+      "11th overall"
+    ]
+  },
+  {
+    "id": "event8",
+    "title": "FS Germany 2019",
+    "subtitle": "PRV 19-Highest ever points scored by an Indian team at the Engineering Design event at Formula Student Germany and the first ever team to win the D-BASF best use of 3D printing award at the event.",
+    "iconText": "19'",
+    "details": [
+      "D-BASF best use of 3D printing award winners",
+      "15th in Engineering design",
+      "15th in Business presentation",
+      "43rd overall"
+    ]
+  },
+  {
+    "id": "event9",
+    "title": "Formula SAE-A 2018",
+    "subtitle": "PRV 18 - Highest ever points scored by an Indian team at the Engineering Design event.",
+    "iconText": "18'",
+    "details": [
+      "FSAE-A encouragement award",
+      "4th in Engineering design",
+      "9th in acceleration",
+      "14th overall"
+    ]
+  },
+  {
+    "id": "event10",
+    "title": "FS Germany 2017",
+    "subtitle": "PRV 18 - Highest ever points scored by an Indian team at the Engineering Design event.",
+    "iconText": "17'",
+    "details": ["18th in Business Presentation Event", "20th in Cost Report"]
+  },
+  {
+    "id": "event11",
+    "title": "Formula Bharat 2017",
+    "subtitle": "PRV 16 - Car that raced to be the best in India.",
+    "iconText": "17'",
+    "details": [
+      "1st overall",
+      "1st in Autocross",
+      "1st in Acceleration",
+      "1st in Cost Event",
+      "1st in Business Presentation Event",
+      "2nd in Skidpad",
+      "2nd in Endurance",
+      "Special Award for Spirit of FSI",
+      "Best Driver Award"
+    ]
+  },
+  {
+    "id": "event12",
+    "title": "Formula Student Germany 2016",
+    "subtitle": "PRV 16 was the fastest among all Indian teams.",
+    "iconText": "16'",
+    "details": [
+      "13th in Business Presentation Event",
+      "39th in Design Event",
+      "40th in Cost Event",
+      "1st in Cost Event",
+      "37th in Acceleration Event(4.65 seconds)",
+      "41th in Skidpad Event(6.39 seconds)",
+      "53th in AutoCross Event(87.88 seconds)"
+    ]
+  },
+  {
+    "id": "event13",
+    "title": "Formula Student India 2016",
+    "subtitle": "Won 7/11 Trophies",
+    "iconText": "16'",
+    "details": [
+      "1st in Acceleration Event",
+      "1st in Skidpad Event",
+      "1st in Business Presentation Event",
+      "3rd in Engineering Design Event",
+      "37th in Acceleration Event(4.65 seconds)",
+      "3rd in Cost & Manufacturing Event",
+      "Special Awards for Spirit of FSI and Cleanest Pit"
+    ]
+  },
+  {
+    "id": "event14",
+    "title": "Formula Student Germany 2015",
+    "subtitle": "This was the best statics result by any Indian team in Formula Student Germany history",
+    "iconText": "15'",
+    "details": [
+      "8th in Cost & Manufacturing Event",
+      "10th in Business Presentation Event",
+      "21st in Engineering Design Event"
+    ]
+  },
+  {
+    "id": "event15",
+    "title": "JK Tyre Formula Design Challenge 2015",
+    "subtitle": "We set the national record of completing the autocross lap in 1 minute 23 seconds which is still un-beaten",
+    "iconText": "15'",
+    "details": [
+      "3rd overall",
+      "2nd in Engineering Design Event",
+      "2nd in AutoCross Event",
+      "3rd in Business Presentation Event",
+      "3rd in Cost & Manufacturing Event",
+      "3rd in Skipad Event"
+    ]
+  },
+  {
+    "id": "event16",
+    "title": "Formula Student Germany 2014",
+    "subtitle": "We were the Only Indian team to complete the entire Technical Inspection and compete in all the Dynamic Events",
+    "iconText": "14'",
+    "details": [
+      "In 2014 we decided to move to Formula Student Germany as it is considered the biggest event in the Formula Student Circuit. Our first experience at the biggest stage was a valuable one and we learned a lot of new things from the top teams in the world. We had a great result here as we were the Only Indian team to complete the entire Technical Inspection and compete in all the Dynamic Events."
+    ]
+  },
+  {
+    "id": "event17",
+    "title": "Formula Student Italy 2013",
+    "subtitle": "Overall 20th position in the world out of the 45 competing teams",
+    "iconText": "13'",
+    "details": [
+      "2nd position in the cost event",
+      "11th in Business Plan Event",
+      "19th in Design Event"
+    ]
+  }
+]

@@ -1,14 +1,17 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+
 import 'react-vertical-timeline-component/style.min.css';
 import './page.css';
+
 // import Footer from '@/components/footer';
 import Nav from '@/components/nav';
+
 import eventData from '@/constant/eventsData.json';
 
 interface ShowTextState {
@@ -35,21 +38,20 @@ const EventsPage: React.FC = () => {
   };
 
   const commonIconStyle = {
-    background: "rgb(6,49,119)",
-    color: "#fff",
+    background: 'rgb(6,49,119)',
+    color: '#fff',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    
   };
 
   const commonContentStyle = {
-    color: "#000",
-    opacity: "0.7",
-    borderRadius: "15px"
+    color: '#000',
+    opacity: '0.7',
+    borderRadius: '15px',
   };
 
-  const commonIconClassName = "text-center text-2xl font-bold text-white";
+  const commonIconClassName = 'text-center text-2xl font-bold text-white';
 
   return (
     <div
@@ -83,9 +85,7 @@ const EventsPage: React.FC = () => {
               {event.subtitle}
             </h5>
             <br />
-            <h6 className='font-bold text-gray-700'>
-              {event.description}
-            </h6>
+            <h6 className='font-bold text-gray-700'>{event.description}</h6>
             <button
               className='bg-blue-500 hover:bg-blue-700 text-white text-sm py-2 px-3 rounded  opacity-1  !important'
               onClick={() => toggleShowText(event.id)}

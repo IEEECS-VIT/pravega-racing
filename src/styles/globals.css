@@ -42,7 +42,9 @@
   }
 
   .cursor-newtab {
-    cursor: url('/images/new-tab.png') 10 10, pointer;
+    cursor:
+      url('/images/new-tab.png') 10 10,
+      pointer;
   }
 
   /* #region  /**=========== Typography =========== */
@@ -52,11 +54,11 @@
   .dropdown {
     position: relative;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -65,19 +67,19 @@
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   }
-  
+
   .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown-content a:hover {
     background-color: #ddd; /* Grey background color on hover */
     color: black;
   }
-  
+
   h1,
   .h1 {
     @apply font-primary text-2xl font-bold md:text-4xl;
@@ -128,8 +130,12 @@
         var(--color-primary-400),
         var(--color-primary-500)
       );
-    background-size: 100% 2px, 0 2px;
-    background-position: 100% 100%, 0 100%;
+    background-size:
+      100% 2px,
+      0 2px;
+    background-position:
+      100% 100%,
+      0 100%;
     background-repeat: no-repeat;
   }
   @media (prefers-reduced-motion: no-preference) {
@@ -141,6 +147,8 @@
   }
   .animated-underline:hover,
   .animated-underline:focus-visible {
-    background-size: 0 2px, 100% 2px;
+    background-size:
+      0 2px,
+      100% 2px;
   }
 }
