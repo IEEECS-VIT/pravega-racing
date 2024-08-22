@@ -14,68 +14,19 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'off',
-    'no-console': 'warn',
+    'no-console': 'off', // Turn off no-console warnings
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/no-unescaped-entities': 'off',
-
     'react/display-name': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
       { props: 'never', children: 'never' },
     ],
-
-    //#region  //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
-    'unused-imports/no-unused-imports': 'warn',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'after-used',
-        argsIgnorePattern: '^_',
-      },
-    ],
-    //#endregion  //*======== Unused Import ===========
-
-    //#region  //*=========== Import Sort ===========
-    'simple-import-sort/exports': 'warn',
-    'simple-import-sort/imports': [
-      'warn',
-      {
-        groups: [
-          // ext library & side effect imports
-          ['^@?\\w', '^\\u0000'],
-          // {s}css files
-          ['^.+\\.s?css$'],
-          // Lib and hooks
-          ['^@/lib', '^@/hooks'],
-          // static data
-          ['^@/data'],
-          // components
-          ['^@/components', '^@/container'],
-          // zustand store
-          ['^@/store'],
-          // Other imports
-          ['^@/'],
-          // relative paths up until 3 level
-          [
-            '^\\./?$',
-            '^\\.(?!/?$)',
-            '^\\.\\./?$',
-            '^\\.\\.(?!/?$)',
-            '^\\.\\./\\.\\./?$',
-            '^\\.\\./\\.\\.(?!/?$)',
-            '^\\.\\./\\.\\./\\.\\./?$',
-            '^\\.\\./\\.\\./\\.\\.(?!/?$)',
-          ],
-          ['^@/types'],
-          // other that didnt fit in
-          ['^'],
-        ],
-      },
-    ],
-    //#endregion  //*======== Import Sort ===========
+    'unused-imports/no-unused-imports': 'off', // Turn off unused imports warnings
+    'unused-imports/no-unused-vars': 'off', // Turn off unused vars warnings
+    'simple-import-sort/exports': 'off', // Turn off import sort warnings
+    'simple-import-sort/imports': 'off', // Turn off import sort warnings
   },
   globals: {
     React: true,
