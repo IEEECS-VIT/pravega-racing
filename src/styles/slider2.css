@@ -10,9 +10,8 @@
 }
 .cb-slideshow:after {
   content: '';
-  z-index:-1;
+  z-index: -1;
   background: transparent url('https://placehold.co/600x400') repeat top left;
-
 }
 .cb-slideshow li span {
   width: 100%;

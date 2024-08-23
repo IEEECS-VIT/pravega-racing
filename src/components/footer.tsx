@@ -1,4 +1,5 @@
 import '/src/styles/slider1.css';
+
 import styles from '/src/styles/FollowPageCard.module.css';
 
 
@@ -21,12 +22,10 @@ export default function Footer() {
             <input type="text" style={{ width: '80%', marginLeft: '0px', marginRight: '0px' }}></input>
             <button className="bg-black px-2 hover:bg-white" style={{ height: '25px', marginLeft: '0px', marginRight: '0px' }}>Submit</button></span>
         </div>
-        <div className="ieeecs mt-8" style={{ marginLeft: '100px' }}>
-          <img src="images/general/ieeecslogo.png" className="footImg"></img>
+        <div className='ieeecs mt-8' style={{ marginLeft: '100px' }}>
+          <img src='images/general/ieeecslogo.png' className='footImg'></img>
         </div>
-
       </div>
     </footer>
   );
 }
-
