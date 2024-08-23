@@ -86,7 +86,7 @@ const MyPage: React.FC = () => {
                       <i className="fa fa-globe w-5 text-center"></i>
                       <p className="" style={{ fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif", fontWeight: '400' }}>www.pravega-racing.com</p>
                     </a>
-                    <a className='text-sm flex items-center pb-1 text-blue-800' href="http://www.pravega-racing.com">
+                    <a className='text-sm flex items-center pb-1 text-blue-800' href="https://www.instagram.com/pravegaracing/">
                       <i className="fa fa-facebook w-5 text-center"></i>
                       <p className="" style={{ fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif", fontWeight: '400' }}>/pravegaracing</p>
 
@@ -94,15 +94,15 @@ const MyPage: React.FC = () => {
                   </div>
 
                   <div className="w-full sm:w-1/2 flex flex-col sm:items-end">
-                    <a className='text-sm flex items-center pb-1 text-blue-800'>
+                    <a className='text-sm flex items-center pb-1 text-blue-800' href="https://www.linkedin.com/company/pravega-racing./">
                       <i className="fa fa-instagram w-5 text-center"></i>
                       <p className="" style={{ fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif", fontWeight: '400' }}>/pravegaracing</p>
                     </a>
-                    <a className='text-sm flex items-center pb-1 text-blue-800' href="http://www.pravega-racing.com">
+                    <a className='text-sm flex items-center pb-1 text-blue-800' href="https://m.facebook.com/pravegaracing/">
                       <i className="fa fa-linkedin w-5 text-center"></i>
                       <p className="" style={{ fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif", fontWeight: '400' }}>/pravegaracing</p>
                     </a>
-                    <a className='text-sm flex items-center pb-2 text-blue-800' href="http://www.pravega-racing.com">
+                    <a className='text-sm flex items-center pb-2 text-blue-800' href="https://x.com/pravegaracing">
                       <i className="fa fa-twitter w-5 text-center"></i>
                       <p className="" style={{ fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif", fontWeight: '400' }}>@pravegaracing</p>
 
