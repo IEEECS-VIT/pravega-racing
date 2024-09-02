@@ -55,21 +55,18 @@ const MyPage: React.FC = () => {
                   >
                     Chief Executive Officer
                   </div>
-                  <div className='flex flex-col sm:flex-row'>
-                    <div
-                      className='w-full sm:w-1/2 mb-4 sm:mb-0'
-                      style={{ height: 'auto' }}
-                    >
+                  <div className='flex flex-col items-center'>
+                    <div className='w-full mb-4' style={{ height: 'auto' }}>
                       <img
                         src='/images/general/teams/team20/4.JPG'
                         alt='CEO'
                         className='w-full object-cover'
-                        style={{ height: '20rem' }}
+                        style={{ height: '20rem', objectFit: 'cover' }}
                       />
                     </div>
-                    <div className='w-full sm:w-1/2 flex flex-col items-center justify-center'>
+                    <div className='text-center'>
                       <span
-                        className='font-semibold text-m pb-2'
+                        className='font-semibold text-m pb-2 block'
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -78,9 +75,11 @@ const MyPage: React.FC = () => {
                       >
                         Chetan Pratapaneni
                       </span>
-                      <div className='flex items-center'>
+                      <div className='flex items-center justify-center'>
                         <i className='fa fa-phone'></i>
-                        <span className='text-m underline'>+91 7702241423</span>
+                        <span className='text-m underline pl-2 lg:text-xs'>
+                          +91 7702241423
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -97,21 +96,18 @@ const MyPage: React.FC = () => {
                   >
                     Chief Operations Officer
                   </div>
-                  <div className='flex flex-col sm:flex-row'>
-                    <div
-                      className='w-full sm:w-1/2 mb-4 sm:mb-0'
-                      style={{ height: 'auto' }}
-                    >
+                  <div className='flex flex-col items-center'>
+                    <div className='w-full mb-4' style={{ height: 'auto' }}>
                       <img
                         src='/images/general/teams/team20/4.JPG'
-                        alt='COO'
+                        alt='CEO'
                         className='w-full object-cover'
-                        style={{ height: '20rem' }}
+                        style={{ height: '20rem', objectFit: 'cover' }}
                       />
                     </div>
-                    <div className='w-full sm:w-1/2 flex flex-col items-center justify-center'>
+                    <div className='text-center'>
                       <span
-                        className='font-semibold text-m pb-2'
+                        className='font-semibold text-m pb-2 block'
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -120,61 +116,115 @@ const MyPage: React.FC = () => {
                       >
                         Chetan Pratapaneni
                       </span>
-                      <div className='flex items-center'>
+                      <div className='flex items-center justify-center'>
                         <i className='fa fa-phone'></i>
-                        <span className='text-m underline'>+91 7702241423</span>
+                        <span className='text-m underline pl-2 lg:text-xs'>
+                          +91 7702241423
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='flex flex-col sm:flex-row mt-4 gap-4'>
-                <div className='w-full sm:w-1/2 flex flex-col'>
-                  <a className='text-sm flex items-center pb-1 text-blue-800'>
-                    <i className='fa fa-envelope w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
+
+                <div className='flex flex-col sm:flex-row mt-4 gap-4'>
+                  <div className='w-full sm:w-1/2 flex flex-col'>
+                    <a className='text-sm flex items-center pb-1 text-blue-800'>
+                      <i className='fa fa-envelope w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        pravegaracing@vit.ac.in
+                      </p>
+                    </a>
+                    <a
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='http://www.pravega-racing.com'
                     >
-                      pravegaracing@vit.ac.in
-                    </p>
-                  </a>
-                  <a
-                    className='text-sm flex items-center pb-1 text-blue-800'
-                    href='http://www.pravega-racing.com'
-                  >
-                    <i className='fa fa-globe w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
+                      <i className='fa fa-globe w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        www.pravega-racing.com
+                      </p>
+                    </a>
+                    <a
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='https://www.instagram.com/pravegaracing/'
                     >
-                      www.pravega-racing.com
-                    </p>
-                  </a>
-                  <a
-                    className='text-sm flex items-center pb-1 text-blue-800'
-                    href='http://www.pravega-racing.com'
-                  >
-                    <i className='fa fa-facebook w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
+                      <i className='fa fa-facebook w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        /pravegaracing
+                      </p>
+                    </a>
+                  </div>
+
+                  <div className='w-full sm:w-1/2 flex flex-col sm:items-end'>
+                    <a
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='https://www.linkedin.com/company/pravega-racing./'
                     >
-                      /pravegaracing
-                    </p>
-                  </a>
+                      <i className='fa fa-instagram w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        /pravegaracing
+                      </p>
+                    </a>
+                    <a
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='https://m.facebook.com/pravegaracing/'
+                    >
+                      <i className='fa fa-linkedin w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        /pravegaracing
+                      </p>
+                    </a>
+                    <a
+                      className='text-sm flex items-center pb-2 text-blue-800'
+                      href='https://x.com/pravegaracing'
+                    >
+                      <i className='fa fa-twitter w-5 text-center'></i>
+                      <p
+                        className=''
+                        style={{
+                          fontFamily:
+                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                          fontWeight: '400',
+                        }}
+                      >
+                        @pravegaracing
+                      </p>
+                    </a>
+                  </div>
                 </div>
 
                 <div className='w-full sm:w-1/2 flex flex-col sm:items-end'>
