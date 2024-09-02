@@ -20,9 +20,42 @@ const FollowPageCard = () => {
       </div>
 
       <div className={styles.socialButtons}>
-        <button className={`${styles.socialButton} ${styles.instagram}`} aria-label="Instagram"></button>
-        <button className={`${styles.socialButton} ${styles.facebook}`} aria-label="Facebook"></button>
-        <button className={`${styles.socialButton} ${styles.twitter}`} aria-label="Twitter"></button>
+        <a
+          href='https://www.instagram.com/pravegaracing/'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='Instagram'
+          className={`${styles.socialButton} ${styles.instagram}`}
+        >
+          <button
+            className={`${styles.socialButton} ${styles.instagram}`}
+            aria-label='Instagram'
+          ></button>
+        </a>
+        <a
+          href='https://m.facebook.com/pravegaracing/'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='Facebook'
+          className={`${styles.socialButton} ${styles.facebook}`}
+        >
+          <button
+            className={`${styles.socialButton} ${styles.facebook}`}
+            aria-label='Facebook'
+          ></button>
+        </a>
+        <a
+          href='https://x.com/pravegaracing'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='Twitter'
+          className={`${styles.socialButton} ${styles.twitter}`}
+        >
+          <button
+            className={`${styles.socialButton} ${styles.twitter}`}
+            aria-label='Twitter'
+          ></button>
+        </a>
       </div>
     </div>
   );

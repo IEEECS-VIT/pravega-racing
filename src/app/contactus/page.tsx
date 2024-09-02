@@ -128,14 +128,22 @@ const MyPage: React.FC = () => {
 
                 <div className='flex flex-col sm:flex-row mt-4 gap-4'>
                   <div className='w-full sm:w-1/2 flex flex-col'>
-                    <a className='text-sm flex items-center pb-1 text-blue-800'>
-                      <i className='fa fa-envelope w-5 text-center'></i>
+                    <a
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='mailto:pravegaracing@vit.ac.in'
+                      style={{ display: 'flex', alignItems: 'center' }}
+                    >
+                      <i
+                        className='fa fa-envelope mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          whiteSpace: 'nowrap',
+                          margin: 0, // Ensure no margin is causing misalignment
                         }}
                       >
                         pravegaracing@vit.ac.in
@@ -144,14 +152,19 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='http://www.pravega-racing.com'
+                      style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i className='fa fa-globe w-5 text-center'></i>
+                      <i
+                        className='fa fa-globe mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          whiteSpace: 'nowrap',
+                          margin: 0,
                         }}
                       >
                         www.pravega-racing.com
@@ -160,14 +173,19 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://www.instagram.com/pravegaracing/'
+                      style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i className='fa fa-facebook w-5 text-center'></i>
+                      <i
+                        className='fa fa-instagram mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          whiteSpace: 'nowrap',
+                          margin: 0,
                         }}
                       >
                         /pravegaracing
@@ -178,15 +196,19 @@ const MyPage: React.FC = () => {
                   <div className='w-full sm:w-1/2 flex flex-col sm:items-end'>
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
-                      href='https://www.linkedin.com/company/pravega-racing./'
+                      href='https://x.com/pravegaracing'
+                      style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i className='fa fa-instagram w-5 text-center'></i>
+                      <i
+                        className='fa fa-twitter mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          margin: 0,
                         }}
                       >
                         /pravegaracing
@@ -195,84 +217,44 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://m.facebook.com/pravegaracing/'
+                      style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i className='fa fa-linkedin w-5 text-center'></i>
+                      <i
+                        className='fa fa-facebook mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          margin: 0,
                         }}
                       >
                         /pravegaracing
                       </p>
                     </a>
                     <a
-                      className='text-sm flex items-center pb-2 text-blue-800'
-                      href='https://x.com/pravegaracing'
+                      className='text-sm flex items-center pb-1 text-blue-800'
+                      href='https://www.linkedin.com/company/pravega-racing./'
+                      style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i className='fa fa-twitter w-5 text-center'></i>
+                      <i
+                        className='fa fa-linkedin mr-2'
+                        style={{ verticalAlign: 'middle' }}
+                      ></i>
                       <p
-                        className=''
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
                           fontWeight: '400',
+                          margin: 0,
                         }}
                       >
-                        @pravegaracing
+                        /pravegaracing
                       </p>
                     </a>
                   </div>
-                </div>
-
-                <div className='w-full sm:w-1/2 flex flex-col sm:items-end'>
-                  <a className='text-sm flex items-center pb-1 text-blue-800'>
-                    <i className='fa fa-instagram w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
-                    >
-                      /pravegaracing
-                    </p>
-                  </a>
-                  <a
-                    className='text-sm flex items-center pb-1 text-blue-800'
-                    href='http://www.pravega-racing.com'
-                  >
-                    <i className='fa fa-linkedin w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
-                    >
-                      /pravegaracing
-                    </p>
-                  </a>
-                  <a
-                    className='text-sm flex items-center pb-2 text-blue-800'
-                    href='http://www.pravega-racing.com'
-                  >
-                    <i className='fa fa-twitter w-5 text-center'></i>
-                    <p
-                      className=''
-                      style={{
-                        fontFamily:
-                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                        fontWeight: '400',
-                      }}
-                    >
-                      @pravegaracing
-                    </p>
-                  </a>
                 </div>
               </div>
               <div className='flex justify-center items-center mt-6'>
