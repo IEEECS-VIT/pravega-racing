@@ -11,6 +11,9 @@ const SlideshowBackground: React.FC = () => {
     '/images/5.jpg',
     '/images/8.jpg',
     '/images/10.jpg',
+    '/images/11.jpg',
+    '/images/12.jpg',
+    '/images/13.jpg'
   ]; // Replace with your own image URLs
 
   useEffect(() => {
@@ -41,9 +44,8 @@ const SlideshowBackground: React.FC = () => {
             transformOrigin: 'center center',
           }}
           alt={`Slideshow Image ${index + 1}`}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
-            index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
         />
       ))}
     </div>
