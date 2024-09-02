@@ -105,6 +105,9 @@ const Nav = () => {
                   >
                     <p className='block px-4 py-2 cursor-pointer'>PRV 21</p>
                   </Link>
+                  <Link href={{ pathname: "/cars", query: { slide: 10 } }} passHref>
+                    <p className="block px-4 py-2 cursor-pointer">PRV 23</p>
+                  </Link>
                 </div>
               </div>
               <div className='relative group'>

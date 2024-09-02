@@ -48,3 +48,30 @@
   background-color: #ccc;
   color: #333;
 }
+
+.socialButtons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.socialButton {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.instagram {
+  background-image: url('/images/instagram-icon.png'); /* Replace with the actual path to the Instagram icon */
+}
+
+.facebook {
+  background-image: url('/images/facebook-icon.png'); /* Replace with the actual path to the Facebook icon */
+}
+
+.twitter {
+  background-image: url('/images/twitter-icon.png'); /* Replace with the actual path to the Twitter icon */
+}

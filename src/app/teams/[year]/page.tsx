@@ -1,7 +1,6 @@
 'use client';
 import React, { useRef, useEffect } from 'react';
 
-import Footer from '@/components/footer';
 import Nav from '@/components/nav';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Team13Background from '@/components/team13background';
@@ -17,7 +16,8 @@ import { teamData } from '@/constant/teamdata';
 
 const TeamPage = ({ params }: { params: { year: string } }) => {
   const contentRef = useRef<HTMLDivElement>(null);
-  const fontUrl = 'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap';
+  const fontUrl =
+    'https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap';
 
   useEffect(() => {
     const link = document.createElement('link');
@@ -28,7 +28,7 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
     return () => {
       document.head.removeChild(link);
     };
-  }, []); 
+  }, []);
 
   console.log('Params:', params);
 
@@ -86,8 +86,18 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
       </div>
       <div
         ref={contentRef}
-        className='container py-8 pt-60 flex flex-col w-full justify-center items-center'>
-        <h1 className="pt-8 text-4xl" style={{ fontFamily: "'Lato', Helvetica, Arial, sans-serif", fontWeight: '300',color: 'rgb(48,48,48)' }}>Team {year}</h1>
+        className='container py-8 pt-60 flex flex-col w-full justify-center items-center'
+      >
+        <h1
+          className='pt-8 text-4xl'
+          style={{
+            fontFamily: "'Lato', Helvetica, Arial, sans-serif",
+            fontWeight: '300',
+            color: 'rgb(48,48,48)',
+          }}
+        >
+          Team {year}
+        </h1>
 
         {chunkedMembers.map((row, rowIndex) => (
           <div
@@ -161,7 +171,6 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 };
