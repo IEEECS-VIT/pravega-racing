@@ -167,7 +167,7 @@ const MyPage: React.FC = () => {
                   Distribution of Company Merchandise
                 </li>
                 <li className='flex custom-marker1'>
-                  Promotion at events (FSI+FSG)
+                  Promotion at events (FB, FSG, FSA, FSE)
                 </li>
                 <li className='flex custom-marker1'>
                   Promotion at Car launch and college fests
@@ -219,7 +219,8 @@ const MyPage: React.FC = () => {
                       ></span>
                       See our
                       <a
-                        style={{ marginLeft: '20px', cursor: 'pointer' }}
+                        className='ml-1 md:ml-5'
+                        style={{ cursor: 'pointer' }}
                         href='#Sponsorshipbrochure'
                         onClick={scrollToSponsorships}
                         onMouseEnter={(e) =>
@@ -231,6 +232,7 @@ const MyPage: React.FC = () => {
                       </a>
                     </h2>
                   </li>
+
                   <li className='flex items-center'>
                     <h2 className='flex text-2xl text-white'>
                       <span

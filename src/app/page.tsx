@@ -73,7 +73,7 @@ export default function HomePage() {
                   <FollowPageCard />
                 </div>
                 <div className='grid-row padlr'>
-                  <h3 className='text-left'>
+                  <h3 className='text-left text-3xl md:text-4xl'>
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
                   <div className='column-9'>

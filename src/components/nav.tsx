@@ -105,8 +105,11 @@ const Nav = () => {
                   >
                     <p className='block px-4 py-2 cursor-pointer'>PRV 21</p>
                   </Link>
-                  <Link href={{ pathname: "/cars", query: { slide: 10 } }} passHref>
-                    <p className="block px-4 py-2 cursor-pointer">PRV 23</p>
+                  <Link
+                    href={{ pathname: '/cars', query: { slide: 10 } }}
+                    passHref
+                  >
+                    <p className='block px-4 py-2 cursor-pointer'>PRV 23</p>
                   </Link>
                 </div>
               </div>
@@ -189,6 +192,79 @@ const Nav = () => {
                   <Link href='/events' passHref>
                     <p className='block px-4 py-2 cursor-pointer'>
                       FS Germany 2023
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Bharat 2023
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Online 2021
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>FSEV 2021</p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Bharat 2021
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Online 2020
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      FS Germany 2019
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula SAE-A 2018
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      FS Germany 2017
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Bharat 2017
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Germany 2016
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student India 2016
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Germany 2015
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      JK Tyre Formula Design Challenge 2015
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Germany 2014
+                    </p>
+                  </Link>
+                  <Link href='/events' passHref>
+                    <p className='block px-4 py-2 cursor-pointer'>
+                      Formula Student Italy 2013
                     </p>
                   </Link>
                 </div>
@@ -278,7 +354,7 @@ const Nav = () => {
               Cars
             </p>
           </Link>
-          <Link href='/teamprv20' passHref>
+          <Link href='/teams/2020' passHref>
             <p className='text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer'>
               Team
             </p>

@@ -58,7 +58,7 @@ const MyPage: React.FC = () => {
                   <div className='flex flex-col items-center'>
                     <div className='w-full mb-4' style={{ height: 'auto' }}>
                       <img
-                        src='/images/general/teams/team20/4.JPG'
+                        src='/images/general/teams/team23/CEO.JPG'
                         alt='CEO'
                         className='w-full object-cover'
                         style={{ height: '20rem', objectFit: 'cover' }}
@@ -73,12 +73,12 @@ const MyPage: React.FC = () => {
                           fontWeight: '400',
                         }}
                       >
-                        Chetan Pratapaneni
+                        Arindam Sharma
                       </span>
                       <div className='flex items-center justify-center'>
                         <i className='fa fa-phone'></i>
                         <span className='text-m underline pl-2 lg:text-xs'>
-                          +91 7702241423
+                          +91 8580917504
                         </span>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ const MyPage: React.FC = () => {
                   <div className='flex flex-col items-center'>
                     <div className='w-full mb-4' style={{ height: 'auto' }}>
                       <img
-                        src='/images/general/teams/team20/4.JPG'
+                        src='/images/general/teams/team23/COO.JPG'
                         alt='CEO'
                         className='w-full object-cover'
                         style={{ height: '20rem', objectFit: 'cover' }}
@@ -114,12 +114,12 @@ const MyPage: React.FC = () => {
                           fontWeight: '400',
                         }}
                       >
-                        Chetan Pratapaneni
+                        Anurag Balaje
                       </span>
                       <div className='flex items-center justify-center'>
                         <i className='fa fa-phone'></i>
                         <span className='text-m underline pl-2 lg:text-xs'>
-                          +91 7702241423
+                          +91 8054603773
                         </span>
                       </div>
                     </div>
