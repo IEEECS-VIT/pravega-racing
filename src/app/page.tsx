@@ -47,8 +47,8 @@ export default function HomePage() {
         <div className='main-ka-baap'>
           <main className='container' style={{ width: '75%', margin: 'auto' }}>
             <section id='firstsection'>
-              <div className='grid-container-fluid margin-top-70 margin-bottom-50'>
-                <div className='grid-row'>
+              <div className='grid-container-fluid margin-top-70 margin-bottom-60'>
+                <div className='grid-row pb-4 md:pb-1'>
                   <div className='column-8 aboutusdiv'>
                     <h3 className='text-left'>
                       <b>
@@ -153,7 +153,7 @@ export default function HomePage() {
           <section style={{ color: 'black', width: '100%', margin: 'auto' }}>
             <div
               className='text-align-left text-bold text-3xl'
-              style={{ marginLeft: '8%' }}
+              style={{ marginLeft: '13%' }}
             >
               Recent Activities
             </div>
