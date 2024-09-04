@@ -3,7 +3,8 @@
 import Head from 'next/head';
 import * as React from 'react';
 import '@/lib/env';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import '/src/styles/slider1.css';
 import '/src/styles/slider2.css';
 import '/src/styles/font-awesome.css';
@@ -29,6 +30,7 @@ export default function HomePage() {
     <>
       <div className='pageFull'>
         <Head>
+
           <title>Pravega Racing - VIT University Vellore</title>
         </Head>
         <SlideshowBackground />
@@ -110,7 +112,7 @@ export default function HomePage() {
                   </div>
                   <div className='column-10'>
                     <div className='text-left-imp'>
-                      <i className='fa fa-quote-left '></i>
+                      <FontAwesomeIcon icon={faQuoteLeft} />
                     </div>
                     <div className='text-left-imp'>
                       <p>
@@ -123,7 +125,7 @@ export default function HomePage() {
                       </p>
                     </div>
                     <div className='text-right'>
-                      <i className='fa fa-quote-right '></i>
+                      <FontAwesomeIcon icon={faQuoteRight} />
                     </div>
 
                     <p className='about-gv-p text-left-imp'>
