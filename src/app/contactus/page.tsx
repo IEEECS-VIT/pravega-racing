@@ -3,6 +3,19 @@ import React, { useRef, useEffect } from 'react';
 import ContactUsbackground from '@/components/contactusbackground';
 import Nav from '@/components/nav';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faPhone,
+  faEnvelope,
+  faGlobe,
+  faMapMarker,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 import '/src/styles/font-awesome.css';
 
 const MyPage: React.FC = () => {
@@ -76,7 +89,7 @@ const MyPage: React.FC = () => {
                         Arindam Sharma
                       </span>
                       <div className='flex items-center justify-center'>
-                        <i className='fa fa-phone'></i>
+                        <FontAwesomeIcon icon={faPhone} />
                         <span className='text-m underline pl-2 lg:text-xs'>
                           +91 8580917504
                         </span>
@@ -117,7 +130,7 @@ const MyPage: React.FC = () => {
                         Anurag Balaje
                       </span>
                       <div className='flex items-center justify-center'>
-                        <i className='fa fa-phone'></i>
+                        <FontAwesomeIcon icon={faPhone} />
                         <span className='text-m underline pl-2 lg:text-xs'>
                           +91 8054603773
                         </span>
@@ -133,10 +146,7 @@ const MyPage: React.FC = () => {
                       href='mailto:pravegaracing@vit.ac.in'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-envelope mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -154,10 +164,7 @@ const MyPage: React.FC = () => {
                       href='http://www.pravega-racing.com'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-globe mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faGlobe} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -175,10 +182,7 @@ const MyPage: React.FC = () => {
                       href='https://www.instagram.com/pravegaracing/'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-instagram mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faInstagram} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -199,10 +203,7 @@ const MyPage: React.FC = () => {
                       href='https://x.com/pravegaracing'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-twitter mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faTwitter} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -219,10 +220,7 @@ const MyPage: React.FC = () => {
                       href='https://m.facebook.com/pravegaracing/'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-facebook mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faFacebook} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -239,10 +237,7 @@ const MyPage: React.FC = () => {
                       href='https://www.linkedin.com/company/pravega-racing./'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
-                      <i
-                        className='fa fa-linkedin mr-2'
-                        style={{ verticalAlign: 'middle' }}
-                      ></i>
+                      <FontAwesomeIcon icon={faLinkedin} className='mr-2' />
                       <p
                         style={{
                           fontFamily:
@@ -258,7 +253,10 @@ const MyPage: React.FC = () => {
                 </div>
               </div>
               <div className='flex justify-center items-center mt-6'>
-                <i className='fa fa-map-marker w-5 text-center'></i>
+                <FontAwesomeIcon
+                  icon={faMapMarker}
+                  className='w-6 text-center'
+                />
                 <span
                   className='text-sm'
                   style={{
