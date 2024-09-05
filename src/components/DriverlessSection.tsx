@@ -13,7 +13,7 @@ const DriverlessSection: React.FC = () => {
               Pravega Racing Driverless
             </h2>
 
-            <p className='text-s ml-0 md:ml-8'>
+            <p className='text-s ml-0 text-justify md:ml-8'>
               At Pravega Racing Driverless our goal is aimed at developing the
               software stack and the required integration module for achieving
               driverless capability on our FS car and participate in the

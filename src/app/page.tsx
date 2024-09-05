@@ -30,7 +30,6 @@ export default function HomePage() {
     <>
       <div className='pageFull'>
         <Head>
-
           <title>Pravega Racing - VIT University Vellore</title>
         </Head>
         <SlideshowBackground />
@@ -60,7 +59,10 @@ export default function HomePage() {
                         </span>
                       </b>
                     </h3>
-                    <p className='text-left' style={{ width: '85%' }}>
+                    <p
+                      className='text-left text-justify'
+                      style={{ width: '85%' }}
+                    >
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
                       University by implementation of engineering fundamentals
@@ -79,7 +81,10 @@ export default function HomePage() {
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
                   <div className='column-9'>
-                    <p className='text-left' style={{ width: '80%' }}>
+                    <p
+                      className='text-left text-justify'
+                      style={{ width: '80%' }}
+                    >
                       Formula SAE (FSAE) is an opportunity for students to
                       design, manufacture, and race a formula-style car. Over
                       570 university teams from around the world participate in
@@ -114,7 +119,7 @@ export default function HomePage() {
                     <div className='text-left-imp'>
                       <FontAwesomeIcon icon={faQuoteLeft} />
                     </div>
-                    <div className='text-left-imp'>
+                    <div className='text-left-imp text-justify'>
                       <p>
                         I am happy and proud to inform you that Pravega Racing
                         is the official Formula SAE (FSAE) team of VIT
