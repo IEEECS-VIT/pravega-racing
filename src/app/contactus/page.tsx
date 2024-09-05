@@ -144,6 +144,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='mailto:pravegaracing@vit.ac.in'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
@@ -162,6 +163,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='http://www.pravega-racing.com'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faGlobe} className='mr-2' />
@@ -180,6 +182,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://www.instagram.com/pravegaracing/'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faInstagram} className='mr-2' />
@@ -201,6 +204,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://x.com/pravegaracing'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faTwitter} className='mr-2' />
@@ -218,6 +222,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://m.facebook.com/pravegaracing/'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faFacebook} className='mr-2' />
@@ -235,6 +240,7 @@ const MyPage: React.FC = () => {
                     <a
                       className='text-sm flex items-center pb-1 text-blue-800'
                       href='https://www.linkedin.com/company/pravega-racing./'
+                      target='_blank'
                       style={{ display: 'flex', alignItems: 'center' }}
                     >
                       <FontAwesomeIcon icon={faLinkedin} className='mr-2' />

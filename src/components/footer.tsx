@@ -8,10 +8,10 @@ export default function Footer() {
       className='container bg-gray-800 '
       style={{ maxWidth: '100%', height: 200 }}
     >
-      <div className='footThing mx-20'>
+      <div className='footThing mx-5 md:mx-20'>
         <div className='mt-4'>
           <img src='images/general/logowhite.png' className='footImg'></img>
-          <div className='buttonsAtEnd'>
+          <div className='buttonsAtEnd ml-2 flex gap-x-'>
             <a
               href='https://www.instagram.com/pravegaracing/'
               target='_blank'
@@ -29,7 +29,7 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Facebook'
-              className={`${styles.socialButton} ${styles.facebook}`}
+              className={`ml-2 ${styles.socialButton} ${styles.facebook}`}
             >
               <button
                 className={`${styles.socialButton} ${styles.facebook}`}
@@ -41,7 +41,7 @@ export default function Footer() {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Twitter'
-              className={`${styles.socialButton} ${styles.twitter}`}
+              className={`ml-2 ${styles.socialButton} ${styles.twitter}`}
             >
               <button
                 className={`${styles.socialButton} ${styles.twitter}`}
