@@ -56,8 +56,8 @@ const MyPage: React.FC = () => {
               >
                 <span className='text-red-500'>Pravega</span> Racing
               </h1>
-              <div className='flex flex-col lg:flex-row gap-4'>
-                <div className='w-full lg:w-1/2 mb-4 lg:mb-0'>
+              <div className='flex flex-col items-center justify-center lg:flex-row gap-4'>
+                <div className='w-full lg:w-1/3 mb-4 lg:mb-0'>
                   <div
                     className='bg-gray-800 text-white text-center w-full p-2.5 text-m mb-2'
                     style={{
@@ -98,7 +98,7 @@ const MyPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className='w-full lg:w-1/2'>
+                <div className='w-full lg:w-1/3'>
                   <div
                     className='bg-gray-800 text-white text-center w-full p-2.5 text-m mb-2'
                     style={{
@@ -113,7 +113,7 @@ const MyPage: React.FC = () => {
                     <div className='w-full mb-4' style={{ height: 'auto' }}>
                       <img
                         src='/images/general/teams/team23/COO.JPG'
-                        alt='CEO'
+                        alt='COO'
                         className='w-full object-cover'
                         style={{ height: '20rem', objectFit: 'cover' }}
                       />
@@ -138,141 +138,130 @@ const MyPage: React.FC = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className='flex flex-col sm:flex-row mt-4 gap-4'>
-                  <div className='w-full sm:w-1/2 flex flex-col'>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='mailto:pravegaracing@vit.ac.in'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          whiteSpace: 'nowrap',
-                          margin: 0, // Ensure no margin is causing misalignment
-                        }}
-                      >
-                        pravegaracing@vit.ac.in
-                      </p>
-                    </a>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='http://www.pravega-racing.com'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faGlobe} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          whiteSpace: 'nowrap',
-                          margin: 0,
-                        }}
-                      >
-                        www.pravega-racing.com
-                      </p>
-                    </a>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='https://www.instagram.com/pravegaracing/'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faInstagram} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          whiteSpace: 'nowrap',
-                          margin: 0,
-                        }}
-                      >
-                        /pravegaracing
-                      </p>
-                    </a>
-                  </div>
-
-                  <div className='w-full sm:w-1/2 flex flex-col sm:items-end'>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='https://x.com/pravegaracing'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faTwitter} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          margin: 0,
-                        }}
-                      >
-                        /pravegaracing
-                      </p>
-                    </a>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='https://m.facebook.com/pravegaracing/'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faFacebook} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          margin: 0,
-                        }}
-                      >
-                        /pravegaracing
-                      </p>
-                    </a>
-                    <a
-                      className='text-sm flex items-center pb-1 text-blue-800'
-                      href='https://www.linkedin.com/company/pravega-racing./'
-                      target='_blank'
-                      style={{ display: 'flex', alignItems: 'center' }}
-                    >
-                      <FontAwesomeIcon icon={faLinkedin} className='mr-2' />
-                      <p
-                        style={{
-                          fontFamily:
-                            "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                          fontWeight: '400',
-                          margin: 0,
-                        }}
-                      >
-                        /pravegaracing
-                      </p>
-                    </a>
-                  </div>
-                </div>
               </div>
-              <div className='flex justify-center items-center mt-6'>
-                <FontAwesomeIcon
-                  icon={faMapMarker}
-                  className='w-6 text-center'
-                />
-                <span
-                  className='text-sm'
-                  style={{
-                    fontFamily:
-                      "'Source Sans Pro', Helvetica, Arial, sans-serif",
-                    fontWeight: '400',
-                  }}
-                >
-                  VIT University, Vellore-632014, India
-                </span>
+
+              <div className='flex flex-col items-center mt-6 ml-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-0'>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='mailto:pravegaracing@vit.ac.in'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} className='mr-2' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      pravegaracing@vit.ac.in
+                    </p>
+                  </a>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='https://www.instagram.com/pravegaracing/'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faInstagram} className='mr-2' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      /pravegaracing
+                    </p>
+                  </a>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='https://x.com/pravegaracing'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faTwitter} className='mr-2' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      /pravegaracing
+                    </p>
+                  </a>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='http://www.pravega-racing.com'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faGlobe} className='mr-1' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      www.pravega-racing.com
+                    </p>
+                  </a>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='https://m.facebook.com/pravegaracing/'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faFacebook} className='mr-2' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      /pravegaracing
+                    </p>
+                  </a>
+                  <a
+                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    href='https://www.linkedin.com/company/pravega-racing./'
+                    target='_blank'
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} className='mr-2' />
+                    <p
+                      style={{
+                        fontFamily:
+                          "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                        fontWeight: '400',
+                        margin: 0,
+                      }}
+                    >
+                      /pravegaracing
+                    </p>
+                  </a>
+                </div>
+
+                <div className='flex justify-center items-center mt-6'>
+                  <FontAwesomeIcon
+                    icon={faMapMarker}
+                    className='w-6 text-center'
+                  />
+                  <span
+                    className='text-sm'
+                    style={{
+                      fontFamily:
+                        "'Source Sans Pro', Helvetica, Arial, sans-serif",
+                      fontWeight: '400',
+                    }}
+                  >
+                    VIT University, Vellore-632014, India
+                  </span>
+                </div>
               </div>
             </div>
           </div>
