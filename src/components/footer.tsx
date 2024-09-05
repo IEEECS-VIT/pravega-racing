@@ -54,7 +54,7 @@ export default function Footer() {
           <p className='textEnd text-left text-xl' style={{ color: 'white' }}>
             Sign Up
           </p>
-          <p className='textEnd text-left'>
+          <p className='textEnd text-left text-gray-300'>
             Want to keep informed? Join our infrequent mailing list, and you
             will never miss out on our upcoming events.
           </p>
@@ -67,7 +67,7 @@ export default function Footer() {
               style={{ width: '80%', marginLeft: '0px', marginRight: '0px' }}
             ></input>
             <button
-              className='bg-black px-2 hover:bg-white'
+              className='bg-black px-2 text-gray-400 hover:bg-white'
               style={{ height: '25px', marginLeft: '0px', marginRight: '0px' }}
             >
               Submit
