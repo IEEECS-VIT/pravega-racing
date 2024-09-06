@@ -89,16 +89,14 @@ export default function Cars() {
                   </button>
                 </div>
                 <div
-                  className='container mx-auto'
+                  className='container mx-auto flex flex-col-reverse items-center justify-center md:flex-row'
                   style={{
                     height: '100%',
-                    display: 'flex',
-                    flexDirection: 'row',
                     gap: '10px',
                     width: '80%',
                   }}
                 >
-                  <div className='textContentCars'>
+                  <div className='textContentCars' style={{ width: '63%' }}>
                     <b>Weight:</b> {car.Weight}
                     <br />
                     <b>Wheelbase:</b> {car.Wheelbase}
@@ -125,7 +123,7 @@ export default function Cars() {
                       </>
                     )}
                   </div>
-                  <div style={{ width: '55%' }}>
+                  <div style={{ width: '63%' }}>
                     <img
                       src={car.Image}
                       style={{ height: '70%', width: '100%' }}
