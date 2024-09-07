@@ -102,7 +102,7 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
         {chunkedMembers.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className='flex flex-wrap p-5 justify-center w-full'
+            className='flex flex-wrap p-5 justify-center w-full mt-[3vh]'
           >
             {row.map((member, memberIndex) => (
               <div
@@ -127,7 +127,7 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
                   {member.role.split(',').map((role, roleIndex) => (
                     <p
                       key={roleIndex}
-                      className='text-xs md:text-sm'
+                      className='text-xs md:text-sm mt-[0.5vh]'
                       style={{ fontSize: '13px' }}
                     >
                       {role.trim()}
@@ -137,14 +137,15 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
                 <div className='absolute inset-x-0 top-[-100%] group-hover:inset-0 bg-white/80 opacity-0 group-hover:opacity-100 transition-all duration-500'>
                   <div className='flex flex-col items-center justify-center h-full w-full'>
                     <div>{member.name}</div>
+
                     {member.role.split(',').map((role, roleIndex) => (
-                      <div
+                      <p
                         key={roleIndex}
                         className='font-semibold'
                         style={{ fontSize: '15px' }}
                       >
                         {role.trim()}
-                      </div>
+                      </p>
                     ))}
                   </div>
                 </div>
