@@ -263,10 +263,7 @@ img {
 .testClass {
   background-color: rgba(0, 0, 0, 0);
 }
-.footImg {
-  width: 270px;
-  height: 94px;
-}
+
 .buttonsAtEnd {
   display: flex;
   flex-direction: row;
@@ -291,8 +288,9 @@ img {
 }*/
 
 .footImg {
-  width: 270px;
-  height: 94px;
+  width: 17rem;
+  height: 6rem;
+
 }
 
 .buttonsAtEnd div {
@@ -312,6 +310,9 @@ img {
   }
   .footThing div p {
     font-size: 10px;
+  }
+  .footImg{
+    width: 40vh;
   }
 }
 @keyframes zoomIn0 {

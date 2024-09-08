@@ -91,7 +91,7 @@ export default function Cars() {
                   </div>
                 </div>
                 <div
-                  className='container mx-auto flex flex-col-reverse items-center justify-center md:flex-row'
+                  className='container mb-12 mx-auto flex flex-col-reverse items-center justify-center md:flex-row'
                   style={{
                     height: '100%',
                     gap: '10px',
