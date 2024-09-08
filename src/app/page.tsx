@@ -28,7 +28,7 @@ import SlideshowBackground from '@/components/Slideshow';
 export default function HomePage() {
   return (
     <>
-      <div className='pageFull'>
+      <div className='pageFull '>
         <Head>
           <title>Pravega Racing - VIT University Vellore</title>
         </Head>
@@ -59,10 +59,7 @@ export default function HomePage() {
                         </span>
                       </b>
                     </h3>
-                    <p
-                      className='text-left text-justify'
-                      style={{ width: '85%' }}
-                    >
+                    <p className='text-left' style={{ width: '85%' }}>
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
                       University by implementation of engineering fundamentals

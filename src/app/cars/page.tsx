@@ -70,23 +70,25 @@ export default function Cars() {
             carsData.map((car: Car, index) => (
               <SwiperSlide key={index}>
                 <div className='headingCar'>
-                  <button
-                    onClick={() => {
-                      swiper.slidePrev();
-                    }}
-                    className='custom-swiper-button-prev mx-6'
-                  >
-                    <i className='fa fa-arrow fa-arrow-left'></i>
-                  </button>
-                  {car.Car}
-                  <button
-                    onClick={() => {
-                      swiper.slideNext();
-                    }}
-                    className='custom-swiper-button-next mx-6'
-                  >
-                    <i className='fa fa-arrow fa-arrow-right'></i>
-                  </button>
+                  <div className='flex justify-center'>
+                    <button
+                      onClick={() => {
+                        swiper.slidePrev();
+                      }}
+                      className='custom-swiper-button-prev mx-6'
+                    >
+                      <i className='fa fa-arrow fa-arrow-left'></i>
+                    </button>
+                    <p className='w-[20vw] mt-[1.5vh]'>{car.Car}</p>
+                    <button
+                      onClick={() => {
+                        swiper.slideNext();
+                      }}
+                      className='custom-swiper-button-next mx-6'
+                    >
+                      <i className='fa fa-arrow fa-arrow-right'></i>
+                    </button>
+                  </div>
                 </div>
                 <div
                   className='container mx-auto flex flex-col-reverse items-center justify-center md:flex-row'
