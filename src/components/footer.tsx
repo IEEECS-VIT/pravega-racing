@@ -8,19 +8,19 @@ export default function Footer() {
       className='container bg-gray-800 '
       style={{ maxWidth: '100%', height: 200 }}
     >
-      <div className='footThing mx-5 md:mx-20'>
+      <div className='footThing mx-5 md:mx-20 flex items-center'>
         <div className='mt-4'>
           <img src='images/general/logowhite.png' className='footImg'></img>
-          <div className='buttonsAtEnd ml-2 flex gap-x-'>
+          <div className='buttonsAtEnd ml-2'>
             <a
               href='https://www.instagram.com/pravegaracing/'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Instagram'
-              className={`${styles.socialButton} ${styles.instagram}`}
+              className={`${styles.socialButton} ${styles.instagram} `}
             >
               <button
-                className={`${styles.socialButton} ${styles.instagram}`}
+                className={`${styles.socialButton} ${styles.instagram} `}
                 aria-label='Instagram'
               ></button>
             </a>
@@ -50,7 +50,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className='mt-4'>
+        <div className='flex-col mt-[4vh]'>
           <p className='textEnd text-left text-xl' style={{ color: 'white' }}>
             Sign Up
           </p>
@@ -59,15 +59,16 @@ export default function Footer() {
             will never miss out on our upcoming events.
           </p>
           <span
-            className='flex flex-row '
+            className='flex flex-row gap-x-8'
             style={{ width: '100%', marginBottom: '0px', height: '25px' }}
           >
             <input
               type='text'
+              placeholder='Email'
               style={{ width: '80%', marginLeft: '0px', marginRight: '0px' }}
             ></input>
             <button
-              className='bg-black px-2 text-gray-400 hover:bg-white'
+              className='bg-yellow-400 px-2 text-black hover:bg-red-600 w-[6vw]'
               style={{ height: '25px', marginLeft: '0px', marginRight: '0px' }}
             >
               Submit
