@@ -95,7 +95,7 @@ img {
     flex-direction: column; /* Makes the grid have one column */
   }
   .main-ka-baap iframe {
-    width: 350px;
+    width: 400px;
     height: 300px;
   }
 }
@@ -117,8 +117,8 @@ img {
     position: absolute;
   }
   .saeimg {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
   .vish {
     height: 150px;
@@ -224,10 +224,7 @@ img {
 .itemRecentAct img:hover {
   opacity: 0.3;
 }
-.itemRecentAct img {
-  width: 100%; /* Ensures the image takes the full width of the grid column */
-  height: auto; /* Keeps the aspect ratio of the image */
-}
+
 @media (min-width: 1300px) {
   .testClass {
     margin-top: 25%;
@@ -273,7 +270,7 @@ img {
   gap: 2px;
 }
 .itemRecentAct {
-  width: 300px;
+  width: 350px;
   height: 200px;
   background-color: black;
 }

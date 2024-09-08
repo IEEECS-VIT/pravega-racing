@@ -30,7 +30,7 @@ import SlideshowBackground from '@/components/Slideshow';
 export default function HomePage() {
   return (
     <>
-      <div className='pageFull'>
+      <div className='pageFull '>
         <Head>
           <title>Pravega Racing - VIT University Vellore</title>
         </Head>
@@ -48,9 +48,9 @@ export default function HomePage() {
         </section>
 
         <div className='main-ka-baap'>
-          <main className='container' style={{ width: '75%', margin: 'auto' }}>
+          <main className='container' style={{ width: '85%', margin: 'auto' }}>
             <section id='firstsection'>
-              <div className='grid-container-fluid margin-top-70 margin-bottom-60'>
+              <div className='grid-container-fluid margin-top-80 margin-bottom-60'>
                 <div className='grid-row pb-4 md:pb-1'>
                   <div className='column-8 aboutusdiv'>
                     <h3 className='landing-head'>
@@ -65,6 +65,7 @@ export default function HomePage() {
                       className='text-left text-justify mx-auto md:w-4/5 w-full '
                       style={{ width: '100%' }}
                     >
+
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
                       University by implementation of engineering fundamentals
@@ -103,6 +104,7 @@ export default function HomePage() {
                       src='/images/general/cars/sae.png'
                       className='saeimg'
                     />
+
                   </div>
                 </div>
               </div>
@@ -112,17 +114,19 @@ export default function HomePage() {
                 <div className='grid-row  '>
                   <div className='column-2 text-center flex'>
                     <div>&nbsp;</div>
+
                     <img
                       src='images/chancellor.png'
-                      className='vish img-circle chancellor-img img-responsive hidden-small valign-m text-center'
+                      className='vish img-circle chancellor-img img-responsive hidden-small size-[40vh] object-cover'
+                      alt='Chancellor'
                     />
                   </div>
-                  <div className='column-10'>
+                  <div className='w-8/12'>
                     <div className='text-left-imp'>
                       <FontAwesomeIcon icon={faQuoteLeft} />
                     </div>
-                    <div className='text-left-imp text-justify'>
-                      <p>
+                    <div className='text-left font-extrabold'>
+                      <p className='w-[60vw]'>
                         I am happy and proud to inform you that Pravega Racing
                         is the official Formula SAE (FSAE) team of VIT
                         University. The team comprises of a group of able and
@@ -134,8 +138,8 @@ export default function HomePage() {
                     <div className='text-right'>
                       <FontAwesomeIcon icon={faQuoteRight} />
                     </div>
-
-                    <p className='about-gv-p text-left-imp'>
+                    <br />
+                    <p className='text-right font-thin'>
                       <b>
                         Dr. G Vishwanathan
                         <br />
@@ -160,6 +164,7 @@ export default function HomePage() {
             </a>
           </main>
           <section style={{ color: 'black', width: '100%', margin: 'auto' }}>
+            <br />
             <div
               className='rec-ac text-bold text-3xl'
               // style={{ marginLeft: '13%' }}
@@ -167,17 +172,18 @@ export default function HomePage() {
               Recent Activities
             </div>
             <div className='imageThing flex justify-center mt-4 mb-6'>
+
               <div className='itemRecentAct'>
                 <a href='/events'>
                   <img
                     src='images/general/media/fsb21/1.png'
-                    style={{ width: 'fit-content', height: '100%' }}
+                    style={{ width: '100%', height: '100%' }}
                     className='image'
-                  ></img>
+                  />
                 </a>
                 <div className='textContentImage'>
                   <div className='innerText'>Formula Bharat 2021</div>
-                </div>{' '}
+                </div>
               </div>
               <div className='itemRecentAct'>
                 <a href='/events'>
@@ -185,23 +191,23 @@ export default function HomePage() {
                     src='images/general/media/fsO20/1.jpg'
                     style={{ width: '100%', height: '100%' }}
                     className='image'
-                  ></img>
+                  />
                 </a>
                 <div className='textContentImage'>
                   <div className='innerText'>Formula Student Online 2020</div>
-                </div>{' '}
+                </div>
               </div>
               <div className='itemRecentAct'>
                 <a href='/events'>
                   <img
                     src='images/general/media/fsg19/11.jpg'
-                    style={{ width: 'fit-content', height: 'fit-content' }}
+                    style={{ width: '100%', height: '100%' }}
                     className='image'
-                  ></img>
+                  />
                 </a>
                 <div className='textContentImage'>
                   <div className='innerText'>Formula Student Germany 2019</div>
-                </div>{' '}
+                </div>
               </div>
             </div>
           </section>
