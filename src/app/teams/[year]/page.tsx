@@ -1,6 +1,5 @@
 'use client';
-import React, { useRef, useEffect } from 'react';
-
+import React, { useRef, useEffect, useState } from 'react';
 import Nav from '@/components/nav';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Team13Background from '@/components/team13background';
@@ -11,7 +10,6 @@ import Team17Background from '@/components/team17background';
 import Team18Background from '@/components/team18background';
 import Team19Background from '@/components/team19background';
 import Team20Background from '@/components/team20background';
-
 import { teamData } from '@/constant/teamdata';
 
 const TeamPage = ({ params }: { params: { year: string } }) => {
@@ -30,30 +28,14 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
     };
   }, []);
 
-  console.log('Params:', params);
-
   const year = parseInt(params.year, 10);
 
-  const chunkArray = (arr: any[], size: number) => {
-    return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
-      arr.slice(i * size, i * size + size),
-    );
-  };
-
-  const teamMembers = teamData[year] || [];
-  console.log('Team Members:', teamMembers);
-
-  const chunkedMembers = chunkArray(teamMembers, 6); // 6 members per row
-  console.log('Chunked Members:', chunkedMembers);
-
+  // Dynamic background loading simplified (same as in second code)
   const BackgroundComponent = (() => {
     switch (year) {
       case 2023:
-        return Team20Background;
       case 2022:
-        return Team20Background;
       case 2021:
-        return Team20Background;
       case 2020:
         return Team20Background;
       case 2019:
@@ -74,6 +56,15 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
         return null;
     }
   })();
+
+  const teamMembers = teamData[year] || [];
+  const chunkArray = (arr: any[], size: number) => {
+    return Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+      arr.slice(i * size, i * size + size),
+    );
+  };
+
+  const chunkedMembers = chunkArray(teamMembers, 6);
 
   return (
     <div>
@@ -98,7 +89,6 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
         >
           Team {year}
         </h1>
-
         {chunkedMembers.map((row, rowIndex) => (
           <div
             key={rowIndex}
@@ -125,13 +115,15 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
                     {member.name}
                   </p>
                   {member.role.split(',').map((role, roleIndex) => (
-                    <p
-                      key={roleIndex}
-                      className='text-xs md:text-sm'
-                      style={{ fontSize: '13px' }}
-                    >
-                      {role.trim()}
-                    </p>
+                    <div key={roleIndex}>
+                      <br />
+                      <p
+                        className='text-xs md:text-sm'
+                        style={{ fontSize: '13px' }}
+                      >
+                        {role.trim()}
+                      </p>
+                    </div>
                   ))}
                 </div>
                 <div className='absolute inset-x-0 top-[-100%] group-hover:inset-0 bg-white/80 opacity-0 group-hover:opacity-100 transition-all duration-500'>
@@ -150,7 +142,6 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
                 </div>
               </div>
             ))}
-            {/* Fill empty slots in the last row if needed */}
             {rowIndex === chunkedMembers.length - 1 &&
               [...Array(6 - row.length)].map((_, index) => (
                 <div
@@ -162,9 +153,6 @@ const TeamPage = ({ params }: { params: { year: string } }) => {
                   </div>
                   <div className='text-center'>
                     <p className='font-semibold'></p>
-                    <p style={{ fontSize: '13px' }}></p>
-                    <p style={{ fontSize: '13px' }}></p>
-                    <p style={{ fontSize: '13px' }}></p>
                   </div>
                 </div>
               ))}

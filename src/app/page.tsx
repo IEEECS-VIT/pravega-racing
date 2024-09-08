@@ -98,7 +98,7 @@ export default function HomePage() {
                     <div className='-mt-[5vh] -ml-[2vw]'>
                       <img
                         src='/images/general/cars/sae.png'
-                        className='h-[30vh] w-[20vw]'
+                        className='h-[30vh] w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
                         alt='SAE Car'
                       />
                     </div>
@@ -166,13 +166,16 @@ export default function HomePage() {
             >
               Recent Activities
             </div>
-            <div className='imageThing justify-center mt-4 mb-6 ' style={{}}>
+            <div
+              className='imageThing justify-center flex space-x-12 mt-4 mb-6'
+              style={{}}
+            >
               <div className='itemRecentAct'>
                 <a href='/events'>
                   <img
                     src='images/general/media/fsb21/1.png'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>
@@ -184,7 +187,7 @@ export default function HomePage() {
                   <img
                     src='images/general/media/fsO20/1.jpg'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>
@@ -196,7 +199,7 @@ export default function HomePage() {
                   <img
                     src='images/general/media/fsg19/11.jpg'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>

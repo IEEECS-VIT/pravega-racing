@@ -38,59 +38,116 @@ export default function Cars() {
         style={{ margin: 'auto', textAlign: 'center', marginTop: '500px' }}
       >
         <h1 style={{ marginTop: '50px' }}>Video </h1>
-        <h1 style={{ marginTop: '50px' }}>Sponsor Support </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          Sponsor Support{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/l3OT-2vwQII'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>Pravega Racing Fundrace </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          Pravega Racing Fundrace{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/7zemGO2Q7ek'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>PRV19: Rollout Rev' </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          PRV19: Rollout Rev'{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/82zZM8RW89k'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>PRV19: The Grand Rollout </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          PRV19: The Grand Rollout{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/bEoa3Q4RmKc'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>PRV18: The Grand Rollout </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          PRV18: The Grand Rollout{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/BrUIfWADdgo'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>I am Pravega </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          I am Pravega{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/k-nV3hSLjXA'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>Journey 2016 </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          Journey 2016{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/NCxfsVK4cNs'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
-        <h1 style={{ marginTop: '50px' }}>Season Video 2015-16 </h1>
+        <h1 style={{ marginTop: '50px', marginBottom: '50px' }}>
+          Season Video 2015-16{' '}
+        </h1>
         <iframe
           src='https://www.youtube.com/embed/rioU2CtJQhs'
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            marginBottom: '50px',
+            width: '800px',
+            height: '450px',
+            boxShadow: '-10px 10px 0 0 #FF0000',
+          }}
           title='Pravega Racing - Sponsor Support'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
