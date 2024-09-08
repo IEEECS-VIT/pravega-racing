@@ -10,6 +10,8 @@ import '/src/styles/slider2.css';
 import '/src/styles/font-awesome.css';
 import '/src/styles/indexpage.css';
 import '/src/styles/styles.css';
+import '/src/styles/globals.css';
+
 
 import FollowPageCard from '@/components/followpagecard';
 import SlideshowBackground from '@/components/Slideshow';
@@ -51,7 +53,7 @@ export default function HomePage() {
               <div className='grid-container-fluid margin-top-70 margin-bottom-60'>
                 <div className='grid-row pb-4 md:pb-1'>
                   <div className='column-8 aboutusdiv'>
-                    <h3 className='text-left'>
+                    <h3 className='landing-head'>
                       <b>
                         Fifty Four,{' '}
                         <span className='redcolor' style={{ color: 'red' }}>
@@ -60,8 +62,8 @@ export default function HomePage() {
                       </b>
                     </h3>
                     <p
-                      className='text-left text-justify'
-                      style={{ width: '85%' }}
+                      className='text-left text-justify mx-auto md:w-4/5 w-full '
+                      style={{ width: '100%' }}
                     >
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
@@ -77,13 +79,13 @@ export default function HomePage() {
                   <FollowPageCard />
                 </div>
                 <div className='grid-row padlr'>
-                  <h3 className='text-left text-3xl md:text-4xl'>
+                  <h3 className='text-left text-3xl md:text-4xl landing-head'>  
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
                   <div className='column-9'>
                     <p
-                      className='text-left text-justify'
-                      style={{ width: '80%' }}
+                      className='text-left text-justify mx-auto md:w-4/5 w-full '
+                      style={{ width: '100%' }}
                     >
                       Formula SAE (FSAE) is an opportunity for students to
                       design, manufacture, and race a formula-style car. Over
@@ -96,7 +98,7 @@ export default function HomePage() {
                       target as amateur weekend autocross drivers.
                     </p>
                   </div>
-                  <div className='column-3'>
+                  <div className='column-3 flex'>
                     <img
                       src='/images/general/cars/sae.png'
                       className='saeimg'
@@ -108,7 +110,7 @@ export default function HomePage() {
             <section className='gvisva-section '>
               <div className='grid-container-fluid margin-bottom-10'>
                 <div className='grid-row  '>
-                  <div className='column-2 text-center'>
+                  <div className='column-2 text-center flex'>
                     <div>&nbsp;</div>
                     <img
                       src='images/chancellor.png'
@@ -159,12 +161,12 @@ export default function HomePage() {
           </main>
           <section style={{ color: 'black', width: '100%', margin: 'auto' }}>
             <div
-              className='text-align-left text-bold text-3xl'
-              style={{ marginLeft: '13%' }}
+              className='rec-ac text-bold text-3xl'
+              // style={{ marginLeft: '13%' }}
             >
               Recent Activities
             </div>
-            <div className='imageThing justify-center mt-4 mb-6' style={{}}>
+            <div className='imageThing flex justify-center mt-4 mb-6'>
               <div className='itemRecentAct'>
                 <a href='/events'>
                   <img

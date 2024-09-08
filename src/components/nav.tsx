@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <nav
       className='fixed navTest'
-      style={{ borderBottom: '1px solid black', zIndex: 10000, width: '100%' }}
+      style={{ borderBottom: '1px solid black', zIndex: 10000, width: '100%', }}
     >
       <div className='mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16'>
