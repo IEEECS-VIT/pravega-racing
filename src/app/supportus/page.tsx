@@ -249,9 +249,9 @@ const MyPage: React.FC = () => {
                   </li>
 
                   <li className='flex items-center'>
-                    <h2 className='flex text-2xl'>
+                    <h2 className='flex text-3xl font-bold'>
                       <span
-                        style={{ color: 'navy', marginRight: '140px' }}
+                        style={{ color: 'navy', marginRight: '130px' }}
                       ></span>
                       <a
                         className='hover:underline'
