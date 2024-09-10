@@ -7,13 +7,13 @@ const DriverlessSection: React.FC = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
           <div className='text-center md:text-left'>
             <h2
-              className='text-3xl md:text-4xl font-bold mb-4 ml-0 md:ml-8'
+              className='p-8 text-3xl md:text-4xl font-bold ml-0 md:ml-8'
               style={{ color: '#C63446' }}
             >
               Pravega Racing Driverless
             </h2>
 
-            <p className='text-s ml-0 text-justify md:ml-8'>
+            <p className='text-s ml-0 p-8 text-justify md:ml-8'>
               At Pravega Racing Driverless our goal is aimed at developing the
               software stack and the required integration module for achieving
               driverless capability on our FS car and participate in the

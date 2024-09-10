@@ -142,3 +142,31 @@
     background-size: 160px 178px;
   }
 }
+
+.landing-head{
+  text-align: left;
+}
+
+.rec-ac{
+  text-align: left;
+  margin-left: 14vw;
+}
+
+@media (max-width: 500px) {
+  .landing-head{
+    text-align: center;
+    font-size: 2.1rem;
+  }
+
+  .column-3, .column-2{
+    justify-content: center;
+  }
+  .rec-ac{
+    text-align: center;
+    margin: 0%;
+  }
+  .imageThing{
+    margin-left: 7vh;
+  }
+}
+
