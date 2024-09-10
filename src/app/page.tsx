@@ -83,27 +83,32 @@ export default function HomePage() {
                   <h3 className='text-left text-3xl md:text-4xl landing-head'>  
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
-                  <div className='column-9'>
-                    <p
-                      className='text-left text-justify mx-auto md:w-4/5 w-full '
-                      style={{ width: '100%' }}
-                    >
-                      Formula SAE (FSAE) is an opportunity for students to
-                      design, manufacture, and race a formula-style car. Over
-                      570 university teams from around the world participate in
-                      competitions held across the globe including locations
-                      such USA, UK, Germany, Italy, Japan and Australia. The
-                      participants explain and defend their design decisions,
-                      test their driver’s abilities and pitch their car to
-                      venture capitalists via a business presentation with the
-                      target as amateur weekend autocross drivers.
-                    </p>
-                  </div>
-                  <div className='column-3 flex'>
-                    <img
-                      src='/images/general/cars/sae.png'
-                      className='saeimg'
-                    />
+
+                  <div className='flex'>
+                    <div className='column-9'>
+                      <p
+                        className='text-left text-justify'
+                        style={{ width: '75%' }}
+                      >
+                        Formula SAE (FSAE) is an opportunity for students to
+                        design, manufacture, and race a formula-style car. Over
+                        570 university teams from around the world participate
+                        in competitions held across the globe including
+                        locations such USA, UK, Germany, Italy, Japan, and
+                        Australia. The participants explain and defend their
+                        design decisions, test their driver’s abilities and
+                        pitch their car to venture capitalists via a business
+                        presentation with the target as amateur weekend
+                        autocross drivers.
+                      </p>
+                    </div>
+                    <div className='-mt-[5vh] -ml-[2vw]'>
+                      <img
+                        src='/images/general/cars/sae.png'
+                        className='h-[30vh] w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
+                        alt='SAE Car'
+                      />
+                    </div>
 
                   </div>
                 </div>
@@ -171,6 +176,11 @@ export default function HomePage() {
             >
               Recent Activities
             </div>
+
+            <div
+              className='imageThing justify-center flex space-x-12 mt-4 mb-6'
+              style={{}}
+            >
             <div className='imageThing flex justify-center mt-4 mb-6'>
 
               <div className='itemRecentAct'>
@@ -178,7 +188,7 @@ export default function HomePage() {
                   <img
                     src='images/general/media/fsb21/1.png'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>
@@ -190,7 +200,7 @@ export default function HomePage() {
                   <img
                     src='images/general/media/fsO20/1.jpg'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>
@@ -202,7 +212,7 @@ export default function HomePage() {
                   <img
                     src='images/general/media/fsg19/11.jpg'
                     style={{ width: '100%', height: '100%' }}
-                    className='image'
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
                   />
                 </a>
                 <div className='textContentImage'>

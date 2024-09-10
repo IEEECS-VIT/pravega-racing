@@ -32,13 +32,13 @@ const Nav = () => {
           <div className='hidden sm:block' style={{ marginTop: '29.4px' }}>
             <div className='flex space-x-4'>
               <Link href='/' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   Home
                 </p>
               </Link>
               <div className='relative group'>
                 <Link href='/cars' passHref>
-                  <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                  <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                     Cars
                   </p>
                 </Link>
@@ -47,7 +47,7 @@ const Nav = () => {
                     href={{ pathname: '/cars', query: { slide: 0 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       PRV Delta Phoenix
                     </p>
                   </Link>
@@ -55,123 +55,143 @@ const Nav = () => {
                     href={{ pathname: '/cars', query: { slide: 1 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 13</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 13
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 2 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 14</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 14
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 3 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 15</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 15
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 4 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 16</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 16
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 5 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 17</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 17
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 6 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 18</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 18
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 7 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 19</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 19
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 8 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 20</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 20
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 9 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 21</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 21
+                    </p>
                   </Link>
                   <Link
                     href={{ pathname: '/cars', query: { slide: 10 } }}
                     passHref
                   >
-                    <p className='block px-4 py-2 cursor-pointer'>PRV 23</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      PRV 23
+                    </p>
                   </Link>
                 </div>
               </div>
               <div className='relative group'>
                 <Link href='/teams/2020' passHref>
-                  <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                  <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                     Team
                   </p>
                 </Link>
                 <div className='absolute z-10 hidden bg-black bg-opacity-90 text-white group-hover:block w-48 py-2 mt-1 rounded-md'>
                   <Link href='/teams/2020' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 23
                     </p>
                   </Link>
                   <Link href='/teams/2020' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 22
                     </p>
                   </Link>
                   <Link href='/teams/2020' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 21
                     </p>
                   </Link>
                   <Link href='/teams/2020' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 20
                     </p>
                   </Link>
                   <Link href='/teams/2019' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 19
                     </p>
                   </Link>
                   <Link href='/teams/2018' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 18
                     </p>
                   </Link>
                   <Link href='/teams/2017' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 17
                     </p>
                   </Link>
                   <Link href='/teams/2016' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 16
                     </p>
                   </Link>
                   <Link href='/teams/2015' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 15
                     </p>
                   </Link>
                   <Link href='/teams/2014' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 14
                     </p>
                   </Link>
                   <Link href='/teams/2013' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Team PRV 13
                     </p>
                   </Link>
@@ -179,91 +199,93 @@ const Nav = () => {
               </div>
               <div className='relative group'>
                 <Link href='/events' passHref>
-                  <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                  <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                     Events
                   </p>
                 </Link>
                 <div className='absolute z-10 hidden bg-black bg-opacity-90 text-white group-hover:block w-48 py-2 mt-1 rounded-md'>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       FS East 2023
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       FS Germany 2023
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Bharat 2023
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Online 2021
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>FSEV 2021</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      FSEV 2021
+                    </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Bharat 2021
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Online 2020
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       FS Germany 2019
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula SAE-A 2018
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       FS Germany 2017
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Bharat 2017
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Germany 2016
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student India 2016
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Germany 2015
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       JK Tyre Formula Design Challenge 2015
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Germany 2014
                     </p>
                   </Link>
                   <Link href='/events' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       Formula Student Italy 2013
                     </p>
                   </Link>
@@ -271,49 +293,55 @@ const Nav = () => {
               </div>
               <div className='relative group'>
                 <Link href='/photos' passHref>
-                  <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                  <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                     Media
                   </p>
                 </Link>
                 <div className='absolute z-10 hidden bg-black bg-opacity-90 text-white group-hover:block w-48 py-2 mt-1 rounded-md'>
                   <Link href='/photos' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>Photos</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      Photos
+                    </p>
                   </Link>
                   <Link href='/videos' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>Videos</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      Videos
+                    </p>
                   </Link>
                   <Link href='/articles' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>Articles</p>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
+                      Articles
+                    </p>
                   </Link>
                   <Link href='/linkedin' passHref>
-                    <p className='block px-4 py-2 cursor-pointer'>
+                    <p className='block px-4 py-2 cursor-pointer hover:text-gray-300'>
                       LinkedIn Articles
                     </p>
                   </Link>
                 </div>
               </div>
               <Link href='/practivities' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   PR Activities
                 </p>
               </Link>
               <Link href='/driverless' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   Driverless
                 </p>
               </Link>
               <Link href='/sponsors' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   Our Sponsors
                 </p>
               </Link>
               <Link href='/supportus' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   Support Us
                 </p>
               </Link>
               <Link href='/contactus' passHref>
-                <p className='text-white hover:bg-gray-800 hover:text-yellow-400 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
+                <p className='text-white hover:text-gray-300 px-3 py-2 rounded-md text-[2.5vh] font-medium cursor-pointer'>
                   Contact Us
                 </p>
               </Link>

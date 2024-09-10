@@ -57,9 +57,9 @@ const MyPage: React.FC = () => {
                 <span className='text-red-500'>Pravega</span> Racing
               </h1>
               <div className='flex flex-col items-center justify-center lg:flex-row gap-4'>
-                <div className='w-full lg:w-1/3 mb-4 lg:mb-0'>
+                <div className=' w-[60vw]  lg:w-3/5 mb-4 lg:mb-0'>
                   <div
-                    className='bg-gray-800 text-white text-center w-full p-2.5 text-m mb-2'
+                    className='bg-gray-800 text-white text-center w-full py-2 px-1 text-xl mb-2'
                     style={{
                       fontFamily:
                         "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -69,17 +69,17 @@ const MyPage: React.FC = () => {
                     Chief Executive Officer
                   </div>
                   <div className='flex flex-col items-center'>
-                    <div className='w-full mb-4' style={{ height: 'auto' }}>
+                    <div className='w-full mb-4'>
                       <img
                         src='/images/general/teams/team23/CEO.JPG'
                         alt='CEO'
-                        className='w-full object-cover'
-                        style={{ height: '20rem', objectFit: 'cover' }}
+                        className='object-cover w-[60vw] h-[40vh] lg:h-[80vh]'
                       />
                     </div>
+
                     <div className='text-center'>
                       <span
-                        className='font-semibold text-m pb-2 block'
+                        className='font-semibold text-xl pb-2 block'
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -90,7 +90,7 @@ const MyPage: React.FC = () => {
                       </span>
                       <div className='flex items-center justify-center'>
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className='text-m underline pl-2 lg:text-xs'>
+                        <span className='text-xl underline pl-2 lg:text-lg'>
                           +91 8580917504
                         </span>
                       </div>
@@ -98,9 +98,9 @@ const MyPage: React.FC = () => {
                   </div>
                 </div>
 
-                <div className='w-full lg:w-1/3'>
+                <div className=' w-[60vw]  lg:w-3/5 mb-4 lg:mb-0'>
                   <div
-                    className='bg-gray-800 text-white text-center w-full p-2.5 text-m mb-2'
+                    className='bg-gray-800 text-white text-center w-full py-2 px-1 text-xl mb-2'
                     style={{
                       fontFamily:
                         "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -114,13 +114,12 @@ const MyPage: React.FC = () => {
                       <img
                         src='/images/general/teams/team23/COO.JPG'
                         alt='COO'
-                        className='w-full object-cover'
-                        style={{ height: '20rem', objectFit: 'cover' }}
+                        className='object-cover w-[60vw] h-[40vh] lg:h-[80vh]'
                       />
                     </div>
                     <div className='text-center'>
                       <span
-                        className='font-semibold text-m pb-2 block'
+                        className='font-semibold text-xl pb-2 block'
                         style={{
                           fontFamily:
                             "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -131,7 +130,7 @@ const MyPage: React.FC = () => {
                       </span>
                       <div className='flex items-center justify-center'>
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className='text-m underline pl-2 lg:text-xs'>
+                        <span className='text-xl underline pl-2 lg:text-lg'>
                           +91 8054603773
                         </span>
                       </div>
@@ -143,7 +142,7 @@ const MyPage: React.FC = () => {
               <div className='flex flex-col items-center mt-6 ml-6'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-0'>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='mailto:pravegaracing@vit.ac.in'
                     target='_blank'
                   >
@@ -160,7 +159,7 @@ const MyPage: React.FC = () => {
                     </p>
                   </a>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='https://www.instagram.com/pravegaracing/'
                     target='_blank'
                   >
@@ -177,7 +176,7 @@ const MyPage: React.FC = () => {
                     </p>
                   </a>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='https://x.com/pravegaracing'
                     target='_blank'
                   >
@@ -194,7 +193,7 @@ const MyPage: React.FC = () => {
                     </p>
                   </a>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='http://www.pravega-racing.com'
                     target='_blank'
                   >
@@ -211,7 +210,7 @@ const MyPage: React.FC = () => {
                     </p>
                   </a>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='https://m.facebook.com/pravegaracing/'
                     target='_blank'
                   >
@@ -228,7 +227,7 @@ const MyPage: React.FC = () => {
                     </p>
                   </a>
                   <a
-                    className='text-sm flex items-center justify-center pb-1 text-blue-800'
+                    className='text-lg flex items-center justify-center pb-1 text-blue-800'
                     href='https://www.linkedin.com/company/pravega-racing./'
                     target='_blank'
                   >
@@ -252,7 +251,7 @@ const MyPage: React.FC = () => {
                     className='w-6 text-center'
                   />
                   <span
-                    className='text-sm'
+                    className='text-lg'
                     style={{
                       fontFamily:
                         "'Source Sans Pro', Helvetica, Arial, sans-serif",
@@ -304,7 +303,7 @@ const MyPage: React.FC = () => {
             <div>
               <button
                 type='submit'
-                className='button text-white bg-gray-800 px-4 py-2 mb-4'
+                className='button text-white bg-gray-800 hover:bg-yellow-400 hover:text-black border-2 border-black px-4 py-2 mb-4  lg:w-[10vw]'
                 style={{
                   fontFamily: "'Source Sans Pro', Helvetica, Arial, sans-serif",
                   fontWeight: '400',
