@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import '/src/styles/slider1.css';
@@ -16,7 +17,7 @@ export default function Footer() {
         'service_lc4i3wf', // Replace with your EmailJS service ID
         'template_zyzfuyw', // Replace with your EmailJS template ID
         form.current,
-        'XTE3GS1zjUvWG9Url' // Replace with your EmailJS user ID
+        'XTE3GS1zjUvWG9Url', // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
@@ -25,7 +26,7 @@ export default function Footer() {
         },
         (error) => {
           setMessage('Failed to send email. Please try again.');
-        }
+        },
       );
   };
 
@@ -36,17 +37,21 @@ export default function Footer() {
     >
       <div className='footThing mx-5 md:mx-20 flex items-center'>
         <div className='mt-4'>
-          <img src='images/general/logowhite.png' className='footImg'></img>
+          <img
+            src='images/general/logowhite.png'
+            className='footImg'
+            alt='Pravega Racing Logo'
+          ></img>
           <div className='buttonsAtEnd ml-2'>
             <a
               href='https://www.instagram.com/pravegaracing/'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Instagram'
-              className={`${styles.socialButton} ${styles.instagram} `}
+              className={`${styles.socialButton} ${styles.instagram}`}
             >
               <button
-                className={`${styles.socialButton} ${styles.instagram} `}
+                className={`${styles.socialButton} ${styles.instagram}`}
                 aria-label='Instagram'
               ></button>
             </a>
@@ -76,48 +81,41 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className='flex-col mt-[4vh]'>
-          <p className='textEnd text-left text-xl' style={{ color: 'white' }}>
-            Sign Up
+        <div className='flex-col mt-4'>
+          <p className='text-left text-xl text-white'>Sign Up</p>
+          <p className='text-left text-gray-300'>
+            Want to keep informed? Join our infrequent mailing list, and you
+            will never miss out on our upcoming events.
           </p>
-          <p className='textEnd text-left text-gray-300'>
-            Want to keep informed? Join our infrequent mailing list, and you will never miss out on our upcoming events.
-          </p>
-          <span
+          <form
+            ref={form}
+            onSubmit={sendEmail}
             className='flex flex-row gap-x-8'
-            style={{ width: '100%', marginBottom: '0px', height: '25px' }}
           >
             <input
-              type='text'
-              placeholder='Email'
-              style={{ width: '80%', marginLeft: '0px', marginRight: '0px' }}
-            ></input>
+              type='email'
+              name='user_email'
+              placeholder='Enter your email'
+              className='w-[80%] px-2 py-1 border border-gray-300 rounded'
+              required
+            />
             <button
-              className='bg-yellow-400 px-2 text-black hover:bg-red-600 w-[6vw]'
-              style={{ height: '25px', marginLeft: '0px', marginRight: '0px' }}
+              type='submit'
+              className='bg-black px-4 text-gray-400 hover:bg-white hover:text-black border border-gray-600 rounded'
             >
-              <input
-                type='email'
-                name='user_email'
-                style={{ width: '80%', marginLeft: '0px', marginRight: '0px' }}
-                placeholder='Enter your email'
-                required
-              />
-              <button
-                type='submit'
-                className='bg-black px-2 text-gray-400 hover:bg-white'
-                style={{ height: '25px', marginLeft: '0px', marginRight: '0px' }}
-              >
-                Submit
-              </button>
-            </span>
+              Submit
+            </button>
           </form>
           {message && (
             <p className='text-green-400 mt-2'>{message}</p> // Display the notification
           )}
         </div>
         <div className='ieeecs mt-8' style={{ marginLeft: '100px' }}>
-          <img src='images/general/ieeecslogo.png' className='footImg md:h-[10vh]'></img>
+          <img
+            src='images/general/ieeecslogo.png'
+            className='footImg md:h-[10vh]'
+            alt='IEEE CS Logo'
+          ></img>
         </div>
       </div>
     </footer>

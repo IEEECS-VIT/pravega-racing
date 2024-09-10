@@ -12,7 +12,6 @@ import '/src/styles/indexpage.css';
 import '/src/styles/styles.css';
 import '/src/styles/globals.css';
 
-
 import FollowPageCard from '@/components/followpagecard';
 import SlideshowBackground from '@/components/Slideshow';
 /**
@@ -65,7 +64,6 @@ export default function HomePage() {
                       className='text-left text-justify mx-auto md:w-4/5 w-full '
                       style={{ width: '100%' }}
                     >
-
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
                       University by implementation of engineering fundamentals
@@ -80,7 +78,7 @@ export default function HomePage() {
                   <FollowPageCard />
                 </div>
                 <div className='grid-row padlr'>
-                  <h3 className='text-left text-3xl md:text-4xl landing-head'>  
+                  <h3 className='text-left text-3xl md:text-4xl landing-head'>
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
 
@@ -109,7 +107,6 @@ export default function HomePage() {
                         alt='SAE Car'
                       />
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -181,42 +178,44 @@ export default function HomePage() {
               className='imageThing justify-center flex space-x-12 mt-4 mb-6'
               style={{}}
             >
-            <div className='imageThing flex justify-center mt-4 mb-6'>
-
-              <div className='itemRecentAct'>
-                <a href='/events'>
-                  <img
-                    src='images/general/media/fsb21/1.png'
-                    style={{ width: '100%', height: '100%' }}
-                    className='image shadow-[-10px_10px_0_0_#FF0000]'
-                  />
-                </a>
-                <div className='textContentImage'>
-                  <div className='innerText'>Formula Bharat 2021</div>
+              <div className='imageThing flex justify-center mt-4 mb-6'>
+                <div className='itemRecentAct'>
+                  <a href='/events'>
+                    <img
+                      src='images/general/media/fsb21/1.png'
+                      style={{ width: '100%', height: '100%' }}
+                      className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    />
+                  </a>
+                  <div className='textContentImage'>
+                    <div className='innerText'>Formula Bharat 2021</div>
+                  </div>
                 </div>
-              </div>
-              <div className='itemRecentAct'>
-                <a href='/events'>
-                  <img
-                    src='images/general/media/fsO20/1.jpg'
-                    style={{ width: '100%', height: '100%' }}
-                    className='image shadow-[-10px_10px_0_0_#FF0000]'
-                  />
-                </a>
-                <div className='textContentImage'>
-                  <div className='innerText'>Formula Student Online 2020</div>
+                <div className='itemRecentAct'>
+                  <a href='/events'>
+                    <img
+                      src='images/general/media/fsO20/1.jpg'
+                      style={{ width: '100%', height: '100%' }}
+                      className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    />
+                  </a>
+                  <div className='textContentImage'>
+                    <div className='innerText'>Formula Student Online 2020</div>
+                  </div>
                 </div>
-              </div>
-              <div className='itemRecentAct'>
-                <a href='/events'>
-                  <img
-                    src='images/general/media/fsg19/11.jpg'
-                    style={{ width: '100%', height: '100%' }}
-                    className='image shadow-[-10px_10px_0_0_#FF0000]'
-                  />
-                </a>
-                <div className='textContentImage'>
-                  <div className='innerText'>Formula Student Germany 2019</div>
+                <div className='itemRecentAct'>
+                  <a href='/events'>
+                    <img
+                      src='images/general/media/fsg19/11.jpg'
+                      style={{ width: '100%', height: '100%' }}
+                      className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    />
+                  </a>
+                  <div className='textContentImage'>
+                    <div className='innerText'>
+                      Formula Student Germany 2019
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
