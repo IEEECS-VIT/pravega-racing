@@ -1,2 +1,0 @@
-[build]
-  command = "git config --global submodule.recurse false && your-build-command"
