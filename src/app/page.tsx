@@ -82,7 +82,7 @@ export default function HomePage() {
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
 
-                  <div className='flex'>
+                  <div className='flex flex-col md:flex-row'>
                     <div className='column-9'>
                       <p
                         className='text-left text-justify'
@@ -100,10 +100,10 @@ export default function HomePage() {
                         autocross drivers.
                       </p>
                     </div>
-                    <div className='-mt-[5vh] -ml-[2vw]'>
+                    <div className='mt-[5vh] ml-[6vw] md:-mt-[5vh] md:-ml-[2vw]'>
                       <img
                         src='/images/general/cars/sae.png'
-                        className='h-[30vh] w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
+                        className='h-[30vh] w-[50vw] md:h-[30vh] md:w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
                         alt='SAE Car'
                       />
                     </div>
