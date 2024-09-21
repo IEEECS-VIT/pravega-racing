@@ -37,7 +37,7 @@ export default function HomePage() {
 
         <section className='h-screen flex items-center justify-center'>
           <div className='text-center'>
-            <h1 className='text-color-10 font-size-xxlrg main-heading-pravega font-bold mb-5'>
+            <h1 className='text-color-10 font-size-xxlrg main-heading-pravega font-bold mb-8'>
               Pravega Racing
             </h1>
             <h5 className='text-color-10 font-bold'>
@@ -61,7 +61,7 @@ export default function HomePage() {
                       </b>
                     </h3>
                     <p
-                      className='text-left text-justify mx-auto md:w-4/5 w-full '
+                      className='text-left text-justify mx-auto md:w-4/5 w-full mb-4'
                       style={{ width: '100%' }}
                     >
                       We are a team of engineers who seek to enhance the
@@ -77,13 +77,14 @@ export default function HomePage() {
                   </div>
                   <FollowPageCard />
                 </div>
+                
                 <div className='grid-row padlr'>
                   <h3 className='text-left text-3xl md:text-4xl landing-head'>
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
 
-                  <div className='flex'>
-                    <div className='column-9'>
+                  <div className='flex flex-col md:flex-row items-center '>
+                    <div className='column-9 flex justify-center'>
                       <p
                         className='text-left text-justify'
                         style={{ width: '75%' }}
@@ -100,10 +101,10 @@ export default function HomePage() {
                         autocross drivers.
                       </p>
                     </div>
-                    <div className='-mt-[5vh] -ml-[2vw]'>
+                    <div className='flex flex-col mt-6 md:mt-0 md:-ml-[2vw]'>
                       <img
                         src='/images/general/cars/sae.png'
-                        className='h-[30vh] w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
+                        className='h-[18vh] w-[30vw] md:h-[30vh] md:w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
                         alt='SAE Car'
                       />
                     </div>
