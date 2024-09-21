@@ -14,25 +14,15 @@ import '/src/styles/globals.css';
 
 import FollowPageCard from '@/components/followpagecard';
 import SlideshowBackground from '@/components/Slideshow';
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
 
 export default function HomePage() {
   return (
     <>
-      <div className='pageFull '>
+      <div className='pageFull'>
         <Head>
           <title>Pravega Racing - VIT University Vellore</title>
         </Head>
+
         <SlideshowBackground />
 
         <section className='h-screen flex items-center justify-center'>
@@ -56,70 +46,70 @@ export default function HomePage() {
                       <b>
                         Fifty Four,{' '}
                         <span className='redcolor' style={{ color: 'red' }}>
-                          Pravega !
+                          Pravega!
                         </span>
                       </b>
                     </h3>
-                    <p
-                      className='text-left text-justify mx-auto md:w-4/5 w-full mb-4'
-                      style={{ width: '100%' }}
-                    >
+                    <p className='text-left text-justify mx-auto md:w-4/5 w-full mb-4'>
                       We are a team of engineers who seek to enhance the
                       learning experience of the student community at VIT
-                      University by implementation of engineering fundamentals
-                      within the context of building a formula style Racecar. We
+                      University by the implementation of engineering fundamentals
+                      within the context of building a formula-style Racecar. We
                       annually take part in the Formula Student competitions
-                      organised by Society of Automotive Engineers (SAE). We
-                      strive to achieve a steady growth in the Formula Student
-                      Circuit by focusing on world class engineering practices
-                      and institutionalising innovation.
+                      organized by the Society of Automotive Engineers (SAE). We
+                      strive to achieve steady growth in the Formula Student
+                      Circuit by focusing on world-class engineering practices
+                      and institutionalizing innovation.
                     </p>
                   </div>
                   <FollowPageCard />
                 </div>
-                
+
                 <div className='grid-row padlr'>
                   <h3 className='text-left text-3xl md:text-4xl landing-head'>
                     &nbsp;&nbsp;<b>About Formula SAE</b>
                   </h3>
 
-                  <div className='flex flex-col md:flex-row items-center '>
-                    <div className='column-9 flex justify-center'>
-                      <p
-                        className='text-left text-justify'
-                        style={{ width: '75%' }}
-                      >
-                        Formula SAE (FSAE) is an opportunity for students to
-                        design, manufacture, and race a formula-style car. Over
-                        570 university teams from around the world participate
-                        in competitions held across the globe including
-                        locations such USA, UK, Germany, Italy, Japan, and
-                        Australia. The participants explain and defend their
-                        design decisions, test their driver’s abilities and
-                        pitch their car to venture capitalists via a business
-                        presentation with the target as amateur weekend
-                        autocross drivers.
-                      </p>
-                    </div>
-                    <div className='flex flex-col mt-6 md:mt-0 md:-ml-[2vw]'>
-                      <img
-                        src='/images/general/cars/sae.png'
-                        className='h-[18vh] w-[30vw] md:h-[30vh] md:w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
-                        alt='SAE Car'
-                      />
+                  <div className='flex flex-col md:flex-row'>
+                    <div className='column-9'>
+                      <div className='flex flex-col md:flex-row items-center'>
+                        <div className='column-9 flex justify-center'>
+                          <p
+                            className='text-left text-justify'
+                            style={{ width: '75%' }}
+                          >
+                            Formula SAE (FSAE) is an opportunity for students to
+                            design, manufacture, and race a formula-style car. Over
+                            570 university teams from around the world participate
+                            in competitions held across the globe including
+                            locations such as the USA, UK, Germany, Italy, Japan, and
+                            Australia. The participants explain and defend their
+                            design decisions, test their driver’s abilities, and
+                            pitch their car to venture capitalists via a business
+                            presentation with the target as amateur weekend
+                            autocross drivers.
+                          </p>
+                        </div>
+                        <div className='flex flex-col mt-6 md:mt-0 md:-ml-[2vw]'>
+                          <img
+                            src='/images/general/cars/sae.png'
+                            className='h-[18vh] w-[30vw] md:h-[30vh] md:w-[20vw] border-black border-4 p-4 shadow-[-10px_10px_0_0_#000000]'
+                            alt='SAE Car'
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section className='gvisva-section '>
-              <div className='grid-container-fluid margin-bottom-10'>
-                <div className='grid-row  '>
-                  <div className='column-2 text-center flex'>
-                    <div>&nbsp;</div>
 
+            <section className='gvisva-section'>
+              <div className='grid-container-fluid margin-bottom-10'>
+                <div className='grid-row'>
+                  <div className='column-2 text-center flex'>
                     <img
-                      src='images/chancellor.png'
+                      src='/images/chancellor.png'
                       className='vish img-circle chancellor-img img-responsive hidden-small size-[40vh] object-cover'
                       alt='Chancellor'
                     />
@@ -132,10 +122,10 @@ export default function HomePage() {
                       <p className='w-[60vw]'>
                         I am happy and proud to inform you that Pravega Racing
                         is the official Formula SAE (FSAE) team of VIT
-                        University. The team comprises of a group of able and
+                        University. The team comprises a group of able and
                         resolute students of our institution from all academic
                         divisions aiming for excellence. Pravega Racing is among
-                        the top three Formula SAE teams of India.
+                        the top three Formula SAE teams in India.
                       </p>
                     </div>
                     <div className='text-right'>
@@ -166,57 +156,51 @@ export default function HomePage() {
               <i className='ion-ios-arrow-up'></i>
             </a>
           </main>
+
           <section style={{ color: 'black', width: '100%', margin: 'auto' }}>
             <br />
-            <div
-              className='rec-ac text-bold text-3xl'
-              // style={{ marginLeft: '13%' }}
-            >
+            <div className='rec-ac text-bold text-3xl'>
               Recent Activities
             </div>
 
-            <div
-              className='imageThing justify-center flex space-x-12 mt-4 mb-6'
-              style={{}}
-            >
-              <div className='imageThing flex justify-center mt-4 mb-6'>
-                <div className='itemRecentAct'>
-                  <a href='/events'>
-                    <img
-                      src='images/general/media/fsb21/1.png'
-                      style={{ width: '100%', height: '100%' }}
-                      className='image shadow-[-10px_10px_0_0_#FF0000]'
-                    />
-                  </a>
-                  <div className='textContentImage'>
-                    <div className='innerText'>Formula Bharat 2021</div>
-                  </div>
+            <div className='imageThing flex justify-center ml-8 mt-4 mb-6'>
+              <div className='itemRecentAct'>
+                <a href='/events'>
+                  <img
+                    src='/images/general/media/fsb21/1.png'
+                    style={{ width: '100%', height: '100%' }}
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    alt='Formula Bharat 2021'
+                  />
+                </a>
+                <div className='textContentImage'>
+                  <div className='innerText'>Formula Bharat 2021</div>
                 </div>
-                <div className='itemRecentAct'>
-                  <a href='/events'>
-                    <img
-                      src='images/general/media/fsO20/1.jpg'
-                      style={{ width: '100%', height: '100%' }}
-                      className='image shadow-[-10px_10px_0_0_#FF0000]'
-                    />
-                  </a>
-                  <div className='textContentImage'>
-                    <div className='innerText'>Formula Student Online 2020</div>
-                  </div>
+              </div>
+              <div className='itemRecentAct'>
+                <a href='/events'>
+                  <img
+                    src='/images/general/media/fsO20/1.jpg'
+                    style={{ width: '100%', height: '100%' }}
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    alt='Formula Student Online 2020'
+                  />
+                </a>
+                <div className='textContentImage'>
+                  <div className='innerText'>Formula Student Online 2020</div>
                 </div>
-                <div className='itemRecentAct'>
-                  <a href='/events'>
-                    <img
-                      src='images/general/media/fsg19/11.jpg'
-                      style={{ width: '100%', height: '100%' }}
-                      className='image shadow-[-10px_10px_0_0_#FF0000]'
-                    />
-                  </a>
-                  <div className='textContentImage'>
-                    <div className='innerText'>
-                      Formula Student Germany 2019
-                    </div>
-                  </div>
+              </div>
+              <div className='itemRecentAct'>
+                <a href='/events'>
+                  <img
+                    src='/images/general/media/fsg19/11.jpg'
+                    style={{ width: '100%', height: '100%' }}
+                    className='image shadow-[-10px_10px_0_0_#FF0000]'
+                    alt='Formula Student Germany 2019'
+                  />
+                </a>
+                <div className='textContentImage'>
+                  <div className='innerText'>Formula Student Germany 2019</div>
                 </div>
               </div>
             </div>
